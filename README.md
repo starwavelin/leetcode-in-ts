@@ -8,10 +8,13 @@ $ npm i
 ```
 2. Use ts-node to run a specific *.ts file to see the result, ie.
 ```
-$ ts-node src/array/greedy/AssignCookies.ts
+$ npm run dev src/array/greedy/AssignCookies.ts
 ```
-As you can see, you need to specify the path to the targeting .ts file you want to run.
-
+As you can see, you need to specify the path to the targeting *.ts file you want to run.  
+3. Besides Step 2, you can also use already setup ts-jest framework to test a corresponding *.test.ts file
+```
+$ npm test tests/array/greedy/AssignCookies.ts
+```
 
 ### Searching in this Repository
 I have enabled searching by tag by adding meta to each source file. During search you may append `tag-` as prefix of the tag string. For example, to search on problems on arrays: you navigate to [this repo url](https://github.com/starwavelin/leetcode-in-ts) and enter following on search box: `tag-array`

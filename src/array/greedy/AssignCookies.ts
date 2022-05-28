@@ -1,9 +1,9 @@
-function findContentChildren(children: number[], cookies: number[]): number {
+export function findContentChildren(children: number[], cookies: number[]): number {
     children.sort((a, b) => a - b);
     cookies.sort((a, b) => a - b);
 
-    console.log(`children array: ${children}`);
-    console.log(`cookies array: ${cookies}`);
+    // console.log(`children array: ${children}`);
+    // console.log(`cookies array: ${cookies}`);
 
     let i = 0, j = 0; // i - loop counter for childre, j - loop counter for cookies
     while (i < children.length && j < cookies.length) {
@@ -15,5 +15,5 @@ function findContentChildren(children: number[], cookies: number[]): number {
     return i;
 };
 
-console.log(findContentChildren([1, 2, 4], [1, 5, 1])); // return 2
+// console.log(findContentChildren([1, 2, 4], [1, 5, 1])); // return 2
 console.log(findContentChildren([10, 9, 8, 7], [5, 6, 7, 8])); // return 2
