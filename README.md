@@ -1,6 +1,18 @@
 # leetcode-in-ts
 My practices of LeetCode problems in TypeScript
 
+### How to Run the Sample Solution Code
+1. Use the following command to initialize the project after you git clone this project
+```
+$ npm i
+```
+2. Use ts-node to run a specific *.ts file to see the result, ie.
+```
+$ ts-node src/array/greedy/AssignCookies.ts
+```
+As you can see, you need to specify the path to the targeting .ts file you want to run.
+
+
 ### Searching in this Repository
 I have enabled searching by tag by adding meta to each source file. During search you may append `tag-` as prefix of the tag string. For example, to search on problems on arrays: you navigate to [this repo url](https://github.com/starwavelin/leetcode-in-ts) and enter following on search box: `tag-array`
 
@@ -30,9 +42,9 @@ Supported list of problem categories for searching,
 ### Algorithmic Problem List
 
 **Selective Problems**
-| No.    | Problem                                                                                                      | Difficulty  | Tags  | Videos |
-|--------|--------------------------------------------------------------------------------------------------------------|-------------|-------|--------|
-
+| No.    | Problem                                              | Difficulty  | Tags  | Videos |
+|--------|------------------------------------------------------|-------------|-------|--------|
+| 455	 | [Assign Cookies](src/array/greedy/AssignCookies.ts)  | Easy | Array, Greedy | |
 
 **Problem 1 - 250**
 
