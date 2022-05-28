@@ -1,3 +1,12 @@
+/***************************************************************************
+ * Problem No. : 455
+ * Problem Name: Assign Cookies
+ * Date        : May 21, 2022
+ * Author      : @codingbro
+ *
+ * meta        : tag-array, tag-greedy
+ ***************************************************************************/
+
 export function findContentChildren(children: number[], cookies: number[]): number {
     children.sort((a, b) => a - b);
     cookies.sort((a, b) => a - b);
