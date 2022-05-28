@@ -278,4 +278,6 @@ Supported list of problem categories for searching,
 
 ### Acknowledgement
 
+- [How to Setup a new TypeScript Project](https://www.digitalocean.com/community/tutorials/typescript-new-project)
+
 [[↑] Back to top](#leetcode-in-ts)

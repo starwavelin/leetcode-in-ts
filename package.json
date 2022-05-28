@@ -1,0 +1,24 @@
+{
+    "name": "leetcode-in-ts",
+    "version": "1.0.0",
+    "description": "practice of leetcode in typescript",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "ts-node": "10.8.0",
+        "typescript": "4.7.2"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/starwavelin/leetcode-in-ts.git"
+    },
+    "author": "codingbro",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/starwavelin/leetcode-in-ts/issues"
+    },
+    "homepage": "https://github.com/starwavelin/leetcode-in-ts#readme"
+}
