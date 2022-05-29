@@ -230,7 +230,7 @@ Supported list of problem categories for searching,
 | 60	  | Permutation Sequence                                | Medium | | |
 | 59	  | Spiral Matrix II                                    | Medium | | |
 | 58	  | Length of Last Word                                 | Easy | | |
-| 57	  | Insert Interval                                     | Hard | Interval | |
+| 57	  | [Insert Interval](src/interval/InsertInterval.ts)   | Medium | Interval | |
 | 56	  | Merge Intervals                                     | Hard | Interval, Sort | |
 | 55	  | Jump Game                                           | Medium | | |
 | 54	  | Spiral Matrix                                       | Medium | | |
