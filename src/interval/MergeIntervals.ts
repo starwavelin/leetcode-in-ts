@@ -29,3 +29,27 @@ export function merge(intervals: number[][]): number[][] {
     res.push(tmp);
     return res;
 };
+
+/**
+ * Method 2: 
+ *  Based on Method 1 
+ *  Single pointer approach
+ */
+
+export function merge2(intervals: number[][]): number[][] {
+    intervals.sort((a, b) => a[0] - b[0]);
+    const res = [];
+    res.push(intervals[0]);
+
+    for (let i = 1; i < intervals.length; i++ ) {
+        if (res[res.length - 1][1] < intervals[i][0]) {
+            res.push(intervals[i]);
+        } else { // overlapping case
+            res[res.length - 1][1] = Math.max(res[res.length - 1][1], intervals[i][1]);
+        }
+    }
+    
+    return res;
+};
+
+// console.log(merge2([[1, 3], [2, 5], [4, 7], [8, 10], [9, 13]]));
