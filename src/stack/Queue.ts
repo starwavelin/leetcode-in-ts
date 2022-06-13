@@ -4,7 +4,7 @@
  */
 
 export class Queue<T> {
-    private items: T[];
+    private items: T[] = [];
 
     constructor(items: T[]) {
         this.items = items;
