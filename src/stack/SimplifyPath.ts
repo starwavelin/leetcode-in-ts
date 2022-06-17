@@ -19,3 +19,18 @@ export function simplifyPath(path: string): string {
     }
     return '/' + stack.join('/');
 }
+
+
+export function genPath(current: string, path: string): string {
+    const combinedPath = current + '/' + path;
+    const arr: string[] = combinedPath.split('/');
+    const stack = [];
+    for (const el of arr) {
+        if (!!stack.length && el === '..') {
+            stack.pop();
+        } else if (el !== '.' && el !== '..' && el !== '') {
+            stack.push(el);
+        }
+    }
+    return '/' + stack.join('/');
+}
