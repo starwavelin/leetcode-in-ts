@@ -28,5 +28,6 @@ describe('Test Stack class\'s behavior', () => {
         myStack.pop();
         expect(myStack.peek()).toBe(undefined);
         expect(myStack.length).toBe(0);
+        expect(myStack.isEmpty()).toBe(true);
     });
 });

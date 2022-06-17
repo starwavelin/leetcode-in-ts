@@ -16,6 +16,8 @@ export class Queue<T> {
 
     peek = () => !this.length ? undefined : this.items[0];
 
+    isEmpty = () => !this.length;
+
     get length() {
         return this.items.length;
     }

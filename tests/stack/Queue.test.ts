@@ -28,5 +28,6 @@ describe('Test Queue class\'s behavior', () => {
         myQueue.dequeue();
         expect(myQueue.peek()).toBe(undefined);
         expect(myQueue.length).toBe(0);
+        expect(myQueue.isEmpty()).toBe(true);
     });
 });

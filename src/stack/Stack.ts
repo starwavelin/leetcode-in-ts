@@ -16,6 +16,8 @@ export class Stack<T> {
 
     peek = () => !this.length ? undefined : this.items[this.length - 1];
 
+    isEmpty = () => !this.length;
+
     get length() {
         return this.items.length;
     }
