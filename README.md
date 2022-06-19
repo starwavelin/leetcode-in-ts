@@ -13,7 +13,7 @@ $ npm run dev src/array/greedy/AssignCookies.ts
 As you can see, you need to specify the path to the targeting *.ts file you want to run.  
 3. Besides Step 2, you can also use already setup ts-jest framework to test a corresponding *.test.ts file
 ```
-$ npm test tests/array/greedy/AssignCookies.ts
+$ npm test AssignCookies.test.ts
 ```
 
 ### Searching in this Repository
@@ -44,9 +44,16 @@ Supported list of problem categories for searching,
 
 ### Algorithmic Problem List
 
-**Selective Problems**
+**Selective Problems 2,001 - 2,500**
+
+**Selective Problems 1,501 - 2,000**
+
+**Selective Problems 1,001 - 1,500**
+
+**Selective Problems 251 - 1,000**
 | No.    | Problem                                              | Difficulty  | Tags  | Videos |
 |--------|------------------------------------------------------|-------------|-------|--------|
+| 716	 | [Max Stack](src/stack/MaxStack.ts)                   | Easy | Stack | |
 | 455	 | [Assign Cookies](src/array/greedy/AssignCookies.ts)  | Easy | Array, Greedy | |
 
 **Problem 1 - 250**

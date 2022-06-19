@@ -1,7 +1,7 @@
 /***************************************************************************
 * Problem No. : 155
 * Problem Name: Min Stack
-* Date        : June 16, 2022
+* Date        : June 18, 2022
 * Author      :	@codingbro
 *
 * meta        : tag-stack, tag-data-structure
@@ -46,4 +46,12 @@ export class MinStack {
         }
         return this.minStack[this.minStack.length - 1];
     }
+
+    /**
+     * This problem is easier than the MaxStack one is b/c
+     * we only have a getMin(), we do not need to implement a popMin().
+     * 
+     * That's why we don't need to keep the length of minStack always the same as the length of stack
+     * like what we did for MaxStack solution 1.
+     */
 }
