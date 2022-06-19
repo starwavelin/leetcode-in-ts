@@ -132,7 +132,7 @@ Supported list of problem categories for searching,
 | 158	 | Read N Characters Given Read4 II - Call multiple times |	Hard | | |
 | 157	 | Read N Characters Given Read4 $                      | Easy | | |
 | 156	 | Binary Tree Upside Down $                            | Medium | | |
-| 155	 | Min Stack                                            | Easy | | |
+| 155	 | [Min Stack]((src/stack/MinStack.ts) )                | Easy | | |
 | 154	 | Find Minimum in Rotated Sorted Array II              | Hard | | |
 | 153	 | Find Minimum in Rotated Sorted Array                 | Medium | | |
 | 152	 | Maximum Product Subarray                             | Medium | | |
