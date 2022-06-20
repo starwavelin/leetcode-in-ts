@@ -60,14 +60,14 @@ Supported list of problem categories for searching,
 
 | No.    | Problem                                              | Difficulty  | Tags  | Videos |
 |--------|------------------------------------------------------|-------------|-------|--------|
-| 250	 | Count Univalue Subtrees $                            | Medium | | |
-| 249	 | Group Shifted Strings $	                            | Easy | | |
-| 248	 | Strobogrammatic Number III $                         | Hard | | |
-| 247	 | Strobogrammatic Number II $                          | Medium | | |
-| 246	 | Strobogrammatic Number $                             | Easy | | |
-| 245	 | Shortest Word Distance III $                         | Medium | | |
-| 244	 | Shortest Word Distance II $                          | Medium | | |
-| 243	 | Shortest Word Distance $                             | Easy | | |
+| 250	 | Count Univalue Subtrees                            | Medium | | |
+| 249	 | Group Shifted Strings	                            | Easy | | |
+| 248	 | Strobogrammatic Number III                         | Hard | | |
+| 247	 | Strobogrammatic Number II                          | Medium | | |
+| 246	 | Strobogrammatic Number                            | Easy | | |
+| 245	 | Shortest Word Distance III                         | Medium | | |
+| 244	 | Shortest Word Distance II                          | Medium | | |
+| 243	 | Shortest Word Distance                            | Easy | | |
 | 242	 | Valid Anagram                                        | Easy | Hash, ArrayMap | [讲解](https://youtu.be/PaqSyN63kB8)|
 | 241	 | Different Ways to Add Parentheses                    | Medium | | |
 | 240	 | Search a 2D Matrix II	                            | Medium | | |
@@ -274,7 +274,7 @@ Supported list of problem categories for searching,
 | 23      | Merge k Sorted Lists	                            | Hard | | |
 | 22      |	Generate Parentheses	                            | Medium | | |
 | 21      | Merge Two Sorted Lists	                            | Easy | | |
-| 20      | Valid Parentheses	                                | Easy | | |
+| 20      | [Valid Parentheses](src/stack/ValidParentheses.ts)	| Easy | Stack  | |
 | 19      | Remove Nth Node From End of List	                | Easy | Linked List | |
 | 18      | 4Sum	                                            | Medium | | |
 | 17      | Letter Combinations of a Phone Number	            | Medium | | |
