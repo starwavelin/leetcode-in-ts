@@ -53,6 +53,7 @@ Supported list of problem categories for searching,
 **Selective Problems 251 - 1,000**
 | No.    | Problem                                              | Difficulty  | Tags  | Videos |
 |--------|------------------------------------------------------|-------------|-------|--------|
+| 739	 | [Daily Temperatures](src/stack/DailyTemperatures.ts) | Medium | Stack | |
 | 716	 | [Max Stack](src/stack/MaxStack.ts)                   | Easy | Stack | |
 | 455	 | [Assign Cookies](src/array/greedy/AssignCookies.ts)  | Easy | Array, Greedy | |
 
