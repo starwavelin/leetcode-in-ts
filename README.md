@@ -55,6 +55,7 @@ Supported list of problem categories for searching,
 |--------|------------------------------------------------------|-------------|-------|--------|
 | 739	 | [Daily Temperatures](src/stack/DailyTemperatures.ts) | Medium | Stack | |
 | 716	 | [Max Stack](src/stack/MaxStack.ts)                   | Easy | Stack | |
+| 496	 | [Next Greater Element I](src/stack/NextGreaterElement1.ts) | Easy | Hash, Stack | |
 | 455	 | [Assign Cookies](src/array/greedy/AssignCookies.ts)  | Easy | Array, Greedy | |
 
 **Problem 1 - 250**
@@ -269,7 +270,7 @@ Supported list of problem categories for searching,
 | 29      | Divide Two Integers		                            | Medium | | |
 | 28      | Implement strStr()	                                | Easy | | |
 | 27      | Remove Element	                                    | Easy | | |
-| 26      | Remove Duplicates from Sorted Array                 | Easy | | |
+| 26      | [Remove Duplicates from Sorted Array](src/array/two_pointers/RemoveDuplicatesFromSortedArray.ts) | Easy | Two Pointers | |
 | 25      | Reverse Nodes in k-Group	                        | Hard | | |
 | 24      | Swap Nodes in Pairs		                            | Medium | | |
 | 23      | Merge k Sorted Lists	                            | Hard | | |
