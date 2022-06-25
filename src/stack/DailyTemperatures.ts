@@ -4,7 +4,7 @@
 * Date        : June 20, 2022
 * Author      :	@codingbro
 *
-* meta        : tag-stack
+* meta        : tag-stack, tag-array
 ***************************************************************************/
 
 function dailyTemperatures(temperatures: number[]): number[] {
