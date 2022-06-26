@@ -7,6 +7,8 @@
 * meta        : tag-stack, tag-array
 ***************************************************************************/
 
+import { peek } from './HelpFunctions';
+
 function dailyTemperatures(temperatures: number[]): number[] {
     const n = temperatures.length;
     const res = Array(n).fill(0);
@@ -41,7 +43,3 @@ function dailyTemperaturesSol2(temps: number[]): number[] {
     }
     return res;
 };
-
-function peek(stack: number[]) {
-    return stack[stack.length - 1];
-}

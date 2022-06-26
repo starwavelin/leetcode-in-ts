@@ -55,6 +55,7 @@ Supported list of problem categories for searching,
 |--------|------------------------------------------------------|-------------|-------|--------|
 | 739	 | [Daily Temperatures](src/stack/DailyTemperatures.ts) | Medium | Stack | |
 | 716	 | [Max Stack](src/stack/MaxStack.ts)                   | Easy | Stack | |
+| 503	 | [Next Greater Element II](src/stack/NextGreaterElement2.ts) | Easy | Stack | |
 | 496	 | [Next Greater Element I](src/stack/NextGreaterElement1.ts) | Easy | Hash, Stack | |
 | 455	 | [Assign Cookies](src/array/greedy/AssignCookies.ts)  | Easy | Array, Greedy | |
 
