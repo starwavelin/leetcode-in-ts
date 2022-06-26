@@ -25,3 +25,23 @@ function dailyTemperatures(temperatures: number[]): number[] {
     }
     return res;
 };
+
+
+function dailyTemperaturesSol2(temps: number[]): number[] {
+    const n = temps.length;
+    const res = Array(n).fill(0);
+    const idxStack: number[] = [];
+
+    for (let i = 0; i < n; i++) {
+        while (!!idxStack.length && temps[i] > peek(idxStack)) {
+            res[peek(idxStack)] = i - peek(idxStack);
+            idxStack.pop();
+        }
+        idxStack.push(i);
+    }
+    return res;
+};
+
+function peek(stack: number[]) {
+    return stack[stack.length - 1];
+}
