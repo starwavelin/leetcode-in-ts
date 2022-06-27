@@ -37,7 +37,7 @@ class MyQueue {
     inToOut(): void {
         if (!this.out.length) {
             while (this.in.length > 0) {
-            this.out.push(this.in.pop() as number);
+                this.out.push(this.in.pop() as number);
             }    
         }
     }

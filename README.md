@@ -88,7 +88,7 @@ Supported list of problem categories for searching,
 | 228	 | Summary Ranges                                       | Easy | | |
 | 227	 | Basic Calculator II                                  | Medium | | |
 | 226	 | Invert Binary Tree                                   | Easy | | |
-| 225	 | Implement Stack using Queues                         | Medium | | |
+| 225	 | [Implement Stack using Queues](src/stack/ImplementStackUsingQueues.ts) | Medium | Queue | |
 | 224	 | Basic Calculator                                     | Medium | | |
 | 223	 | Rectangle Area                                       | Easy | | |
 | 222	 | Count Complete Tree Nodes                            | Medium | | |
