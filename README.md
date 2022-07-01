@@ -27,6 +27,7 @@ Supported list of problem categories for searching,
  * [Sorting](../../search?utf8=✓&q=tag-sort)
  * [Linked List](../../search?utf8=✓&q=tag-linked-list)
  * [Hash](../../search?utf8=✓&q=tag-hash)
+ * [Array Map](../../search?utf8=✓&q=tag-array-map)
  * [Stack](../../search?utf8=✓&q=tag-stack)
  * [Queue](../../search?utf8=✓&q=tag-queue)
  * [Binary Search](../../search?utf8=✓&q=tag-binary-search)
@@ -172,7 +173,7 @@ Supported list of problem categories for searching,
 | 128	 | Longest Consecutive Sequence                         | Hard | | |
 | 127	 | Word Ladder                                          | Medium | | |
 | 126	 | Word Ladder II                                       | Hard | | |
-| 125	 | Valid Palindrome                                     | Easy | | |
+| 125	 | [Valid Palindrome](src/string/two_pointers/ValidPalindrome.ts)                                     | Easy | Two Pointers | |
 | 124	 | Binary Tree Maximum Path Sum                         | Hard | | |
 | 123	 | Best Time to Buy and Sell Stock III                  | Hard | | |
 | 122	 | Best Time to Buy and Sell Stock II                   | Medium | | |
