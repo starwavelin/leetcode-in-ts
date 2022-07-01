@@ -1,4 +1,4 @@
-import { Queue } from '../../src/stack/Queue';
+import { Queue } from '../../src/queue/Queue';
 
 describe('Test Queue class\'s behavior', () => {
 

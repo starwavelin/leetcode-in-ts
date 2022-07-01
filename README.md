@@ -41,6 +41,7 @@ Supported list of problem categories for searching,
  * [Bit](../../search?utf8=✓&q=tag-bit)
  * [Math](../../search?utf8=✓&q=tag-math)
  * [Data Structure Design](../../search?utf8=✓&q=tag-data-structure)
+ * [Recursion](../../search?utf8=✓&q=tag-recursion)
 
 
 ### Algorithmic Problem List
@@ -148,7 +149,7 @@ Supported list of problem categories for searching,
 | 153	 | Find Minimum in Rotated Sorted Array                 | Medium | | |
 | 152	 | Maximum Product Subarray                             | Medium | | |
 | 151	 | Reverse Words in a String                            | Medium | | [讲解](https://youtu.be/54uU5Zhzorw) |
-| 150	 | Evaluate Reverse Polish Notation                     | Medium | | |
+| 150	 | [Evaluate Reverse Polish Notation](src/stack/EvaluateReversePolishNotation.ts) | Medium | Stack | |
 | 149	 | Max Points on a Line                                 | Hard | | |
 | 148	 | Sort List                                            | Medium | | |
 | 147	 | Insertion Sort List                                  | Medium | | |
