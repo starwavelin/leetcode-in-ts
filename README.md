@@ -43,6 +43,9 @@ Supported list of problem categories for searching,
  * [Data Structure Design](../../search?utf8=✓&q=tag-data-structure)
  * [Recursion](../../search?utf8=✓&q=tag-recursion)
  * [Circular Array](../../search?utf8=✓&q=tag-circular-array)
+ * [Topological Sort](../../search?utf8=✓&q=tag-topological-sort)
+ * [Breadth First Search](../../search?utf8=✓&q=tag-bfs)
+ * [Depth First Search](../../search?utf8=✓&q=tag-dfs)
 
 
 ### Algorithmic Problem List
@@ -113,7 +116,7 @@ Supported list of problem categories for searching,
 | 210	 | Course Schedule II                                   | Medium | | |
 | 209	 | Minimum Size Subarray Sum                            | Medium | | |
 | 208	 | Implement Trie (Prefix Tree)                         | Medium | | |
-| 207	 | Course Schedule                                      | Medium | | |
+| 207	 | [Course Schedule](src/graph/CourseSchedule.ts)       | Medium | Graph, Topological Sort | |
 | 206	 | Reverse Linked List                                  | Easy | | |
 | 205	 | Isomorphic Strings                                   | Easy | | |
 | 204	 | Count Primes                                         | Easy | | |
