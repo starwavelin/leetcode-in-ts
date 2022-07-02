@@ -42,6 +42,7 @@ Supported list of problem categories for searching,
  * [Math](../../search?utf8=✓&q=tag-math)
  * [Data Structure Design](../../search?utf8=✓&q=tag-data-structure)
  * [Recursion](../../search?utf8=✓&q=tag-recursion)
+ * [Circular Array](../../search?utf8=✓&q=tag-circular-array)
 
 
 ### Algorithmic Problem List
@@ -51,6 +52,10 @@ Supported list of problem categories for searching,
 **Selective Problems 1,501 - 2,000**
 
 **Selective Problems 1,001 - 1,500**
+| No.    | Problem                                              | Difficulty  | Tags  | Videos |
+|--------|------------------------------------------------------|-------------|-------|--------|
+| 1021	 | [Remove Outermost Parentheses](src/stack/RemoveOutermostParentheses.ts) | Easy | Stack | |
+
 
 **Selective Problems 251 - 1,000**
 | No.    | Problem                                              | Difficulty  | Tags  | Videos |
