@@ -123,7 +123,7 @@ Supported list of problem categories for searching,
 | 203	 | Remove Linked List Elements                          | Easy | | |
 | 202	 | Happy Number                                         | Easy | | |
 | 201	 | Bitwise AND of Numbers Range                         | Medium | | |
-| 200	 | Number of Islands                                    | Medium | | |
+| 200	 | [Number of Islands](src/graph/NumberOfIslands.ts)    | Medium | Graph, Matrix | |
 | 199	 | Binary Tree Right Side View                          | Medium | | |
 | 198	 | House Robber                                         | Easy | | |
 | 191	 | Number of 1 Bits                                     | Easy | | |

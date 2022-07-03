@@ -40,8 +40,16 @@ export function canFinish(numCourses: number, prerequisites: number[][]): boolea
     // console.log('indegrees is');
     // console.log(indegrees);
 
-    const res = [];
+    const res: number[] = [];
 
+    bfsProcess(graph, indegrees, n, res);
+
+    // console.log(res);
+
+    return res.length === n;
+};
+
+const bfsProcess = (graph: Map<number, Array<number>>, indegrees: Map<number, number>, n: number, res: number[]): void => {
     const q = [];
     for (let i = 0; i < n; i++) {
         if (!indegrees.get(i)) { // Vertex i's either undefined or is 0
@@ -65,12 +73,7 @@ export function canFinish(numCourses: number, prerequisites: number[][]): boolea
                     q.push(nei);
                     res.push(nei);
                 }
-
             }
         }
     }
-
-    // console.log(res);
-
-    return res.length === n;
-};
+}
