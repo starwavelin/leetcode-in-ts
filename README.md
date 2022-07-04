@@ -113,7 +113,7 @@ Supported list of problem categories for searching,
 | 213	 | House Robber II                                      | Medium | | |
 | 212	 | Word Search II                                       | Hard | | |
 | 211	 | Add and Search Word - Data structure design          | Medium | | |
-| 210	 | Course Schedule II                                   | Medium | | |
+| 210	 | [Course Schedule II](src/graph/CourseSchedule2.ts)   | Medium | Graph, Topological Sort | |
 | 209	 | Minimum Size Subarray Sum                            | Medium | | |
 | 208	 | Implement Trie (Prefix Tree)                         | Medium | | |
 | 207	 | [Course Schedule](src/graph/CourseSchedule.ts)       | Medium | Graph, Topological Sort | |
