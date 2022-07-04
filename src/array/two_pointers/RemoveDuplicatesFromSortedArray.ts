@@ -19,3 +19,15 @@ function removeDuplicates(nums: number[]): number {
     }
     return slow + 1;
 }
+
+export function removeDuplicatesForLoop(nums: number[]): number {
+    const n = nums.length;
+    let slow = 0, fast = 1;
+    for (; fast < n; fast++) {
+        if (nums[slow] !== nums[fast]) {
+            slow++;
+            nums[slow] = nums[fast];
+        }
+    }
+    return slow + 1;
+}
