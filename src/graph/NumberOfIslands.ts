@@ -88,4 +88,50 @@ export class NumberOfIslands {
             }
         }
     }
+
+    numIslandsSolBfsType2(grid: string[][]): number {
+        const m = grid.length;
+        const n = grid[0].length;
+    
+        let res = 0;
+        for (let i = 0; i < m; i++) {
+            for (let j = 0; j < n; j++) {
+                if (grid[i][j] === '1') {                
+                    this.bfsType2(grid, i, j, m, n);
+                    res++;
+                }
+            }
+        }
+        
+        return res;
+    }
+
+    bfsType2 = (grid: string[][], row: number, col: number, m: number, n: number): void => {
+        // 1. 先染色
+        grid[row][col] = '0';
+
+        // 2. Initialization
+        const q: number[][] = [];
+        q.push([row, col]);
+
+        // 3. dx dy
+        const dx = [-1, 1, 0, 0];
+        const dy = [0, 0, -1, 1];
+
+        // 4. 经典BFS
+        while (q.length) {
+            const cur = q.shift() as number[]; // the current position
+
+            for (let i = 0; i < 4; i++) {
+                const rowNum = cur[0] + dx[i];
+                const colNum = cur[1] + dy[i];
+
+                //继续BFS染色的合理条件
+                if (rowNum >= 0 && rowNum < m && colNum >= 0 && colNum < n && grid[rowNum][colNum] === '1') {
+                    grid[rowNum][colNum] = '0';
+                    q.push([rowNum, colNum]);
+                } 
+            }
+        }
+    }
 }
