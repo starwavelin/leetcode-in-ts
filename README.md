@@ -36,7 +36,7 @@ Supported list of problem categories for searching,
  * [Divide and Conquer](../../search?utf8=✓&q==tag-divide-and-conquer)
  * [Advanced Tree](../../search?utf8=✓&q==tag-advanced-tree)
  * [Graph](../../search?utf8=✓&q=tag-graph)
- * [Combinatorics](../../search?utf8=✓&q=tag-combinatorics)
+ * [Backtracking](../../search?utf8=✓&q=tag-backtracking)
  * [Dynamic Programming](../../search?utf8=✓&q=tag-dp)
  * [Bit](../../search?utf8=✓&q=tag-bit)
  * [Math](../../search?utf8=✓&q=tag-math)

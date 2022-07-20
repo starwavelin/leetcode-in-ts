@@ -88,7 +88,23 @@ export class CloneGraph {
     
 
     cloneGraphSolDfs(node: Node | null): Node | null {
-        return null;
+        if (!node) {
+            return null;
+        }
+        const map = new Map<Node, Node>();
+        return this.dfs(node, map);
+    }
+
+    dfs = (node: Node, map: Map<Node, Node>): Node =>  {
+        map.set(node, new Node(node.val));
+        for (let nei of node.neighbors) {
+            if (!map.has(nei)) {
+                this.dfs(nei, map);
+            }
+            map.get(node)?.neighbors.push(map.get(nei) as Node);
+        }
+
+        return map.get(node) as Node;
     }
 }
 
