@@ -41,7 +41,7 @@ export class ListWithRandomPointer {
         return map.get(head) as Node;
     }
 
-    // Use just one pointer traveler, better than Solution 1
+    // Use just one pointer traveler, easier to understand so better than Solution 1
     copyRandomListSol1point5(head: Node | null): Node | null {
         if (!head) {
             return null;

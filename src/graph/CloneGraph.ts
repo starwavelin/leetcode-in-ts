@@ -42,9 +42,8 @@ export class CloneGraph {
 
         // Clone edges
         for (const node of nodes) {
-            const newNode = map.get(node);
             for (const nei of node.neighbors) {
-                newNode?.neighbors.push(map.get(nei) as Node);
+                map.get(node)?.neighbors.push(map.get(nei) as Node);
             }
         }
 
