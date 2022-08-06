@@ -41,6 +41,37 @@ export class ListWithRandomPointer {
         return map.get(head) as Node;
     }
 
+    // Use just one pointer traveler, better than Solution 1
+    copyRandomListSol1point5(head: Node | null): Node | null {
+        if (!head) {
+            return null;
+        }
+
+        const map = new Map<Node, Node>();
+        let trav: Node | undefined = head;
+        while (trav) {
+            if (!map.has(trav)) {
+                map.set(trav, new Node(trav.val));
+            }
+            if (trav.next && !map.has(trav.next)) {
+                map.set(trav.next, new Node(trav.next.val));
+                map.get(trav)!.next = map.get(trav.next);
+            }
+
+            trav = trav.next;
+        }
+
+        trav = head;
+        while (trav) {
+            if (trav.random) {
+                map.get(trav)!.random = map.get(trav.random);
+            }
+            trav = trav.next;
+        }
+
+        return map.get(head) as Node;
+    }
+
 
     copyRandomListSol2(head: Node | null): Node | null {
         if (!head) 

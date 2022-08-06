@@ -174,7 +174,7 @@ Supported list of problem categories for searching,
 | 136	 | Single Number                                        | Medium | Bit, Hash | [讲解](https://youtu.be/7xU7g04FJHw) |
 | 135	 | [Candy](src/array/greedy/Candy.ts)                   | Hard | Greedy, Array, Math | |
 | 134	 | Gas Station                                          | Medium | | |
-| 133	 | [Clone Graph](src/graph/CloneGraph.ts)               | Medium | Graph | |
+| 133	 | [Clone Graph](src/graph/CloneGraph.ts)               | Medium | Graph | [讲解1](https://youtu.be/5e6buIyUvhs) [讲解2](https://youtu.be/F2ofVoR0adw)|
 | 132	 | Palindrome Partitioning II                           | Hard | | |
 | 131	 | Palindrome Partitioning                              | Medium | | |
 | 130	 | Surrounded Regions                                   | Medium | | |
