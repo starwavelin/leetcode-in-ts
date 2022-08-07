@@ -42,7 +42,7 @@ export class ListWithRandomPointer {
     }
 
     // Use just one pointer traveler, easier to understand so better than Solution 1
-    copyRandomListSol1point5(head: Node | null): Node | null {
+    copyRandomListSol2(head: Node | null): Node | null {
         if (!head) {
             return null;
         }
@@ -73,14 +73,14 @@ export class ListWithRandomPointer {
     }
 
 
-    copyRandomListSol2(head: Node | null): Node | null {
+    copyRandomListSol3(head: Node | null): Node | null {
         if (!head) 
             return null;
 
-        return this.copySol2(head);
+        return this.copySol3(head);
     };
 
-    copySol2 = (head: Node): Node => {
+    copySol3 = (head: Node): Node => {
         // 我不区分next和random指针，当我需要建新的复制点的时候我就建立起复制的点
         const map = new Map<Node, Node>();
 

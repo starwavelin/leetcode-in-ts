@@ -219,7 +219,7 @@ Supported list of problem categories for searching,
 | 91	 | Decode Ways                                          | Medium | | |
 | 90	 | Subsets II                                           | Medium | | |
 | 89	 | Gray Code                                            | Medium | | |
-| 88	 | Merge Sorted Array                                   | Easy | Array | [讲解](https://youtu.be/eCtTFp6k8Ls) |
+| 88	 | [Merge Sorted Array](src/array/two_pointers/MergeSortedArrays.ts) | Easy | Array | [讲解](https://youtu.be/eCtTFp6k8Ls) |
 | 87	 | Scramble String                                      | Hard | | |
 | 86	 | Partition List                                       | Medium | | |
 | 85	  | Maximal Rectangle                                   | Hard | | |
