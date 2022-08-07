@@ -131,7 +131,7 @@ Supported list of problem categories for searching,
 | 189	 | Rotate Array                                         | Easy | | |
 | 188	 | Best Time to Buy and Sell Stock IV                   | Hard | | |
 | 187	 | Repeated DNA Sequences                               | Medium | | |
-| 186	 | Reverse Words in a String II                         | Medium | | [讲解](https://youtu.be/bSf8iwxYSgo) |
+| 186	 | [Reverse Words in a String II](src/string/two_pointers/ReverseWordsInAString2.ts) | Medium | Two Pointers | [讲解](https://youtu.be/bSf8iwxYSgo) |
 | 179	 | Largest Number                                       | Medium | | |
 | 174	 | Dungeon Game                                         | Hard | | |
 | 173	 | Binary Search Tree Iterator                          | Medium | | |
