@@ -55,7 +55,7 @@ function twoSumSol2(nums: number[], target: number): number[] {
             j--;
         }
     }
-    
+
     return [-1, -1];
 };
 
@@ -84,7 +84,7 @@ function twoSumSol3(nums: number[], target: number): number[] {
             return [map.get(cur) as number, map.get(target - cur) as number];
         }
     }
-    
+
     return [-1, -1];
 };
 
@@ -106,7 +106,22 @@ function twoSumSol4(nums: number[], target: number): number[] {
         }
         map.set(nums[i] ,i);
     }
-    
+
+    return [-1, -1];
+};
+
+
+/**
+ * If we have the assumption that all elements in the nums array are unique, then
+ */
+function twoSumSol5(nums: number[], target: number): number[] {
+    const n = nums.length;
+    for (let i = 0; i < n; i++) {
+        if (nums.indexOf(target - nums[i]) >= 0 && nums[i] !== target - nums[i]) {
+            return [i, nums.indexOf(target - nums[i])];
+        }
+    }
+
     return [-1, -1];
 };
 
@@ -115,3 +130,10 @@ function twoSumSol4(nums: number[], target: number): number[] {
  * TEST Solution 2
  */
 console.log(twoSumSol2([2, 7, 11, 15], 9));
+
+/**
+ * TEST Solution 5
+ */
+ console.log(twoSumSol5([3, 2, 4], 6)); // [1, 2]
+ console.log(twoSumSol5([-4, 12, 2, 8, 5], 7)); // [2, 4]
+ console.log(twoSumSol5([2, 13, 4, 7], 11)); // [2, 3]
