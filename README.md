@@ -63,6 +63,7 @@ Supported list of problem categories for searching,
 **Selective Problems 251 - 1,000**
 | No.    | Problem                                              | Difficulty  | Tags  | Videos |
 |--------|------------------------------------------------------|-------------|-------|--------|
+| 905	 | [Sort Array By Parity](src/array/two_pointers/SortArrayByParity.ts) | Easy | Two Pointers, Array, Sort | |
 | 739	 | [Daily Temperatures](src/stack/DailyTemperatures.ts) | Medium | Stack | |
 | 716	 | [Max Stack](src/stack/MaxStack.ts)                   | Easy | Stack | |
 | 503	 | [Next Greater Element II](src/stack/NextGreaterElement2.ts) | Easy | Stack | |
