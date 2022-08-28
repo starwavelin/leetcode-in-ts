@@ -228,7 +228,7 @@ Supported list of problem categories for searching,
 | 83	  | Remove Duplicates from Sorted List                  | Easy | | |
 | 82	  | Remove Duplicates from Sorted List II               | Medium | | |
 | 81	  | Search in Rotated Sorted Array II                   | Medium | | |
-| 80	  | Remove Duplicates from Sorted Array II              | Medium | | |
+| 80	  | [Remove Duplicates from Sorted Array II](src/array/two_pointers/RemoveDuplicatesFromSortedArray2.ts) | Medium | Two Pointers | |
 | 79	  | Word Search                                         | Medium | | |
 | 78	  | Subsets                                             | Medium | | |
 | 77	  | Combinations                                        | Medium | | |
