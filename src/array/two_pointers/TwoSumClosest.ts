@@ -40,6 +40,7 @@ export class TwoSumClosest {
         return sum;
     }
 
+    findIndices()
 }
 
 
