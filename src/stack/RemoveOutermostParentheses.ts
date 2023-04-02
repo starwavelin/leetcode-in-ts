@@ -24,4 +24,4 @@ export function removeOutermostParentheses(s: string): string {
         }
     }
     return res;
-};
+}

@@ -33,4 +33,4 @@ export function insert(intervals: number[][], newInterval: number[]): number[][]
     res.splice(insertPos, 0, newInterval);
     console.log(`res is: ${res}`);
     return res;
-};
+}

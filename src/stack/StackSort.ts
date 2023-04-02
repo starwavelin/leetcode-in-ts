@@ -12,7 +12,7 @@ export function sort(s: number[]): void {
         return;
 
     const tmp: number[] = []; // tmp stack which will be ordered from large to small numbers ultimately
-    while (!!s.length) {
+    while (s.length) {
         if (!tmp.length) {
             tmp.push(s.pop() as number);
         } else {
@@ -23,7 +23,7 @@ export function sort(s: number[]): void {
             tmp.push(el);
         }
     }
-    while (!!tmp.length) {
+    while (tmp.length) {
         s.push(tmp.pop() as number);
     }
 }

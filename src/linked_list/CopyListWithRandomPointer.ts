@@ -14,7 +14,7 @@ export class ListWithRandomPointer {
             return null;
 
         return this.copySol1(head);
-    };
+    }
 
     copySol1 = (head: Node): Node => {
         // Dealing with the head node first
@@ -78,7 +78,7 @@ export class ListWithRandomPointer {
             return null;
 
         return this.copySol3(head);
-    };
+    }
 
     copySol3 = (head: Node): Node => {
         // 我不区分next和random指针，当我需要建新的复制点的时候我就建立起复制的点

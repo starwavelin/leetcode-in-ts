@@ -15,7 +15,7 @@ function isAnagram(s: string, t: string): boolean {
         }
     }
     return true;
-};
+}
 
 function isAnagram2(s: string, t: string): boolean {
     if (s.length !== t.length) {
@@ -34,7 +34,7 @@ function isAnagram2(s: string, t: string): boolean {
         }
     }
     return true;
-};
+}
 
 function isAnagram3(s: string, t: string): boolean {
     if (s.length !== t.length) {
@@ -48,4 +48,4 @@ function isAnagram3(s: string, t: string): boolean {
         }
     }
     return true;
-};
+}

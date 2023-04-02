@@ -25,8 +25,8 @@ export class TwoSumClosest {
         let sum = nums[i] + nums[j];
         let minDiff = Math.abs(sum - k);
         while (i < j) {
-            let localSum = nums[i] + nums[j];
-            let localDiff = Math.abs(localSum - k);
+            const localSum = nums[i] + nums[j];
+            const localDiff = Math.abs(localSum - k);
             if (localDiff < minDiff) {
                 minDiff = localDiff;
                 sum = localSum;

@@ -28,7 +28,7 @@ export function merge(intervals: number[][]): number[][] {
     }
     res.push(tmp);
     return res;
-};
+}
 
 /**
  * Method 2: 
@@ -50,6 +50,6 @@ export function merge2(intervals: number[][]): number[][] {
     }
     
     return res;
-};
+}
 
 // console.log(merge2([[1, 3], [2, 5], [4, 7], [8, 10], [9, 13]]));

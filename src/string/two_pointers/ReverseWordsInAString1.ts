@@ -37,5 +37,5 @@ class ReverseWordsInAString1 {
             }
         }
         return res;
-    };
+    }
 }

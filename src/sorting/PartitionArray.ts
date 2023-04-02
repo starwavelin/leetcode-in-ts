@@ -58,7 +58,7 @@ export class PartitionArray {
     // 运行结束后 [0, ..., l-1] 与 [l,...,n-1] 即为quicksort需要继续处理的子数组
 
     swap = (nums: number[], i: number, j: number): void => {
-        let tmp = nums[i];
+        const tmp = nums[i];
         nums[i] = nums[j];
         nums[j] = tmp;
     }

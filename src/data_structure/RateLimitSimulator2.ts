@@ -25,7 +25,7 @@
  */
 
 const maxReqsPerSec = 2;
-let queue: number[] = []; // maintain a queue of length at most equals the maxReqsPerSec
+const queue: number[] = []; // maintain a queue of length at most equals the maxReqsPerSec
 
 export function limitSlidingWindow(currTime: number): boolean {
     if (!!queue.length && currTime - queue[0] >= 1000) {

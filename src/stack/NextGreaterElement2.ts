@@ -7,7 +7,7 @@
  * meta        : tag-stack, tag-array, tag-circular-array
  ***************************************************************************/
 
- import { peek } from './HelpFunctions';
+import { peek } from './HelpFunctions';
 
 function nextGreaterElementsSol1(nums: number[]): number[] {
     const n = nums.length;

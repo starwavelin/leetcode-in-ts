@@ -15,7 +15,7 @@ function dailyTemperatures(temperatures: number[]): number[] {
     const idxStack: number[] = [];
     
     for (let i = 0; i < n; i++) {
-        while (!!idxStack.length) {
+        while (idxStack.length) {
             const preIdx = idxStack[idxStack.length - 1];
             if (temperatures[i] <= temperatures[preIdx]) {
                 break;
@@ -26,7 +26,7 @@ function dailyTemperatures(temperatures: number[]): number[] {
         idxStack.push(i);
     }
     return res;
-};
+}
 
 
 function dailyTemperaturesSol2(temps: number[]): number[] {
@@ -42,4 +42,4 @@ function dailyTemperaturesSol2(temps: number[]): number[] {
         idxStack.push(i);
     }
     return res;
-};
+}

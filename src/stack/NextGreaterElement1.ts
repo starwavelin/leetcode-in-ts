@@ -23,7 +23,7 @@ export function nextGreaterElementSol1(nums1: number[], nums2: number[]): number
     }
 
     return res;
-};
+}
 
 /*
     This solution is based on Sol 1 and designed for some languages that
@@ -50,7 +50,7 @@ export function nextGreaterElementSol2(nums1: number[], nums2: number[]): number
     }
 
     return res;
-};
+}
 
 
 export function nextGreaterElementSol3(nums1: number[], nums2: number[]): number[] {
@@ -72,7 +72,7 @@ export function nextGreaterElementSol3(nums1: number[], nums2: number[]): number
     }
 
     return res;
-};
+}
 
 const peek = (stack: number[]) => {
     return stack[stack.length - 1];

@@ -10,7 +10,7 @@
 function removeDuplicates(nums: number[]): number {
     const n = nums.length;
     let i = 0, j = 1, count = 1; 
-        // i - slow pointer, j - fast pointer, count - record the number of repetition of the same element
+    // i - slow pointer, j - fast pointer, count - record the number of repetition of the same element
     while (j < n) {
         if (nums[i] === nums[j] && count === 2) { // the case of only moving the fast pointer
             j++;

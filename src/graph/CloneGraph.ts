@@ -31,7 +31,7 @@ export class CloneGraph {
 
         while (q.length) {
             const cur = q.shift() as Node;
-            for (let nei of cur.neighbors) {
+            for (const nei of cur.neighbors) {
                 if (!map.has(nei)) {
                     map.set(nei, new Node(nei.val));
                     nodes.push(nei);  // 注意，这个方法就是BFS的时候只处理 点的克隆
@@ -69,7 +69,7 @@ export class CloneGraph {
 
         while (q.length) {
             const cur = q.shift() as Node;
-            for (let nei of cur.neighbors) {
+            for (const nei of cur.neighbors) {
                 // 克隆下一个点
                 if (!map.has(nei)) {
                     map.set(nei, new Node(nei.val));
@@ -96,7 +96,7 @@ export class CloneGraph {
 
     dfs = (node: Node, map: Map<Node, Node>): Node =>  {
         map.set(node, new Node(node.val));
-        for (let nei of node.neighbors) {
+        for (const nei of node.neighbors) {
             if (!map.has(nei)) {
                 this.dfs(nei, map);
             }

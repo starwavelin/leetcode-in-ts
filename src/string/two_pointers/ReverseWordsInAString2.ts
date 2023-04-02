@@ -24,7 +24,7 @@ function reverseWords(s: string[]): void {
         }
         j++;
     }
-};
+}
 
 const reverse = (i: number, j: number, s: string[]): void => {
     while (i < j) {
@@ -34,7 +34,7 @@ const reverse = (i: number, j: number, s: string[]): void => {
 }
 
 const swap = (i: number, j: number, s: string[]): void => {
-    let c = s[i];
+    const c = s[i];
     s[i] = s[j];
     s[j] = c;
 }

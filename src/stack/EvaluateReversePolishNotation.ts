@@ -37,21 +37,22 @@ const isOperand = (s: string): boolean => {
 
 const evaluate = (num1: number, num2: number, op: string, stack: number[]): void => {
     switch(op) {
-        case '+':
-            stack.push(num1 + num2);
-            break;
-        case '-':
-            stack.push(num1 - num2);
-            break;
-        case '*':
-            stack.push(num1 * num2);
-            break;
-        case '/':
-            let val = Math.trunc(num1 / num2); // 不一定floor,因为被除数可能是负数，取整就行
-            val = val === -0 ? 0 : val; // avoid -0 from JS
-            stack.push(val); 
-            break;
-        default:
-            throw new Error(errMsg); 
+    case '+':
+        stack.push(num1 + num2);
+        break;
+    case '-':
+        stack.push(num1 - num2);
+        break;
+    case '*':
+        stack.push(num1 * num2);
+        break;
+    case '/': {
+        let val = Math.trunc(num1 / num2); // 不一定floor,因为被除数可能是负数，取整就行
+        val = Object.is(val, -0) ? 0 : val; // avoid -0 from JS
+        stack.push(val); 
+        break;
+    }
+    default:
+        throw new Error(errMsg); 
     }
 }

@@ -27,7 +27,7 @@ function findOrder(numCourses: number, prerequisites: number[][]): number[] {
     bfs(graph, indegrees, n, res);
 
     return res.length < n ? [] : res;
-};
+}
 
 const bfs = (graph: Map<number, number[]>, indegrees: Map<number, number>, n: number, res: number[]): void => {
     const q: number[] = [];

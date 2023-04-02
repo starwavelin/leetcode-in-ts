@@ -37,7 +37,7 @@ export function candy(ratings: number[]): number {
     return candies.reduce((pre, cur) => {
         return pre + cur;
     }, 0);
-};
+}
 
 
 /* Solution 2 is just a slight diff from Solution 1 

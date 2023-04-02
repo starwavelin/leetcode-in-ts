@@ -18,7 +18,7 @@ export class MaxStack {
 
     push(x: number): void {
         this.stack.push(x);
-        let max = (!this.maxStack.length ||  x > this.peekMax()) ? x : this.peekMax(); 
+        const max = (!this.maxStack.length ||  x > this.peekMax()) ? x : this.peekMax(); 
         this.maxStack.push(max);
     }
 

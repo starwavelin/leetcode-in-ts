@@ -11,7 +11,7 @@ export class SortArrayByParity {
 
     sortArrayByParitySol1 = (nums: number[]): number[] => {
         const evenArr = [], oddArr = [];
-        for (let num of nums) {
+        for (const num of nums) {
             if (num % 2 === 0) {
                 evenArr.push(num);
             } else {
@@ -36,7 +36,7 @@ export class SortArrayByParity {
     }
 
     swap = (i: number, j: number, nums: number[]): void => {
-        let tmp = nums[i];
+        const tmp = nums[i];
         nums[i] = nums[j];
         nums[j] = tmp;
     }

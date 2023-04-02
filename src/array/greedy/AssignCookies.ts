@@ -22,7 +22,7 @@ export function findContentChildren(children: number[], cookies: number[]): numb
         j++;
     }
     return i;
-};
+}
 
 // console.log(findContentChildren([1, 2, 4], [1, 5, 1])); // return 2
 console.log(findContentChildren([10, 9, 8, 7], [5, 6, 7, 8])); // return 2

@@ -2,7 +2,7 @@
 
 let now: number = new Date().valueOf(); // get the current time value in milliseconds
 
-const maxReqsPerSec: number = 20000; // Assume every second allows at most 20000 requests coming in
+const maxReqsPerSec = 20000; // Assume every second allows at most 20000 requests coming in
 
 let count = 0;
 

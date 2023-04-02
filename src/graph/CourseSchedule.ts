@@ -47,7 +47,7 @@ export function canFinish(numCourses: number, prerequisites: number[][]): boolea
     // console.log(res);
 
     return res.length === n;
-};
+}
 
 const bfsProcess = (graph: Map<number, Array<number>>, indegrees: Map<number, number>, n: number, res: number[]): void => {
     const q = [];
@@ -61,7 +61,7 @@ const bfsProcess = (graph: Map<number, Array<number>>, indegrees: Map<number, nu
     while (q.length) {
         const cur = q.shift() as number;
         if (graph.has(cur)) { // need this checking cuz graph doesn't contain nodes whose out-degree is 0
-                                // ie. 0 -> 1, 1 -> 2, 2 is not recorded in the graph
+            // ie. 0 -> 1, 1 -> 2, 2 is not recorded in the graph
             const neighbors = graph.get(cur) as number[];
             for (const nei of neighbors) {
                 indegrees.set(nei, indegrees.get(nei)! - 1);
