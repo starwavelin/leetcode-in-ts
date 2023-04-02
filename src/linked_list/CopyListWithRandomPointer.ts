@@ -8,28 +8,26 @@
  ***************************************************************************/
 
 export class ListWithRandomPointer {
-
     copyRandomListSol1(head: Node | null): Node | null {
-        if (!head) 
-            return null;
+        if (!head) return null;
 
         return this.copySol1(head);
     }
 
     copySol1 = (head: Node): Node => {
         // Dealing with the head node first
-        const map = new Map<Node, Node>();        
+        const map = new Map<Node, Node>();
         map.set(head, new Node(head.val));
-    
+
         let prev: Node | undefined = head;
         let trav = prev.next;
         while (trav) {
-            map.set(trav, new Node(trav.val));            
+            map.set(trav, new Node(trav.val));
             map.get(prev)!.next = map.get(trav); // connect next pointer
             prev = trav;
             trav = trav.next;
         }
-    
+
         prev = head;
         while (prev) {
             if (prev.random) {
@@ -37,9 +35,9 @@ export class ListWithRandomPointer {
             }
             prev = prev.next;
         }
-    
+
         return map.get(head) as Node;
-    }
+    };
 
     // Use just one pointer traveler, easier to understand so better than Solution 1
     copyRandomListSol2(head: Node | null): Node | null {
@@ -72,10 +70,8 @@ export class ListWithRandomPointer {
         return map.get(head) as Node;
     }
 
-
     copyRandomListSol3(head: Node | null): Node | null {
-        if (!head) 
-            return null;
+        if (!head) return null;
 
         return this.copySol3(head);
     }
@@ -92,7 +88,7 @@ export class ListWithRandomPointer {
 
             // Create copied next pointer if it doesn't exist
             if (trav.next && !map.has(trav.next)) {
-                map.set(trav.next, new Node(trav.next.val));                
+                map.set(trav.next, new Node(trav.next.val));
             }
 
             // Create copied random pointer node if it doesn't exist
@@ -114,7 +110,7 @@ export class ListWithRandomPointer {
         }
 
         return map.get(head) as Node;
-    }    
+    };
 }
 
 class Node {

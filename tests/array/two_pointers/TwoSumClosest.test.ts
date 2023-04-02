@@ -26,4 +26,4 @@ describe('Test TwoSumClosest', () => {
     //         expect(instance.sortArrayByParitySol2(nums)).toEqual([8, 6, 4, 10, 7, 9, 5]);
     //     });
     // });
-})
+});

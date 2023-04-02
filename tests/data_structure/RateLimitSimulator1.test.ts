@@ -24,7 +24,6 @@ describe('Test RateLimit Simulator 1 - limitFixedWindow method', () => {
         expect(limitFixedWindow(1400)).toBe(false);
     });
 
-
     // test('Assume one hit at a timestamp', () => {
     //     expect(limitFixedWindow(1100)).toBe(true);
 
@@ -38,5 +37,4 @@ describe('Test RateLimit Simulator 1 - limitFixedWindow method', () => {
 
     //     expect(limitFixedWindow(2200)).toBe(false);
     // });
-})
-
+});

@@ -1,16 +1,16 @@
 /***************************************************************************
-* Problem No. : 232
-* Problem Name: Implement Queue using Stacks
-* Date        : June 19, 2022
-* Author      :	@codingbro
-*
-* meta        : tag-stack, tag-queue
-***************************************************************************/
+ * Problem No. : 232
+ * Problem Name: Implement Queue using Stacks
+ * Date        : June 19, 2022
+ * Author      :	@codingbro
+ *
+ * meta        : tag-stack, tag-queue
+ ***************************************************************************/
 
 class MyQueue {
     in: number[];
     out: number[];
-    
+
     constructor() {
         this.in = [];
         this.out = [];
@@ -38,7 +38,7 @@ class MyQueue {
         if (!this.out.length) {
             while (this.in.length > 0) {
                 this.out.push(this.in.pop() as number);
-            }    
+            }
         }
     }
 }

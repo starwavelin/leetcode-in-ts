@@ -2,12 +2,12 @@ import { removeOutermostParentheses } from '../../src/stack/RemoveOutermostParen
 
 describe('Test RemoveOutermostParentheses', () => {
     test('Test - Ex 1', () => {
-        const s = "(()())(())"
+        const s = '(()())(())';
         expect(removeOutermostParentheses(s)).toBe('()()()');
     });
 
     test('Test - Ex 2', () => {
-        const s = "(()())(())(()(()))"
+        const s = '(()())(())(()(()))';
         expect(removeOutermostParentheses(s)).toBe('()()()()(())');
     });
-})
+});

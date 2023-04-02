@@ -19,13 +19,13 @@ describe('Test RateLimit Simulator 2 - limitSlidingWindow method', () => {
 
     /**
      * * Example of a max of 2 requests / sec:
-    *  Timestamp           Outcome
-    *  01.100              PASS
-    *  02.120              PASS         compare with last one, exceed 1 sec duration, set this to be new head
-    *  02.150              PASS
-    *  02.200              FAIL
-    *  03.119              FAIL
-    *  03.120              PASS
+     *  Timestamp           Outcome
+     *  01.100              PASS
+     *  02.120              PASS         compare with last one, exceed 1 sec duration, set this to be new head
+     *  02.150              PASS
+     *  02.200              FAIL
+     *  03.119              FAIL
+     *  03.120              PASS
      */
 
     test('Assume one hit at a timestamp - original example', () => {
@@ -41,5 +41,4 @@ describe('Test RateLimit Simulator 2 - limitSlidingWindow method', () => {
 
         expect(limitSlidingWindow(3120)).toBe(true);
     });
-
-})
+});

@@ -34,7 +34,7 @@ export class CloneGraph {
             for (const nei of cur.neighbors) {
                 if (!map.has(nei)) {
                     map.set(nei, new Node(nei.val));
-                    nodes.push(nei);  // 注意，这个方法就是BFS的时候只处理 点的克隆
+                    nodes.push(nei); // 注意，这个方法就是BFS的时候只处理 点的克隆
                     q.push(nei);
                 }
             }
@@ -48,8 +48,7 @@ export class CloneGraph {
         }
 
         return map.get(node) as Node;
-    }
-
+    };
 
     cloneGraphSolBfs(node: Node | null): Node | null {
         if (!node) {
@@ -62,7 +61,7 @@ export class CloneGraph {
         // 建立旧的点和新的点的映射
         const map = new Map<Node, Node>();
         map.set(node, new Node(node.val));
-        
+
         // Initialization
         const q: Node[] = [];
         q.push(node);
@@ -82,9 +81,7 @@ export class CloneGraph {
         }
 
         return map.get(node) as Node;
-    }
-
-    
+    };
 
     cloneGraphSolDfs(node: Node | null): Node | null {
         if (!node) {
@@ -94,7 +91,7 @@ export class CloneGraph {
         return this.dfs(node, map);
     }
 
-    dfs = (node: Node, map: Map<Node, Node>): Node =>  {
+    dfs = (node: Node, map: Map<Node, Node>): Node => {
         map.set(node, new Node(node.val));
         for (const nei of node.neighbors) {
             if (!map.has(nei)) {
@@ -104,7 +101,7 @@ export class CloneGraph {
         }
 
         return map.get(node) as Node;
-    }
+    };
 }
 
 class Node {

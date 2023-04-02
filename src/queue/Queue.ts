@@ -1,5 +1,5 @@
 /**
- * Implementation Reference: 
+ * Implementation Reference:
  *  https://keestalkstech.com/2020/12/a-stack-data-structure-in-typescript/
  */
 
@@ -14,7 +14,7 @@ export class Queue<T> {
 
     dequeue = () => this.items.shift();
 
-    peek = () => !this.length ? undefined : this.items[0];
+    peek = () => (!this.length ? undefined : this.items[0]);
 
     isEmpty = () => !this.length;
 

@@ -1,7 +1,6 @@
 import { Queue } from '../../src/queue/Queue';
 
-describe('Test Queue class\'s behavior', () => {
-
+describe("Test Queue class's behavior", () => {
     const myQueue = new Queue(['apple', 'pear']);
 
     test('length is 2', () => {

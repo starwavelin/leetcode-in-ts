@@ -1,4 +1,4 @@
-import { nextGreaterElementSol3 } from '../../src/stack/NextGreaterElement1'
+import { nextGreaterElementSol3 } from '../../src/stack/NextGreaterElement1';
 
 describe('Test Next Greater Element', () => {
     test('Test Solution 3 - Ex 1', () => {

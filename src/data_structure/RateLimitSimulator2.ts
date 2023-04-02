@@ -1,19 +1,19 @@
 /***************************************************************************
-* Problem No. : 
-* Problem Name: Rate Limit
-* Date        : June 17, 2022
-* Author      :	@codingbro
-*
-* meta        : tag-data-structure
-***************************************************************************/
+ * Problem No. :
+ * Problem Name: Rate Limit
+ * Date        : June 17, 2022
+ * Author      :	@codingbro
+ *
+ * meta        : tag-data-structure
+ ***************************************************************************/
 
 /**
  * Problem Description: Rate Limit
- * Assumptions: 
+ * Assumptions:
  *  Time is measured in milliseconds
  *  API requests come in sequentially
  *  For each given timestamp, there is noly one request possible
- * 
+ *
  * Example of a max of 2 requests / sec:
  *  Timestamp           Outcome
  *  01.100              PASS

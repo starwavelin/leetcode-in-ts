@@ -11,4 +11,4 @@ describe('Test AreasOfWaters', () => {
         ];
         expect(calcAreasOfWaters(grid)).toEqual([1, 1, 2, 4]);
     });
-})
+});

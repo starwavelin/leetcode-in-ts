@@ -7,7 +7,6 @@
  * meta        : tag-graph, tag-topological-sort, tag-bfs, tag-dfs
  ***************************************************************************/
 
-
 function findOrder(numCourses: number, prerequisites: number[][]): number[] {
     // Construct the graph and indegrees map
     const n = numCourses;
@@ -19,7 +18,7 @@ function findOrder(numCourses: number, prerequisites: number[][]): number[] {
         }
         graph.get(pair[1])?.push(pair[0]);
 
-        indegrees.set(pair[0], indegrees.has(pair[0]) ? indegrees.get(pair[0]) as number + 1 : 1)
+        indegrees.set(pair[0], indegrees.has(pair[0]) ? (indegrees.get(pair[0]) as number) + 1 : 1);
     }
 
     const res: number[] = [];
@@ -46,12 +45,12 @@ const bfs = (graph: Map<number, number[]>, indegrees: Map<number, number>, n: nu
         if (graph.has(cur)) {
             const neis = graph.get(cur) as number[];
             for (const nei of neis) {
-                indegrees.set(nei, indegrees.get(nei) as number - 1);
+                indegrees.set(nei, (indegrees.get(nei) as number) - 1);
                 if (!indegrees.get(nei)) {
                     q.push(nei);
                     res.push(nei);
                 }
             }
-        }        
+        }
     }
-}
+};

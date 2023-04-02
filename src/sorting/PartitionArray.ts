@@ -20,10 +20,10 @@
  ***************************************************************************/
 
 export class PartitionArray {
-
     partitionSol1 = (nums: number[], k: number): number[] => {
-        const n = nums.length; 
-        let i = 0, j = 0;
+        const n = nums.length;
+        let i = 0,
+            j = 0;
         while (j < n) {
             if (nums[j] < k) {
                 if (nums[i] !== nums[j]) {
@@ -34,12 +34,13 @@ export class PartitionArray {
             j++;
         }
         return nums;
-    }
+    };
     // 运行结束后 [0, ..., i-1] 与 [i,...,j-1] 即为quicksort需要继续处理的子数组
 
-    partitionSol2 = (nums: number[], k: number): number[] => { 
+    partitionSol2 = (nums: number[], k: number): number[] => {
         const n = nums.length;
-        let l = 0, r = n-1;
+        let l = 0,
+            r = n - 1;
         while (l < r) {
             while (l < n && nums[l] < k) {
                 l++;
@@ -54,12 +55,12 @@ export class PartitionArray {
             }
         }
         return nums;
-    }
+    };
     // 运行结束后 [0, ..., l-1] 与 [l,...,n-1] 即为quicksort需要继续处理的子数组
 
     swap = (nums: number[], i: number, j: number): void => {
         const tmp = nums[i];
         nums[i] = nums[j];
         nums[j] = tmp;
-    }
+    };
 }

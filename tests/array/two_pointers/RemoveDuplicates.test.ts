@@ -10,4 +10,4 @@ describe('Test RemoveDuplicatesFromSortedArray Sol For Loop', () => {
         const nums = [1, 2, 3, 3, 3, 5, 5, 5, 7, 7, 9];
         expect(removeDuplicatesForLoop(nums)).toBe(6);
     });
-})
+});

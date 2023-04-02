@@ -1,7 +1,6 @@
 import { simplifyPath, genPath } from '../../src/stack/SimplifyPath';
 
 describe('Test simplifyPath function', () => {
-
     test('/home/ should become /home', () => {
         expect(simplifyPath('/home/')).toBe('/home');
     });
@@ -26,7 +25,6 @@ describe('Test simplifyPath function', () => {
         expect(simplifyPath('/x/./y/z')).toBe('/x/y/z');
     });
 });
-
 
 describe('Test genPath function', () => {
     test('/home/ and /a should become /home/a', () => {

@@ -18,7 +18,9 @@
     "scripts": {
         "dev": "ts-node",
         "test": "jest",
-        "lint": "npx eslint --ext .ts ."
+        "lint": "npx eslint --ext .ts .",
+        "prettier": "prettier --check '**/*.{ts,tsx,js,jsx,json}'",
+        "prettier:write": "prettier --write '**/*.{ts,tsx,js,jsx,json}'"
     },
     "repository": {
         "type": "git",

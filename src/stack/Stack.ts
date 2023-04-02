@@ -1,5 +1,5 @@
 /**
- * Implementation Reference: 
+ * Implementation Reference:
  *  https://keestalkstech.com/2020/12/a-stack-data-structure-in-typescript/
  */
 
@@ -14,7 +14,7 @@ export class Stack<T> {
 
     pop = () => this.items.pop();
 
-    peek = () => !this.length ? undefined : this.items[this.length - 1];
+    peek = () => (!this.length ? undefined : this.items[this.length - 1]);
 
     isEmpty = () => !this.length;
 

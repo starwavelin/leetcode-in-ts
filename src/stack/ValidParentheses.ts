@@ -1,11 +1,11 @@
 /***************************************************************************
-* Problem No. : 20
-* Problem Name: Valid Parentheses
-* Date        : June 19, 2022
-* Author      :	@codingbro
-*
-* meta        : tag-stack
-***************************************************************************/
+ * Problem No. : 20
+ * Problem Name: Valid Parentheses
+ * Date        : June 19, 2022
+ * Author      :	@codingbro
+ *
+ * meta        : tag-stack
+ ***************************************************************************/
 
 function isValid(s: string): boolean {
     const stack = [];
@@ -17,7 +17,11 @@ function isValid(s: string): boolean {
                 return false;
             } else {
                 const popped = stack.pop();
-                if ( (popped === '(' && char === ')') || (popped === '[' && char === ']') || (popped === '{' && char === '}') ) {
+                if (
+                    (popped === '(' && char === ')') ||
+                    (popped === '[' && char === ']') ||
+                    (popped === '{' && char === '}')
+                ) {
                     continue;
                 } else {
                     return false;

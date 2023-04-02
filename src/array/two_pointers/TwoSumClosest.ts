@@ -1,5 +1,5 @@
 /***************************************************************************
- * Problem No. : 
+ * Problem No. :
  * Problem Name: Two Sum Closest
  * Date        : September 04, 2022
  * Author      : @codingbro
@@ -8,7 +8,6 @@
  ***************************************************************************/
 
 export class TwoSumClosest {
-
     /**
      * Description:
      *  Given an array of integers, and a target value k, 
@@ -20,8 +19,9 @@ export class TwoSumClosest {
      */
     findSum(nums: number[], k: number): number {
         const n = nums.length;
-        nums.sort((a, b) => a-b);
-        let i = 0, j = n-1;
+        nums.sort((a, b) => a - b);
+        let i = 0,
+            j = n - 1;
         let sum = nums[i] + nums[j];
         let minDiff = Math.abs(sum - k);
         while (i < j) {
@@ -40,9 +40,8 @@ export class TwoSumClosest {
         return sum;
     }
 
-    findIndices()
+    findIndices();
 }
-
 
 /**
  * Test

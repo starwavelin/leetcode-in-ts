@@ -24,14 +24,13 @@ function nextGreaterElementsSol1(nums: number[]): number[] {
     return res;
 }
 
-
 export function nextGreaterElementsSol2(nums: number[]): number[] {
     const n = nums.length;
     const res = Array(n).fill(-1);
     const idxStack: number[] = [];
 
-    for (let i = 0; i < 2*n; i++) {
-        const num = nums[i%n];
+    for (let i = 0; i < 2 * n; i++) {
+        const num = nums[i % n];
         while (idxStack.length && num > nums[peek(idxStack)]) {
             res[peek(idxStack)] = num;
             idxStack.pop();

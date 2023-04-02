@@ -12,26 +12,26 @@ export class NumberOfIslands {
         // m - num of rows, n - num of cols
         const m = grid.length;
         const n = grid[0].length;
-    
+
         let res = 0;
         for (let i = 0; i < m; i++) {
             for (let j = 0; j < n; j++) {
-                if (grid[i][j] === '1') {                
+                if (grid[i][j] === '1') {
                     this.dfs(grid, i, j, m, n);
                     res++;
                 }
             }
         }
-        
+
         return res;
     }
-    
+
     dfs = (grid: string[][], row: number, col: number, m: number, n: number) => {
         // 递归的退出条件
         if (row < 0 || row >= m || col < 0 || col >= n || grid[row][col] === '0') {
             return;
         }
-    
+
         grid[row][col] = '0'; // dye the cell
         const dx = [-1, 1, 0, 0];
         const dy = [0, 0, -1, 1];
@@ -40,22 +40,22 @@ export class NumberOfIslands {
             const colNum = col + dy[i];
             this.dfs(grid, rowNum, colNum, m, n);
         }
-    }
+    };
 
     numIslandsSolBfs(grid: string[][]): number {
         const m = grid.length;
         const n = grid[0].length;
-    
+
         let res = 0;
         for (let i = 0; i < m; i++) {
             for (let j = 0; j < n; j++) {
-                if (grid[i][j] === '1') {                
+                if (grid[i][j] === '1') {
                     this.bfs(grid, i, j, m, n);
                     res++;
                 }
             }
         }
-        
+
         return res;
     }
 
@@ -78,31 +78,31 @@ export class NumberOfIslands {
 
             for (let i = 0; i < 4; i++) {
                 const rowNum = Math.trunc(cur / n) + dx[i];
-                const colNum = cur % n + dy[i];
+                const colNum = (cur % n) + dy[i];
 
                 //继续BFS染色的合理条件
                 if (rowNum >= 0 && rowNum < m && colNum >= 0 && colNum < n && grid[rowNum][colNum] === '1') {
                     grid[rowNum][colNum] = '0';
                     q.push(rowNum * n + colNum);
-                } 
+                }
             }
         }
-    }
+    };
 
     numIslandsSolBfsType2(grid: string[][]): number {
         const m = grid.length;
         const n = grid[0].length;
-    
+
         let res = 0;
         for (let i = 0; i < m; i++) {
             for (let j = 0; j < n; j++) {
-                if (grid[i][j] === '1') {                
+                if (grid[i][j] === '1') {
                     this.bfsType2(grid, i, j, m, n);
                     res++;
                 }
             }
         }
-        
+
         return res;
     }
 
@@ -130,8 +130,8 @@ export class NumberOfIslands {
                 if (rowNum >= 0 && rowNum < m && colNum >= 0 && colNum < n && grid[rowNum][colNum] === '1') {
                     grid[rowNum][colNum] = '0';
                     q.push([rowNum, colNum]);
-                } 
+                }
             }
         }
-    }
+    };
 }

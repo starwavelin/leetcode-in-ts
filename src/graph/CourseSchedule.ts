@@ -7,13 +7,12 @@
  * meta        : tag-graph, tag-topological-sort, tag-bfs, tag-dfs
  ***************************************************************************/
 
-
 /**
  * The given graph's notation is an edge vector notation
  * ie. a prerequisite [1, 0] meaning Course 0 is a prerequisite for Course 1
  *  [1, 0] is an edge vector
- * @param numCourses 
- * @param prerequisites 
+ * @param numCourses
+ * @param prerequisites
  */
 export function canFinish(numCourses: number, prerequisites: number[][]): boolean {
     const n = numCourses;
@@ -27,10 +26,10 @@ export function canFinish(numCourses: number, prerequisites: number[][]): boolea
         if (!graph.has(pair[1])) {
             graph.set(pair[1], []);
         }
-        graph.get(pair[1])?.push(pair[0]); 
-        
+        graph.get(pair[1])?.push(pair[0]);
+
         // set prerequisite's next directing course's indegree
-        indegrees.set(pair[0], indegrees.has(pair[0]) ? indegrees.get(pair[0])!+1 : 1);
+        indegrees.set(pair[0], indegrees.has(pair[0]) ? indegrees.get(pair[0])! + 1 : 1);
     }
 
     // Use BFS to do Topological Sort
@@ -49,10 +48,16 @@ export function canFinish(numCourses: number, prerequisites: number[][]): boolea
     return res.length === n;
 }
 
-const bfsProcess = (graph: Map<number, Array<number>>, indegrees: Map<number, number>, n: number, res: number[]): void => {
+const bfsProcess = (
+    graph: Map<number, Array<number>>,
+    indegrees: Map<number, number>,
+    n: number,
+    res: number[]
+): void => {
     const q = [];
     for (let i = 0; i < n; i++) {
-        if (!indegrees.get(i)) { // Vertex i's either undefined or is 0
+        if (!indegrees.get(i)) {
+            // Vertex i's either undefined or is 0
             q.push(i);
             res.push(i);
         }
@@ -60,15 +65,16 @@ const bfsProcess = (graph: Map<number, Array<number>>, indegrees: Map<number, nu
 
     while (q.length) {
         const cur = q.shift() as number;
-        if (graph.has(cur)) { // need this checking cuz graph doesn't contain nodes whose out-degree is 0
+        if (graph.has(cur)) {
+            // need this checking cuz graph doesn't contain nodes whose out-degree is 0
             // ie. 0 -> 1, 1 -> 2, 2 is not recorded in the graph
             const neighbors = graph.get(cur) as number[];
             for (const nei of neighbors) {
                 indegrees.set(nei, indegrees.get(nei)! - 1);
 
                 // console.log(`nei is: ${nei}, indegrees.get(nei) is ${indegrees.get(nei)}` );
-                
-                // Set next vertex that needs to be processed 
+
+                // Set next vertex that needs to be processed
                 if (!indegrees.get(nei)) {
                     q.push(nei);
                     res.push(nei);
@@ -76,4 +82,4 @@ const bfsProcess = (graph: Map<number, Array<number>>, indegrees: Map<number, nu
             }
         }
     }
-}
+};

@@ -1,15 +1,14 @@
 /***************************************************************************
-* Problem No. : 
-* Problem Name: Stack Sort
-* Date        : June 19, 2022
-* Author      :	@codingbro
-*
-* meta        : tag-stack, tag-sort
-***************************************************************************/
+ * Problem No. :
+ * Problem Name: Stack Sort
+ * Date        : June 19, 2022
+ * Author      :	@codingbro
+ *
+ * meta        : tag-stack, tag-sort
+ ***************************************************************************/
 
 export function sort(s: number[]): void {
-    if (s.length == 0)
-        return;
+    if (s.length == 0) return;
 
     const tmp: number[] = []; // tmp stack which will be ordered from large to small numbers ultimately
     while (s.length) {

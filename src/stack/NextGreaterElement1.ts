@@ -7,9 +7,9 @@
  * meta        : tag-hash, tag-stack, tag-array
  ***************************************************************************/
 
-
 export function nextGreaterElementSol1(nums1: number[], nums2: number[]): number[] {
-    const m = nums1.length, n = nums2.length;
+    const m = nums1.length,
+        n = nums2.length;
     const res = Array(m).fill(-1);
 
     for (let i = 0; i < m; i++) {
@@ -30,7 +30,8 @@ export function nextGreaterElementSol1(nums1: number[], nums2: number[]): number
     do not support Array.indexOf() method
 */
 export function nextGreaterElementSol2(nums1: number[], nums2: number[]): number[] {
-    const m = nums1.length, n = nums2.length;
+    const m = nums1.length,
+        n = nums2.length;
     const res = Array(m).fill(-1);
     const map = new Map<number, number>();
 
@@ -41,7 +42,7 @@ export function nextGreaterElementSol2(nums1: number[], nums2: number[]): number
 
     for (let i = 0; i < m; i++) {
         const idx = map.get(nums1[i]) as number;
-        for (let j = idx + 1; j <n; j++) {
+        for (let j = idx + 1; j < n; j++) {
             if (nums2[j] > nums1[i]) {
                 res[i] = nums2[j];
                 break;
@@ -52,9 +53,9 @@ export function nextGreaterElementSol2(nums1: number[], nums2: number[]): number
     return res;
 }
 
-
 export function nextGreaterElementSol3(nums1: number[], nums2: number[]): number[] {
-    const m = nums1.length, n = nums2.length;
+    const m = nums1.length,
+        n = nums2.length;
     const res = Array(m).fill(-1);
     const map = new Map<number, number>(); // key - num from nums2, valu - next larger element for num
     const stack: number[] = []; // keep a monotonic decreasing stack
@@ -76,4 +77,4 @@ export function nextGreaterElementSol3(nums1: number[], nums2: number[]): number
 
 const peek = (stack: number[]) => {
     return stack[stack.length - 1];
-}
+};

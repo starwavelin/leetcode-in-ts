@@ -14,12 +14,14 @@
  */
 function reverseWords(s: string[]): void {
     const n = s.length;
-    let i = 0, j = n - 1;
+    let i = 0,
+        j = n - 1;
     reverse(i, j, s);
-    i = 0; j = i + 1;
+    i = 0;
+    j = i + 1;
     while (i < n && j <= n) {
         if (j == n || s[j] == ' ') {
-            reverse(i, j-1, s);
+            reverse(i, j - 1, s);
             i = j + 1;
         }
         j++;
@@ -29,19 +31,20 @@ function reverseWords(s: string[]): void {
 const reverse = (i: number, j: number, s: string[]): void => {
     while (i < j) {
         swap(i, j, s);
-        i++; j--;
+        i++;
+        j--;
     }
-}
+};
 
 const swap = (i: number, j: number, s: string[]): void => {
     const c = s[i];
     s[i] = s[j];
     s[j] = c;
-}
+};
 
 /**
  * TEST
  */
-const s = ["t","h","e"," ","s","k","y"," ","i","s"," ","b","l","u","e"];
-reverseWords(s)
+const s = ['t', 'h', 'e', ' ', 's', 'k', 'y', ' ', 'i', 's', ' ', 'b', 'l', 'u', 'e'];
+reverseWords(s);
 console.log(s);

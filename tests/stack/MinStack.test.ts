@@ -1,7 +1,6 @@
 import { MinStack } from '../../src/stack/MinStack';
 
 describe('Test MinStack class', () => {
-
     test('Test a series of push, pop, top and getMin methods', () => {
         const ms: MinStack = new MinStack();
         ms.push(-1);
@@ -15,5 +14,4 @@ describe('Test MinStack class', () => {
         expect(ms.top()).toBe(0);
         expect(ms.getMin()).toBe(-1);
     });
-
 });

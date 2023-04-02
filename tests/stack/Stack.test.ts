@@ -1,7 +1,6 @@
 import { Stack } from '../../src/stack/Stack';
 
-describe('Test Stack class\'s behavior', () => {
-
+describe("Test Stack class's behavior", () => {
     const myStack = new Stack(['apple', 'pear']);
 
     test('length is 2', () => {

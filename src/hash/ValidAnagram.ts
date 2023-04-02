@@ -2,7 +2,7 @@ function isAnagram(s: string, t: string): boolean {
     if (s.length !== t.length) {
         return false;
     }
-    
+
     const arrayMap = new Array(26).fill(0);
     const size = s.length;
     for (let i = 0; i < size; i++) {
@@ -21,7 +21,7 @@ function isAnagram2(s: string, t: string): boolean {
     if (s.length !== t.length) {
         return false;
     }
-    
+
     const arrayMap = new Array(128).fill(0);
     const size = s.length;
     for (let i = 0; i < size; i++) {

@@ -1,7 +1,6 @@
 import { MaxStack } from '../../src/stack/MaxStack';
 
 describe('Test MinStack class', () => {
-
     test('Test a series of push, pop, top and peekMax, popMax methods - Ex 1', () => {
         const ms: MaxStack = new MaxStack();
         ms.push(5);
@@ -25,5 +24,4 @@ describe('Test MinStack class', () => {
         expect(ms.top()).toBe(3);
         expect(ms.peekMax()).toBe(5);
     });
-
 });

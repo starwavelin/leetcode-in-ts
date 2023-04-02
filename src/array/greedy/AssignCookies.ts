@@ -14,7 +14,8 @@ export function findContentChildren(children: number[], cookies: number[]): numb
     // console.log(`children array: ${children}`);
     // console.log(`cookies array: ${cookies}`);
 
-    let i = 0, j = 0; // i - loop counter for childre, j - loop counter for cookies
+    let i = 0,
+        j = 0; // i - loop counter for childre, j - loop counter for cookies
     while (i < children.length && j < cookies.length) {
         if (cookies[j] >= children[i]) {
             i++;
