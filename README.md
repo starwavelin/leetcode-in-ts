@@ -82,7 +82,7 @@ Supported list of problem categories for searching,
 | 245	 | Shortest Word Distance III                         | Medium | | |
 | 244	 | Shortest Word Distance II                          | Medium | | |
 | 243	 | Shortest Word Distance                            | Easy | | |
-| 242	 | Valid Anagram                                        | Easy | Hash, ArrayMap | [讲解](https://youtu.be/PaqSyN63kB8)|
+| 242	 | [Valid Anagram](src/hash/ValidAnagram.ts)            | Easy | Hash, ArrayMap | [讲解](https://youtu.be/PaqSyN63kB8)|
 | 241	 | Different Ways to Add Parentheses                    | Medium | | |
 | 240	 | Search a 2D Matrix II	                            | Medium | | |
 | 239	 | Sliding Window Maximum                               | Hard | | |
