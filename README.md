@@ -259,7 +259,7 @@ Supported list of problem categories for searching,
 | 52	  | N-Queens II                                         | Hard | | |
 | 51      | N-Queens                                            | Hard | | |
 | 50      | Pow(x, n)                                           | Medium | | |
-| 49      | Group Anagrams                                      | Medium | Hash| [讲解](https://www.youtube.com/watch?v=G0WEebYHJ-E)|
+| 49      | [Group Anagrams](src/hash/GroupAnagrams.ts)         | Medium | Hash| [讲解](https://www.youtube.com/watch?v=G0WEebYHJ-E)|
 | 48      | Rotate Image                                        | Medium | | |
 | 47      | Permutations II                                     | Hard | | |
 | 46      | Permutations                                        | Medium | | |
