@@ -293,7 +293,7 @@ Supported list of problem categories for searching,
 | 18      | 4Sum	                                            | Medium | | |
 | 17      | Letter Combinations of a Phone Number	            | Medium | | |
 | 16      | 3Sum Closest	                                    | Medium | | |
-| 15      | 3Sum		                                        | Medium | | |
+| 15      | [3Sum](src/array/two_pointers/ThreeSum.js)	        |q Medium | | |
 | 14      |	Longest Common Prefix	                            | Easy | | |
 | 13      | Roman to Integer		                            | Easy | | |
 | 12      | Integer to Roman		                            | Medium | | |
