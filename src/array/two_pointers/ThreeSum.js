@@ -1,4 +1,48 @@
 /**
+ * A 3rd way:
+ *  - 最外层的i指针用for loop写法
+ *  - 有助于从这种写法推导出 recusrive solution的写法
+ * Assuming the given target may not be 0, so add a new param target 
+ * 
+ */
+var threeSumVer3 = function(nums, target) {
+    const res = []
+    nums.sort((a, b) => a-b);
+    const len = nums.length;
+
+    for (let i = 0; i < len-2; i++) {
+        if (i > 0 && nums[i] === nums[i-1]) {
+            continue;
+        }
+        const nextTarget = target - nums[i];
+        let l = i+1, r = len-1;
+        while (l < r) {
+            if (l > i+1 && nums[l] === nums[l-1]) {
+                l++;
+                continue;
+            }
+            if (nums[l] + nums[r] === nextTarget) {
+                res.push([nums[i], nums[l], nums[r]]);
+                l++;                
+                r--;
+            } else if (nums[l] + nums[r] < nextTarget) {
+                l++;
+            } else {
+                r--;
+            }
+        }        
+    }
+
+    return res;
+};
+
+console.log(threeSumVer3([-1, 0, 1, 2, -1, -4], 3)); // should get [[0,1,2]]
+console.log(threeSumVer3([0, 0, 0], 3)); // should get []
+console.log(threeSumVer3([-1,0,1,2,-1,-4,-2,-3,3,0,4], 3)); // should get
+    // [[-4, 3, 4], [-3, 2, 4], [-2, 2, 3], [-1, 0, 4], [-1, 1, 3], [0, 0, 3], [0, 1, 2]]
+
+
+/**
  * Another way to dedup, being a little differnt from the solution below
  * b/c this way uses if () condition with i++ and continue to avoid duplicated items for the
  * first pointer and left poniter numbers.
@@ -10,7 +54,6 @@
 var threeSumVer2 = function(nums) {
     const res = []
     nums.sort((a, b) => a-b);
-    // console.log(nums);
     const len = nums.length;
 
     // The following portion can be extracted into a kSum() ftn and be called recusrively
@@ -90,10 +133,10 @@ var threeSum = function(nums) {
     return res;
 };
 
-console.log(threeSum([-1, 0, 1, 2, -1, -4])); // should get [[-1,-1,2],[-1,0,1]]
-console.log(threeSum([0, 1, 1])); // should get []
-console.log(threeSum([0, 0, 0])); // should get [0,0,0]
-console.log(threeSum([-1,0,1,2,-1,-4,-2,-3,3,0,4])); // should get 
+// console.log(threeSum([-1, 0, 1, 2, -1, -4])); // should get [[-1,-1,2],[-1,0,1]]
+// console.log(threeSum([0, 1, 1])); // should get []
+// console.log(threeSum([0, 0, 0])); // should get [0,0,0]
+// console.log(threeSum([-1,0,1,2,-1,-4,-2,-3,3,0,4])); // should get 
     //[[-4,0,4],[-4,1,3],[-3,-1,4],[-3,0,3],[-3,1,2],[-2,-1,3],[-2,0,2],[-1,-1,2],[-1,0,1]]
 
 /**
