@@ -292,8 +292,8 @@ Supported list of problem categories for searching,
 | 19      | Remove Nth Node From End of List	                | Easy | Linked List | |
 | 18      | 4Sum	                                            | Medium | | |
 | 17      | Letter Combinations of a Phone Number	            | Medium | | |
-| 16      | 3Sum Closest	                                    | Medium | | |
-| 15      | [3Sum](src/array/two_pointers/ThreeSum.js)	        |q Medium | | |
+| 16      | [3Sum Closest](src/array/two_pointers/ThreeSumClosest.js)	 | Medium | | |
+| 15      | [3Sum](src/array/two_pointers/ThreeSum.js)	        | Medium | | |
 | 14      |	Longest Common Prefix	                            | Easy | | |
 | 13      | Roman to Integer		                            | Easy | | |
 | 12      | Integer to Roman		                            | Medium | | |
