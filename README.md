@@ -526,10 +526,10 @@ Supported list of problem categories for searching,
 | 21      | Merge Two Sorted Lists	                            | Easy | | |
 | 20      | [Valid Parentheses](src/stack/ValidParentheses.ts)	| Easy | Stack  | |
 | 19      | Remove Nth Node From End of List	                | Easy | Linked List | |
-| 18      | 4Sum	                                            | Medium | | |
+| 18      | [4Sum](src/array/two_pointers/FourSum.js)	        | Medium | Sort, DFS | |
 | 17      | Letter Combinations of a Phone Number	            | Medium | | |
-| 16      | [3Sum Closest](src/array/two_pointers/ThreeSumClosest.js)	 | Medium | | |
-| 15      | [3Sum](src/array/two_pointers/ThreeSum.js)	        | Medium | | |
+| 16      | [3Sum Closest](src/array/two_pointers/ThreeSumClosest.js)	 | Medium | Sort | |
+| 15      | [3Sum](src/array/two_pointers/ThreeSum.js)	[3Sum Recursive Solution](src/array/two_pointers/ThreeSumRecursive.js) | Medium | Sort, Two Pointers | |
 | 14      |	Longest Common Prefix	                            | Easy | | |
 | 13      | Roman to Integer		                            | Easy | | |
 | 12      | Integer to Roman		                            | Medium | | |
