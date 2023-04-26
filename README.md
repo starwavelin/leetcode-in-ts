@@ -109,7 +109,7 @@ Supported list of problem categories for searching,
 | 457	 | Circular Array Loop                                                                                                | Medium | | |
 | 456	 | 132 Pattern                                                                                                        | Medium | | |
 | 455	 | [Assign Cookies](src/array/greedy/AssignCookies.ts)  | Easy | Array, Greedy | |
-| 454	 | 4Sum II                                                                                                            | Medium | | |
+| 454	 | [4Sum II](src/hash/FourSumII.js) | Medium | Hash | |
 | 453	 | Minimum Moves to Equal Array Elements                                                                              | Easy | | |
 | 452	 | Minimum Number of Arrows to Burst Balloons                                                                         | Medium | | |
 | 451	 | Sort Characters By Frequency                                                                                       | Medium | | |
@@ -529,7 +529,7 @@ Supported list of problem categories for searching,
 | 18      | [4Sum](src/array/two_pointers/FourSum.js)	        | Medium | Sort, DFS | |
 | 17      | Letter Combinations of a Phone Number	            | Medium | | |
 | 16      | [3Sum Closest](src/array/two_pointers/ThreeSumClosest.js)	 | Medium | Sort | |
-| 15      | [3Sum](src/array/two_pointers/ThreeSum.js)	[3Sum Recursive Solution](src/array/two_pointers/ThreeSumRecursive.js) | Medium | Sort, Two Pointers | |
+| 15      | [3Sum](src/array/two_pointers/ThreeSum.js),	[3Sum Recursive Solution](src/array/two_pointers/ThreeSumRecursive.js) | Medium | Sort, Two Pointers | |
 | 14      |	Longest Common Prefix	                            | Easy | | |
 | 13      | Roman to Integer		                            | Easy | | |
 | 12      | Integer to Roman		                            | Medium | | |
