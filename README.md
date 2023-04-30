@@ -1,5 +1,5 @@
 # leetcode-in-ts
-My practices of LeetCode problems in TypeScript
+My practices of LeetCode problems in TypeScript / JavaScript
 
 ### How to Run the Sample Solution Code
 1. Use the following command to initialize the project after you git clone this project
