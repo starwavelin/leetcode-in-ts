@@ -209,7 +209,7 @@ Supported list of problem categories for searching,
 | 350	| Intersection of Two Arrays II                                                                                      | Easy | | |
 | 349	| Intersection of Two Arrays                                                                                         | Easy  | | |
 | 348	| Design Tic-Tac-Toe $                                                                | Medium | | |
-| 347	| [Top K Frequent Elements](src/sorting/TopKFrequentElements.java)                                                   | Medium | | |
+| 347	| [Top K Frequent Elements](src/heap/TopKFrequentElementsSol1.js), [Solution 2](src/heap/TopKFrequentElementsSol2.js), Solution 3                                                   | Medium | Sort, Heap, Bucket Sort | |
 | 346	| Moving Average from Data Stream  $                                                                                 | Easy | | |
 | 345	| Reverse Vowels of a String                                                                                         | Easy | | |
 | 344	| Reverse String                                                                                                     | Easy | | |
