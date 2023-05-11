@@ -60,6 +60,9 @@ function remove() {
 
 /**
  * The given data stream is 11, 12, 13, 10, 9, 5
+ * 
+ * 与 MinHeap.js 比较就发现,这个数据流输入就是要call add() function 好几次才能构建出完整的heap
+ * 而 MinHeap.js 中的 buildHeap(array),由于是有一个给定的array,只要call一次就建好heap了
  */
 add(11);
 add(12);
