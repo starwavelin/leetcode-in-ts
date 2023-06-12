@@ -23,8 +23,9 @@ Supported list of problem categories for searching,
  * [Array](../../search?utf8=✓&q=tag-array)
  * [String](../../search?utf8=✓&q=tag-string)
  * [Two Pointers](../../search?utf8=✓&q=tag-two-pointers)
+ * [Sliding Window](../../search?utf8=✓&q=tag-sliding-window)
  * [Interval](../../search?utf8=✓&q=tag-interval)
- * [Sorting](../../search?utf8=✓&q=tag-sort)
+ * [Sort](../../search?utf8=✓&q=tag-sort)
  * [Linked List](../../search?utf8=✓&q=tag-linked-list)
  * [Hash](../../search?utf8=✓&q=tag-hash)
  * [Array Map](../../search?utf8=✓&q=tag-array-map)
@@ -36,6 +37,7 @@ Supported list of problem categories for searching,
  * [Divide and Conquer](../../search?utf8=✓&q==tag-divide-and-conquer)
  * [Advanced Tree](../../search?utf8=✓&q==tag-advanced-tree)
  * [Graph](../../search?utf8=✓&q=tag-graph)
+ * [Matrix](../../search?utf8=✓&q=tag-matrix)
  * [Backtracking](../../search?utf8=✓&q=tag-backtracking)
  * [Dynamic Programming](../../search?utf8=✓&q=tag-dp)
  * [Bit](../../search?utf8=✓&q=tag-bit)
@@ -46,6 +48,7 @@ Supported list of problem categories for searching,
  * [Topological Sort](../../search?utf8=✓&q=tag-topological-sort)
  * [Breadth First Search](../../search?utf8=✓&q=tag-bfs)
  * [Depth First Search](../../search?utf8=✓&q=tag-dfs)
+ * [Greedy Algorithm](../../search?utf8=✓&q=tag-greedy)
 
 
 ### Algorithmic Problem List
@@ -398,7 +401,7 @@ Supported list of problem categories for searching,
 | 149	 | Max Points on a Line                                 | Hard | | |
 | 148	 | Sort List                                            | Medium | | |
 | 147	 | Insertion Sort List                                  | Medium | | |
-| 146	 | LRU Cache                                            | Hard | | |
+| 146	 | [LRU Cache](src/data_structure/LRUCacheSol1.ts), Solution 2   | Hard | Map, LinkedList | |
 | 145	 | Binary Tree Postorder Traversal                      | Hard | | |
 | 144	 | Binary Tree Preorder Traversal                       | Medium | | |
 | 143	 | Reorder List                                         | Medium | | |

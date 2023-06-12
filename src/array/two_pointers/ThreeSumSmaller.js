@@ -1,3 +1,12 @@
+/***************************************************************************
+ * Problem No. : 259
+ * Problem Name: 3Sum Smaller
+ * Date        : April 23, 2023
+ * Author      : @codingbro
+ *
+ * meta        : tag-sort, tag-two-pointers
+ ***************************************************************************/
+
 /**
  * @param {number[]} nums
  * @param {number} target
