@@ -49,6 +49,7 @@ Supported list of problem categories for searching,
  * [Breadth First Search](../../search?utf8=✓&q=tag-bfs)
  * [Depth First Search](../../search?utf8=✓&q=tag-dfs)
  * [Greedy Algorithm](../../search?utf8=✓&q=tag-greedy)
+ * [Heap](../../search?utf8=✓&q=tag-heap)
 
 
 ### Algorithmic Problem List

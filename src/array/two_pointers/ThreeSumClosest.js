@@ -1,3 +1,12 @@
+/***************************************************************************
+ * Problem No. : 16
+ * Problem Name: 3Sum Closest
+ * Date        : June 25, 2023
+ * Author      : @codingbro
+ *
+ * meta        : tag-array, tag-two-pointers
+ ***************************************************************************/
+
 /**
  * @param {number[]} nums
  * @param {number} target

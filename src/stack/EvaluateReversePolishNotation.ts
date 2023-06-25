@@ -2,7 +2,7 @@
  * Problem No. : 150
  * Problem Name: Evaluate Reverse Polish Notation
  * Date        : July 1, 2022
- * Author      :	@codingbro
+ * Author      : @codingbro
  *
  * meta        : tag-stack, tag-recursion
  ***************************************************************************/

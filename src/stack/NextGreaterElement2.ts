@@ -7,8 +7,6 @@
  * meta        : tag-stack, tag-array, tag-circular-array
  ***************************************************************************/
 
-import { peek } from './HelpFunctions';
-
 function nextGreaterElementsSol1(nums: number[]): number[] {
     const n = nums.length;
     const res = Array(n).fill(-1);
@@ -41,4 +39,8 @@ export function nextGreaterElementsSol2(nums: number[]): number[] {
     }
 
     return res;
+}
+
+function peek(stack: number[]) {
+    return stack[stack.length - 1];
 }

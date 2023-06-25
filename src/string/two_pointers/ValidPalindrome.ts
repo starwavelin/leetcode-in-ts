@@ -2,7 +2,7 @@
  * Problem No. : 125
  * Problem Name: Valid Palindrome
  * Date        : July 1, 2022
- * Author      :	@codingbro
+ * Author      : @codingbro
  *
  * meta        : tag-two-pointers, tag-string
  ***************************************************************************/

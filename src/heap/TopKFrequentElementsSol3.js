@@ -1,3 +1,12 @@
+/***************************************************************************
+ * Problem No. : 347
+ * Problem Name: Top K Frequent Elements
+ * Date        : June 25, 2023
+ * Author      : @codingbro
+ *
+ * meta        : tag-sort, tag-bucket-sort
+ ***************************************************************************/
+
 /**
  * Solution 3: Use the idea of Bucket Sort
  * 

@@ -1,3 +1,12 @@
+/***************************************************************************
+ * Problem No. : 
+ * Problem Name: Implement a min heap given an initial array
+ * Date        : June 25, 2023
+ * Author      : @codingbro
+ *
+ * meta        : tag-heap
+ ***************************************************************************/
+
 /**
  * This MinHeap class is written by ChatGPT,
  *  I can just use my own MinHeap class (customized from ChatGPT)

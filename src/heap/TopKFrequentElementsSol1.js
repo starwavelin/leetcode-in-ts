@@ -1,3 +1,12 @@
+/***************************************************************************
+ * Problem No. : 347
+ * Problem Name: Top K Frequent Elements
+ * Date        : June 25, 2023
+ * Author      : @codingbro
+ *
+ * meta        : tag-sort
+ ***************************************************************************/
+
 /**
  * Solution 1: using sort function over a 2-D array O(nlogn)
  * 

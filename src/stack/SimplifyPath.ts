@@ -2,7 +2,7 @@
  * Problem No. : 71
  * Problem Name: Simplify Path
  * Date        : June 16, 2022
- * Author      :	@codingbro
+ * Author      : @codingbro
  *
  * meta        : tag-stack
  ***************************************************************************/

@@ -2,12 +2,10 @@
  * Problem No. : 739
  * Problem Name: Daily Temperatures
  * Date        : June 20, 2022
- * Author      :	@codingbro
+ * Author      : @codingbro
  *
  * meta        : tag-stack, tag-array
  ***************************************************************************/
-
-import { peek } from './HelpFunctions';
 
 function dailyTemperatures(temperatures: number[]): number[] {
     const n = temperatures.length;
@@ -41,4 +39,8 @@ function dailyTemperaturesSol2(temps: number[]): number[] {
         idxStack.push(i);
     }
     return res;
+}
+
+function peek(stack: number[]) {
+    return stack[stack.length - 1];
 }

@@ -2,7 +2,7 @@
  * Problem No. : 56
  * Problem Name: Merge Intervals
  * Date        : June 12, 2022
- * Author      :	@codingbro
+ * Author      : @codingbro
  *
  * meta        : tag-array, tag-interval, two-pointers
  ***************************************************************************/

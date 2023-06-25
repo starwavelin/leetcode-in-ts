@@ -2,7 +2,7 @@
  * Problem No. :
  * Problem Name: Stack Sort
  * Date        : June 19, 2022
- * Author      :	@codingbro
+ * Author      : @codingbro
  *
  * meta        : tag-stack, tag-sort
  ***************************************************************************/

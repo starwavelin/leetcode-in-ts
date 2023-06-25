@@ -2,7 +2,7 @@
  * Problem No. : 232
  * Problem Name: Implement Queue using Stacks
  * Date        : June 19, 2022
- * Author      :	@codingbro
+ * Author      : @codingbro
  *
  * meta        : tag-stack, tag-queue
  ***************************************************************************/

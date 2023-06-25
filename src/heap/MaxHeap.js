@@ -1,3 +1,12 @@
+/***************************************************************************
+ * Problem No. : 
+ * Problem Name: Implement a max heap given an initial array
+ * Date        : June 25, 2023
+ * Author      : @codingbro
+ *
+ * meta        : tag-heap
+ ***************************************************************************/
+
 /**
  * The JS implementation of a max heap should be similar to 
  * what I have done in the min heap implementation, in the MinHeap.js file

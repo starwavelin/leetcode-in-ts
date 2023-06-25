@@ -1,3 +1,12 @@
+/***************************************************************************
+ * Problem No. :
+ * Problem Name: Rate Limit
+ * Date        : June 17, 2022
+ * Author      :	@codingbro
+ *
+ * meta        : tag-data-structure
+ ***************************************************************************/
+
 let now: number = new Date().valueOf(); // get the current time value in milliseconds
 
 const maxReqsPerSec = 20000; // Assume every second allows at most 20000 requests coming in

@@ -1,3 +1,12 @@
+/***************************************************************************
+ * Problem No. : 225
+ * Problem Name: Implement Stack using Queues
+ * Date        : June 19, 2022
+ * Author      : @codingbro
+ *
+ * meta        : tag-stack, tag-queue
+ ***************************************************************************/
+
 class MyStackSol1 {
     Q: number[];
 

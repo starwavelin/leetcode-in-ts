@@ -1,3 +1,12 @@
+/***************************************************************************
+ * Problem No. : 49
+ * Problem Name: Group Anagrams
+ * Date        : June 25, 2023
+ * Author      : @codingbro
+ *
+ * meta        : tag-hash
+ ***************************************************************************/
+
 function groupAnagrams(strs: string[]): string[][] {
     const res = [];
     const map = new Map<string, string[]>();

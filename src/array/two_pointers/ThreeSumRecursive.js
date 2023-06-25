@@ -1,3 +1,12 @@
+/***************************************************************************
+ * Problem No. : 15
+ * Problem Name: 3Sum
+ * Date        : June 25, 2023
+ * Author      : @codingbro
+ *
+ * meta        : tag-array, tag-dfs, tag-sort
+ ***************************************************************************/
+
 /**
  * This file provides the resursive way solutions 
  * based on the k-sum algorithm

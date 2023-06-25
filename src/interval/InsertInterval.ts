@@ -2,7 +2,7 @@
  * Problem No. : 57
  * Problem Name: Insert Interval
  * Date        : May 29, 2022
- * Author      :	@codingbro
+ * Author      : @codingbro
  *
  * meta        : tag-array, tag-interval
  ***************************************************************************/

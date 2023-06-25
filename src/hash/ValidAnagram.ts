@@ -1,3 +1,12 @@
+/***************************************************************************
+ * Problem No. : 242
+ * Problem Name: Valid Anagram
+ * Date        : June 25, 2023
+ * Author      : @codingbro
+ *
+ * meta        : tag-array-map, tag-sort
+ ***************************************************************************/
+
 function isAnagram(s: string, t: string): boolean {
     if (s.length !== t.length) {
         return false;

@@ -2,7 +2,7 @@
  * Problem No. : 155
  * Problem Name: Min Stack
  * Date        : June 18, 2022
- * Author      :	@codingbro
+ * Author      : @codingbro
  *
  * meta        : tag-stack, tag-data-structure
  ***************************************************************************/

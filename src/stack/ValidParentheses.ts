@@ -2,7 +2,7 @@
  * Problem No. : 20
  * Problem Name: Valid Parentheses
  * Date        : June 19, 2022
- * Author      :	@codingbro
+ * Author      : @codingbro
  *
  * meta        : tag-stack
  ***************************************************************************/

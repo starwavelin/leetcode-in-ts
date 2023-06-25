@@ -1,3 +1,12 @@
+/***************************************************************************
+ * Problem No. : 
+ * Problem Name: Implement a min heap, assuming data come in as a stream
+ * Date        : June 25, 2023
+ * Author      : @codingbro
+ *
+ * meta        : tag-heap
+ ***************************************************************************/
+
 /**
  * This MinHeap construction process is based on a given condition that
  * there is NO element array given at the beginning, the integer elements
