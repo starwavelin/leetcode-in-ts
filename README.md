@@ -515,7 +515,7 @@ Supported list of problem categories for searching,
 | 37      |	Sudoku Solver                                       | Hard | | |
 | 36      |	Valid Sudoku	                                    | Easy | | |
 | 35      | Search Insert Position                              | Medium | | |
-| 34      | Search for a Range	                                | Medium | | |
+| 34      | [Find First and Last Position of Element in Sorted Array](src/binary_search/SearchRange.js)	                                | Medium | Binary Search | |
 | 33      | Search in Rotated Sorted Array	                    | Hard | | |
 | 32      | Longest Valid Parentheses	                        | Hard | | |
 | 31      |	Next Permutation	                                | Medium | | |
