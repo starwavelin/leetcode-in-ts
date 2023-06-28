@@ -475,7 +475,7 @@ Supported list of problem categories for searching,
 | 77	  | Combinations                                        | Medium | | |
 | 76	  | Minimum Window Substring                            | Hard | | |
 | 75	  | Sort Colors]                                        | Medium | | |
-| 74	  | Search a 2D Matrix                                  | Medium | | |
+| 74	  | [Search a 2D Matrix](src/binary_search/SearchA2DMatrix.js) | Medium | Binary Search, Matrix | |
 | 73	  | Set Matrix Zeroes                                   | Medium | | |
 | 72	  | Edit Distance                                       | Hard | | |
 | 71	  | Simplify Path                                       | Medium | | |
