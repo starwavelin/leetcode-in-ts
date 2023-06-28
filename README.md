@@ -325,7 +325,7 @@ Supported list of problem categories for searching,
 | 243	 | Shortest Word Distance                            | Easy | | |
 | 242	 | [Valid Anagram](src/hash/ValidAnagram.ts)            | Easy | Hash, ArrayMap | [讲解](https://youtu.be/PaqSyN63kB8)|
 | 241	 | Different Ways to Add Parentheses                    | Medium | | |
-| 240	 | Search a 2D Matrix II	                            | Medium | | |
+| 240	 | [Search a 2D Matrix II](src/binary_search/SearchA2DMatrix2.js) | Medium | Matrix | |
 | 239	 | Sliding Window Maximum                               | Hard | | |
 | 238	 | Product of Array Except Self                         | Medium | | |
 | 237	 | Delete Node in a Linked List                         | Easy | | |
