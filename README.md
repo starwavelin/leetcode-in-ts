@@ -284,7 +284,7 @@ Supported list of problem categories for searching,
 | 281	| Zigzag Iterator $                                                                                                  | Medium | | |
 | 280	| Wiggle Sort $                                                                                                      | Medium | | |
 | 279	| Perfect Squares                                                                                                    | Medium | | |
-| 278	| First Bad Version                                                                                                  | Easy | | |
+| 278	| [First Bad Version](src/binary_search/FirstBadVersion.js)                                                          | Easy | Binary Search | |
 | 277	| Find the Celebrity $                                                                                               | Medium | | |
 | 276	| Paint Fence $                                                                                                      | Easy | | |
 | 275	| H-Index II                                                                                                         | Medium | | |
