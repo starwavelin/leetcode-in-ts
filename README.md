@@ -388,7 +388,7 @@ Supported list of problem categories for searching,
 | 165	 | Compare Version Numbers                              | Easy | | |
 | 164	 | Maximum Gap                                          | Hard | | |
 | 163	 | Missing Ranges                                       | Medium | | |
-| 162	 | Find Peak Element                                    | Medium | | |
+| 162	 | [Find Peak Element](src/binary_search/FindPeakElement.js) | Medium | Binary Search | |
 | 161	 | One Edit Distance                                    | Medium | | |
 | 160	 | Intersection of Two Linked Lists                     | Easy | | |
 | 159	 | Longest Substring with At Most Two Distinct Characters |	Hard | | |
