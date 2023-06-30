@@ -395,9 +395,9 @@ Supported list of problem categories for searching,
 | 158	 | Read N Characters Given Read4 II - Call multiple times |	Hard | | |
 | 157	 | Read N Characters Given Read4 $                      | Easy | | |
 | 156	 | Binary Tree Upside Down $                            | Medium | | |
-| 155	 | [Min Stack]((src/stack/MinStack.ts) )                | Easy | | |
+| 155	 | [Min Stack](src/stack/MinStack.ts)                   | Easy | Stack, Data Structure | |
 | 154	 | Find Minimum in Rotated Sorted Array II              | Hard | | |
-| 153	 | Find Minimum in Rotated Sorted Array                 | Medium | | |
+| 153	 | [Find Minimum in Rotated Sorted Array](src/binary_search/FindMinimumInRotatedSortedArray.js) | Medium | Binary Search | |
 | 152	 | Maximum Product Subarray                             | Medium | | |
 | 151	 | [Reverse Words in a String](src/string/two_pointers/ReverseWordsInAString1.ts) | Medium | Two Pointers | [讲解](https://youtu.be/54uU5Zhzorw) |
 | 150	 | [Evaluate Reverse Polish Notation](src/stack/EvaluateReversePolishNotation.ts) | Medium | Stack | |
