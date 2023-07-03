@@ -12,7 +12,7 @@
  * 给出一组排好序的数字,比如 [2, 5, 5, 5, 5, 5, 8, 9], target = 5.
  * 只要能找到5是否在给定数组中,返回找到的数字5的index就可以了;假如target不在数组中,返回-1
  * 
- * 在这道题中用二分查找,得到的结果是3 <-- 即二分查找过程中找到的第一个5所在的index
+ * 在这道题中用二分查找,得到的结果是3 <-- 即 二分查找过程中 找到的第一个5所在的index
  */
 
 const binarySearchSol1 = (array, target) => {
@@ -23,7 +23,7 @@ const binarySearchSol1 = (array, target) => {
         if (array[mid] === target) {
             return mid;
         } else if (array[mid] < target) {
-            l = mid + 1;
+            l = mid + 1; // 运用模板可以不考虑 l是等于 mid+1 还是mid, 但假如已经明确 array中的数字都是unique 等等情况下,用 mid+1 会更高效一些.
         } else {
             r = mid - 1;
         }
