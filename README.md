@@ -67,7 +67,7 @@ Supported list of problem categories for searching,
 **Selective Problems 251 - 1,000**
 | No.    | Problem                                              | Difficulty  | Tags  | Videos |
 |--------|------------------------------------------------------|-------------|-------|--------|
-| 981	 | [Time Based Key-Value Store](src/data_structure/TimeBasedKeyValueStore.js) TS解 | Medium | Hash, Binary Search, Data Structure | |
+| 981	 | [Time Based Key-Value Store](src/data_structure/TimeBasedKeyValueStore.js), [TS解](src/data_structure/TimeBasedKeyValueStore.ts) | Medium | Hash, Binary Search, Data Structure | |
 | 905	 | [Sort Array By Parity](src/array/two_pointers/SortArrayByParity.ts) | Easy | Two Pointers, Array, Sort | |
 | 875	 | [Koko eating bananas](src/binary_search/KokoEatingBananas.js) | Medium | Binary Search | |
 | 739	 | [Daily Temperatures](src/stack/DailyTemperatures.ts) | Medium | Stack | |
