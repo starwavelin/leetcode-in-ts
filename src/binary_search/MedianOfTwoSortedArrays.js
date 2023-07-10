@@ -63,15 +63,15 @@ var findMedianOfTwoSortedArraysSol2 = function(nums1, nums2) {
         let mid1 = Math.floor((l + r) / 2);   // the mid index of the first (smaller) array
         let mid2 = half - mid1 - 2;        // the mid index of the 2nd array shall be half minus the mid1, and also b/c the array is 0-indexed, minus the two zeros
         
-        let maxLeft1 = (mid1 < 0) ? Number.MIN_SAFE_INTEGER : nums1[mid1];
+        let maxLeft1 = (mid1 >= 0) ? nums1[mid1] : Number.MIN_SAFE_INTEGER;
             // The typical index of the maximum of the left partition of nums1 is the calculated mid1,
             // so the violating condition is that when mid1 is less than 0
-        let minRight1 = (mid1 + 1 >= n1) ? Number.MAX_SAFE_INTEGER : nums1[mid1+1];
+        let minRight1 = (mid1 + 1 < n1) ? nums1[mid1+1] : Number.MAX_SAFE_INTEGER;
             // The typical index of the minimum of the right partition of nums1 is the calculated mid1+1,
             // so the violating condition is that when mid1+1 equals the length of nums1
         
-        let maxLeft2 = (mid2 < 0) ? Number.MIN_SAFE_INTEGER : nums2[mid2];
-        let minRight2 = (mid2 + 1 >= n2) ? Number.MAX_SAFE_INTEGER : nums2[mid2+1];
+        let maxLeft2 = (mid2 >= 0) ? nums2[mid2] : Number.MIN_SAFE_INTEGER;
+        let minRight2 = (mid2 + 1 < n2) ? nums2[mid2+1] : Number.MAX_SAFE_INTEGER;
         
         if (maxLeft1 <= minRight2 && maxLeft2 <= minRight1) {
             if ((n1 + n2) % 2 == 0) {
