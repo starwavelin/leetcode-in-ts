@@ -214,7 +214,7 @@ Supported list of problem categories for searching,
 | 353	| Design Snake Game $                                                                                                | Medium | | |
 | 352	| Data Stream as Disjoint Intervals                                                                                  | Hard | | |
 | 351	| Android Unlock Patterns $                                                                                          | Medium | | |
-| 350	| Intersection of Two Arrays II | Easy | | |
+| 350	| [Intersection of Two Arrays II](src/array/two_pointers/IntersectionOfTwoArrays2.js)  | Easy | Two Pointers, Hash | |
 | 349	| [Intersection of Two Arrays](src/array/two_pointers/IntersectionOfTwoArrays.js) | Easy | Two Pointers, Binary Search | |
 | 348	| Design Tic-Tac-Toe $                                                                | Medium | | |
 | 347	| [Top K Frequent Elements](src/heap/TopKFrequentElementsSol1.js), [Solution 2](src/heap/TopKFrequentElementsSol2.js), [Solution 3](src/heap/TopKFrequentElementsSol3.js)                                                   | Medium | Sort, Heap, Bucket Sort | |
