@@ -7,11 +7,36 @@
  * meta        : tag-array, tag-two-pointers
  ***************************************************************************/
 
+/**
+ * Updated on 7/12/2023
+ * 我觉得还是用 while loop
+ *  且慢指针 i 初始于index为0处
+ *  快指针 j 初始于index为1处 更好理解.
+ *  不用变量名称slow fast之类是省点字数,外加可以注解i和j嘛
+ */
+// Draw a sample sorted array containing duplicated nums,
+// Then I will see how the two pointer solution works
+var removeDuplicatesPolished = function (nums: number[]) {
+    let i = 0,
+        j = 1; // use i+1 to represent the # of unique elements
+    const n = nums.length;
+    while (j < n) {
+        if (nums[j] === nums[j - 1]) {
+            // 这里判断条件用 j 和 j-1比对就行了,当然写 j 和 i比对也works
+            j++;
+        } else {
+            i++;
+            nums[i] = nums[j++];
+        }
+    }
+    return i + 1;
+};
+
 function removeDuplicates(nums: number[]): number {
     let slow = 0,
         fast = 1;
     while (fast < nums.length) {
-        if (nums[slow] === nums[fast]) {
+        if (nums[fast] === nums[slow]) {
             fast++;
         } else {
             slow++;
