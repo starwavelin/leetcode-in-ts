@@ -1,6 +1,6 @@
 /***************************************************************************
  * Problem No. : 
- * Problem Name: Implement a min heap, assuming data come in as a stream
+ * Problem Name: Implement a min heap, assuming data comes in as a stream
  * Date        : June 25, 2023
  * Author      : @codingbro
  *
@@ -38,6 +38,7 @@ function heapify(array, index) {
     }
 }
 
+// Or we can call this function enqueue()
 function add(el) {
     heap.push(el);
     const n = heap.length;
@@ -46,6 +47,7 @@ function add(el) {
     }
 }
 
+// Or we can call this function dequeue()
 function remove() {
     if (heap.length === 1) {
         throw new Error('No elements to remove');

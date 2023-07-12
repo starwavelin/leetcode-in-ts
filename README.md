@@ -186,7 +186,7 @@ Supported list of problem categories for searching,
 | 381	| Insert Delete GetRandom O(1) - Duplicates allowed                                                                  | Hard | | |
 | 380	| Insert Delete GetRandom O(1)                                                                                       | Medium | | |
 | 379	| Design Phone Directory $                                                                                           | Medium | | |
-| 378	| Kth Smallest Element in a Sorted Matrix                                                                            | Medium | | |
+| 378	| [Kth Smallest Element in a Sorted Matrix](src/heap/KthSmallestElementInASortedMatrix.js) | Medium | | |
 | 377	| Combination Sum IV                                                                                                 | Medium | | |
 | 376	| Wiggle Subsequence                                                                                                 | Medium | | |
 | 375	| Guess Number Higher or Lower II                                                                                    | Medium | | |

@@ -30,3 +30,22 @@ function merge(nums1: number[], m: number, nums2: number[], n: number): void {
         i--;
     }
 }
+
+/**
+ * Solution: Same as above but a more concised writing
+ */
+var mergePolished = function (nums1: number[], m: number, nums2: number[], n: number) {
+    let k = nums1.length - 1; // the pointer starting from the end of the nusm1 aray
+    m = m - 1;
+    n = n - 1;
+    while (m >= 0 && n >= 0) {
+        if (nums1[m] > nums2[n]) {
+            nums1[k--] = nums1[m--];
+        } else {
+            nums1[k--] = nums2[n--];
+        }
+    }
+    while (n >= 0) {
+        nums1[k--] = nums2[n--];
+    }
+};
