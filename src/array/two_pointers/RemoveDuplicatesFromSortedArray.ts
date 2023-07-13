@@ -8,6 +8,22 @@
  ***************************************************************************/
 
 /**
+ * Updated on 7/13/2023
+ *
+ * This one can be used as a template, for both this question and LC 80
+ */
+var removeDuplicatesPolishedVersion2 = function (nums: number[]) {
+    let i = 0; // use i as the slow pointer
+    const n = nums.length;
+    for (let el of nums) {
+        if (i < 1 || el > nums[i - 1]) {
+            nums[i++] = el;
+        }
+    }
+    return i;
+};
+
+/**
  * Updated on 7/12/2023
  * 我觉得还是用 while loop
  *  且慢指针 i 初始于index为0处
@@ -16,7 +32,7 @@
  */
 // Draw a sample sorted array containing duplicated nums,
 // Then I will see how the two pointer solution works
-var removeDuplicatesPolished = function (nums: number[]) {
+var removeDuplicatesPolishedVersion1 = function (nums: number[]) {
     let i = 0,
         j = 1; // use i+1 to represent the # of unique elements
     const n = nums.length;

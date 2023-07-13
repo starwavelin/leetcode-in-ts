@@ -7,6 +7,21 @@
  * meta        : tag-array, tag-two-pointers
  ***************************************************************************/
 
+/**
+ * Updated on 7/13/2023
+ * Using the template from LC 26
+ */
+var removeDuplicatesPolishedUsingTemplate = function (nums: number[]) {
+    let i = 0; // use i as the slow pointer
+    const n = nums.length;
+    for (let el of nums) {
+        if (i < 2 || el > nums[i - 2]) {
+            nums[i++] = el;
+        }
+    }
+    return i;
+};
+
 function removeDuplicates(nums: number[]): number {
     const n = nums.length;
     let i = 0,
