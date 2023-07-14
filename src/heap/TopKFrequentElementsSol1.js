@@ -29,11 +29,11 @@ var topKFrequent = function(nums, k) {
     const kvArray = [...map.entries()];
 
     // sort the two-D array, in the descending order
-    const sortedArray = kvArray.sort((a, b) => b[1] - a[1]);
+    kvArray.sort((a, b) => b[1] - a[1]); // The sorted result will directly apply to the original array
 
     const res = [];
     for (let i = 0; i < k; i++) {
-        res.push(sortedArray[i][0]);
+        res.push(kvArray[i][0]);
     }
     return res;
 };
