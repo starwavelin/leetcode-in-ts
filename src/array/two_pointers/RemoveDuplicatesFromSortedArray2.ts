@@ -13,7 +13,6 @@
  */
 var removeDuplicatesPolishedUsingTemplate = function (nums: number[]) {
     let i = 0; // use i as the slow pointer
-    const n = nums.length;
     for (let el of nums) {
         if (i < 2 || el > nums[i - 2]) {
             nums[i++] = el;
@@ -22,6 +21,22 @@ var removeDuplicatesPolishedUsingTemplate = function (nums: number[]) {
     return i;
 };
 
+var removeDuplicatesSimilarToLC26Sol1 = function (nums: number[]) {
+    let i = 1,
+        j = 2;
+    while (j < nums.length) {
+        if (nums[j] == nums[i] && nums[j] == nums[i - 1]) {
+            j++;
+        } else {
+            nums[++i] = nums[j++];
+        }
+    }
+    return i + 1;
+};
+
+/**
+ * This solution is Not recommended b/c it involves an extra var count
+ */
 function removeDuplicates(nums: number[]): number {
     const n = nums.length;
     let i = 0,

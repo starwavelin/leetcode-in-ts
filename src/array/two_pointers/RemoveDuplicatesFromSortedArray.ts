@@ -14,7 +14,6 @@
  */
 var removeDuplicatesPolishedVersion2 = function (nums: number[]) {
     let i = 0; // use i as the slow pointer
-    const n = nums.length;
     for (let el of nums) {
         if (i < 1 || el > nums[i - 1]) {
             nums[i++] = el;
@@ -41,8 +40,7 @@ var removeDuplicatesPolishedVersion1 = function (nums: number[]) {
             // 这里判断条件用 j 和 j-1比对就行了,当然写 j 和 i比对也works
             j++;
         } else {
-            i++;
-            nums[i] = nums[j++];
+            nums[++i] = nums[j++];
         }
     }
     return i + 1;
