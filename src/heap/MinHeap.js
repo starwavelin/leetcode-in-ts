@@ -47,6 +47,12 @@ function buildHeap(array) {
     return heap;
 }
 
+/**
+ * Can also call this function dequeue, 
+ *  but unlike the dequeue or remove function defined in
+ * the MinHeapNoGivenArray version, 
+ *  this function takes the [created] heap (array) as the parameter
+ */
 function remove(heap) {
     if (heap.length === 1) { 
         /* when the heap array has only one element, 
@@ -66,6 +72,12 @@ function remove(heap) {
     return min;
 }
 
+const peak = (heap) => {
+    if (heap.length === 1) {
+        throw new Error('The heap is empty!');
+    }
+    return heap[1];
+}
 
 
 /**

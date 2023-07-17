@@ -59,6 +59,13 @@ const remove = (heap) => {
     return max;
 }
 
+const peak = (heap) => {
+    if (heap.length === 1) { 
+        throw new Error('The heap is empty!');
+    }
+    return heap[1];
+}
+
 
 /**
  * Testing

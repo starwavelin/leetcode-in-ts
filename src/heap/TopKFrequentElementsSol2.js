@@ -8,8 +8,35 @@
  ***************************************************************************/
 
 /**
- * Solution 2: The build max heap apporach
+ * Updated on 7/16/2023
  * 
+ * Solution Variation - using existing MaxPriorityQueue data structure available on LeetCode,
+ *  which is actually from the Version 4.1 of https://github.com/datastructures-js/priority-queue
+ */
+var topKFrequentMaxPriorityQueue = function(nums, k) {
+    const map = new Map();
+    for (const n of nums) {
+        map.set(n, map.get(n) + 1 || 1);
+    }
+
+    // build the max heap based on the kvArray, the root is the highest frequency entry of the kvArray
+    const maxHeap = new MaxPriorityQueue(item => item.freq);
+    for (let [key, freq] of map) {
+        maxHeap.enqueue(key, freq); // what we enqueued is .enqueue(element, priority)
+    }
+
+    const res = [];
+    for (let i = 0; i < k; i++) {
+        const item = maxHeap.dequeue();
+        res.push(item.element); // what we want is the .element part of the enqueued element
+    }
+    return res;
+};
+
+
+
+/**
+ * Solution 2: The build max heap apporach
  */
 
 /**
