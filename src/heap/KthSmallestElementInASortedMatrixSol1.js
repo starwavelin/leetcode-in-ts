@@ -4,7 +4,7 @@
  * Date        : July 18, 2023
  * Author      : @codingbro
  *
- * meta        : tag-heap, tag-binary-search, tag-matrix
+ * meta        : tag-heap, tag-matrix
  ***************************************************************************/
 
 /**
