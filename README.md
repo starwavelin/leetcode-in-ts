@@ -61,6 +61,7 @@ Supported list of problem categories for searching,
 **Selective Problems 1,001 - 1,500**
 | No.    | Problem                                              | Difficulty  | Tags  | Videos |
 |--------|------------------------------------------------------|-------------|-------|--------|
+| 1046	 | [Last Stone Weight](src/heap/LastStoneWeight.js) | Easy | Heap | |
 | 1021	 | [Remove Outermost Parentheses](src/stack/RemoveOutermostParentheses.ts) | Easy | Stack | |
 
 
