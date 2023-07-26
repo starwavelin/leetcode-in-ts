@@ -36,5 +36,5 @@ var leastInterval = function(tasks, n) {
 };
 
 // TEST
-console.log(leastInterval(['A','A','A','B','B','B'],2));
-console.log(leastInterval(['A','A','A','B','B','B','B'],2));
+console.log(leastInterval(['A','A','A','B','B','B'],2)); // should be 8
+console.log(leastInterval(['A','A','A','B','B','B','B'],2)); // should be 10
