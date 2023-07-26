@@ -76,7 +76,7 @@ Supported list of problem categories for searching,
 | 739	 | [Daily Temperatures](src/stack/DailyTemperatures.ts) | Medium | Stack | |
 | 716	 | [Max Stack](src/stack/MaxStack.ts)                   | Easy | Stack | |
 | 704	 | [Binary Search](src/binary_search/BinarySearch1.js), [Version 2](src/binary_search/BinarySearch2.js), [Version 3](src/binary_search/BinarySearch3.js)                   | Easy | Binary Search | |
-| 621	 | [Task Schedule](src/heap/TaskScheduleSol1.js), [Solution 2](src/heap/TaskScheduleSol2.js) | Medium | Heap, Hash, Math | |
+| 621	 | [Task Schedule](src/heap/TaskScheduleSol1.js), [Solution 2](src/heap/TaskScheduleSol2.js) | Medium | Heap, Hash, Sort, Math | |
 | 503	 | [Next Greater Element II](src/stack/NextGreaterElement2.ts) | Easy | Stack | |
 | 500	 | Keyboard Row                                                                         | Easy | | |
 | 499	 | The Maze III                                                                         | Hard | | |
@@ -212,7 +212,7 @@ Supported list of problem categories for searching,
 | 358	| Rearrange String k Distance Apart $                                                                                | Hard | | |
 | 357	| Count Numbers with Unique Digits                                                                                   | Medium | | |
 | 356	| Line Reflection $                                                                                                  | Medium | | |
-| 355	| Design Twitter                                                                                                     | Medium | | |
+| 355	| [Design Twitter Solution 1](src/data_structure/DesignTwitterSol1.js), [TS Solution 1](src/data_structure/DesignTwitterSol1.ts),  | Medium | Map, Set, Array, Heap, Design | |
 | 354	| Russian Doll Envelopes                                                                                             | Hard | | |
 | 353	| Design Snake Game $                                                                                                | Medium | | |
 | 352	| Data Stream as Disjoint Intervals                                                                                  | Hard | | |
