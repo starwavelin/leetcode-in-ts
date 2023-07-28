@@ -212,7 +212,7 @@ Supported list of problem categories for searching,
 | 358	| Rearrange String k Distance Apart $                                                                                | Hard | | |
 | 357	| Count Numbers with Unique Digits                                                                                   | Medium | | |
 | 356	| Line Reflection $                                                                                                  | Medium | | |
-| 355	| [Design Twitter Solution 1](src/data_structure/DesignTwitterSol1.js), [TS Solution 1](src/data_structure/DesignTwitterSol1.ts),  | Medium | Map, Set, Array, Heap, Design | |
+| 355	| [Design Twitter Solution 1](src/data_structure/DesignTwitterSol1.js), [TS Solution 1](src/data_structure/DesignTwitterSol1.ts), [TS Solution 2](src/data_structure/DesignTwitterSol2.ts)  | Medium | Map, Set, Array, Heap, Design | |
 | 354	| Russian Doll Envelopes                                                                                             | Hard | | |
 | 353	| Design Snake Game $                                                                                                | Medium | | |
 | 352	| Data Stream as Disjoint Intervals                                                                                  | Hard | | |

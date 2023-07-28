@@ -27,7 +27,7 @@ class Twitter {
         const res: number[] = [];
         const followees = this.userMap.get(userId);
         for (let i = this.tweets.length - 1; i >= 0 && res.length < 10; i--) {
-            if (followees.has(this.tweets[i].userId) || this.tweets[i].userId === userId) {
+            if (followees?.has(this.tweets[i].userId) || this.tweets[i].userId === userId) {
                 res.push(this.tweets[i].tweetId);
             }
         }
@@ -38,11 +38,11 @@ class Twitter {
         if (!this.userMap.has(followerId)) {
             this.userMap.set(followerId, new Set<number>());
         }
-        this.userMap.get(followerId).add(followeeId);
+        this.userMap.get(followerId)?.add(followeeId);
     }
 
     unfollow(followerId: number, followeeId: number): void {
-        this.userMap.get(followerId).delete(followeeId);
+        this.userMap.get(followerId)?.delete(followeeId);
     }
 }
 
