@@ -272,7 +272,7 @@ Supported list of problem categories for searching,
 | 298	| Binary Tree Longest Consecutive Sequence $                                                                         | Medium | | |
 | 297	| [Serialize and Deserialize Binary Tree](src/binary_tree/SerializeDeserializeBT.java)                                | Medium | | |
 | 296	| Best Meeting Point $                                                                                               | Hard | | |
-| 295	| [Find Median from Data Stream](src/heap/FindMedianFromDataStreamSol1.js)                                           | Hard | Sort, Heap | |
+| 295	| [Find Median from Data Stream](src/heap/FindMedianFromDataStreamSol1.js), [Solution 2](src/heap/FindMedianFromDataStreamSol2.js) | Hard | Sort, Heap | |
 | 294	| Flip Game II $                                                                                                     | Medium | | |
 | 293	| Flip Game $                                                                                                        | Easy | | |
 | 292	| Nim Game                                                                                                           | Easy | | |
