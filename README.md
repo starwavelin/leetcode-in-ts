@@ -333,7 +333,7 @@ Supported list of problem categories for searching,
 | 241	 | Different Ways to Add Parentheses                    | Medium | | |
 | 240	 | [Search a 2D Matrix II](src/binary_search/SearchA2DMatrix2.js) | Medium | Matrix | |
 | 239	 | Sliding Window Maximum                               | Hard | | |
-| 238	 | Product of Array Except Self                         | Medium | | |
+| 238	 | [Product of Array Except Self](src/math/ProductOfArrayExceptSelfSol1.js), [Solution 2](src/math/ProductOfArrayExceptSelfSol2.js) | Medium | Math, Array | |
 | 237	 | Delete Node in a Linked List                         | Easy | | |
 | 236	 | Lowest Common Ancestor of a Binary Tree              | Medium | | |
 | 235	 | Lowest Common Ancestor of a Binary Search Tree       | Medium | | |
