@@ -519,7 +519,7 @@ Supported list of problem categories for searching,
 | 39      |	Combination Sum	                                    | Medium | | |
 | 38      |	Count and Say                                       | Easy | | |
 | 37      |	Sudoku Solver                                       | Hard | | |
-| 36      |	Valid Sudoku	                                    | Easy | | |
+| 36      |	[Valid Sudoku](src/hash/ValidSudoku.js)             | Medium | Hash, Set | |
 | 35      | [Search Insert Position](src/binary_search/SearchInsertPosition.js) | Medium | Binary Search | |
 | 34      | [Find First and Last Position of Element in Sorted Array](src/binary_search/SearchRange.js)	| Medium | Binary Search | |
 | 33      | [Search in Rotated Sorted Array](src/binary_search/SearchInRotatedSortedArray.js) | Medium | Binary Search | |
