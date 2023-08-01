@@ -427,7 +427,7 @@ Supported list of problem categories for searching,
 | 131	 | Palindrome Partitioning                              | Medium | | |
 | 130	 | Surrounded Regions                                   | Medium | | |
 | 129	 | Sum Root to Leaf Numbers                             | Medium | | |
-| 128	 | Longest Consecutive Sequence                         | Hard | | |
+| 128	 | [Longest Consecutive Sequence](src/hash/LongestConsecutiveSequence.js) | Medium | Set, Hash | |
 | 127	 | Word Ladder                                          | Medium | | |
 | 126	 | Word Ladder II                                       | Hard | | |
 | 125	 | [Valid Palindrome](src/string/two_pointers/ValidPalindrome.ts)                                     | Easy | Two Pointers | |
