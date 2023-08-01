@@ -7,6 +7,8 @@
  * meta        : tag-two-pointers, tag-string
  ***************************************************************************/
 
+// Prefer to use the JS solution in another file, easy to understand !
+
 export function isPalindrome(s: string): boolean {
     const n = s.length;
     let start = 0,

@@ -430,7 +430,7 @@ Supported list of problem categories for searching,
 | 128	 | [Longest Consecutive Sequence](src/hash/LongestConsecutiveSequence.js) | Medium | Set, Hash | |
 | 127	 | Word Ladder                                          | Medium | | |
 | 126	 | Word Ladder II                                       | Hard | | |
-| 125	 | [Valid Palindrome](src/string/two_pointers/ValidPalindrome.ts)                                     | Easy | Two Pointers | |
+| 125	 | [Valid Palindrome](src/string/two_pointers/ValidPalindrome.ts), [JS解](src/string/two_pointers/ValidPalindrome.js) | Easy | Two Pointers | |
 | 124	 | Binary Tree Maximum Path Sum                         | Hard | | |
 | 123	 | Best Time to Buy and Sell Stock III                  | Hard | | |
 | 122	 | Best Time to Buy and Sell Stock II                   | Medium | | |
