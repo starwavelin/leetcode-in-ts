@@ -544,7 +544,7 @@ Supported list of problem categories for searching,
 | 14      |	Longest Common Prefix	                            | Easy | | |
 | 13      | Roman to Integer		                            | Easy | | |
 | 12      | Integer to Roman		                            | Medium | | |
-| 11      | Container With Most Water	                        | Medium | | |
+| 11      | [Container With Most Water](src/array/two_pointers/ContainerWithMostWater.js) | Medium | Two Pointers | |
 | 10      | Regular Expression Matching		                    | Hard | | |
 | 9       | Palindrome Number	                                | Easy | | |
 | 8	      | String to Integer	                                | Easy | String, Math | |
