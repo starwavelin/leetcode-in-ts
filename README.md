@@ -513,7 +513,7 @@ Supported list of problem categories for searching,
 | 45      | Jump Game II	                                    | Hard | | |
 | 44      | Wildcard Matching	                                | Hard | | |
 | 43      |	Multiply Strings                                    | Medium | | |
-| 42      |	Trapping Rain Water	                                | Hard | | |
+| 42      |	[Trapping Rain Water](src/array/two_pointers/TrappingRainWaterSol1.js), [Solution 2](src/array/two_pointers/TrappingRainWaterSol2.js) | Hard | Math, Two Pointers | |
 | 41      | First Missing Positive	                            | Hard | | |
 | 40      |	Combination Sum II	                                | Medium | | |
 | 39      |	Combination Sum	                                    | Medium | | |
