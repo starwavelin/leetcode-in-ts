@@ -553,7 +553,8 @@ Supported list of problem categories for searching,
 | 5	      | Longest Palindromic Substring	                    | Medium | | |
 | 4	      | [Median of Two Sorted Arrays](src/binary_search/MedianOfTwoSortedArrays.js) | Hard | Sort, Merge Sort, Binary Search | [讲解1](https://youtu.be/raYYmEwyJ0o)|
 | 3       | [Longest Substring Without Repeating Characters](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol1.js),
-[Solution 2](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol2.js) | Medium | String, Hash, Two Pointers, DP | |
+[Solution 2](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol2.js), 
+[Solution 3](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol3.js) | Medium | String, Hash, Two Pointers, DP, Set | |
 | 2       | Add Two Numbers                                     | Medium | | |
 | 1       | [Two Sum](src/array/two_pointers/TwoSum.ts)         | Medium | Two Pointers | |
 

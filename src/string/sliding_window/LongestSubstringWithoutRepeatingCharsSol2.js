@@ -9,8 +9,23 @@
 
 /**
  * 动态规划思想
- *  
- * 
+ *  1. Function Definition:
+
+    Let L[r] = s[l, …, r] denote the longest substring w/o repeating chars ending at position r. And here l is a changing variable; it is not always at position 0. 
+
+        Think how and when we shall update l?
+
+    2. Transition Equation:
+
+        L[r] = max(L[r], r - l + 1);   // we can see we can use maxLen to represent L[r]; L[r] is not necessarily an element from an array
+
+    3. Initialization
+
+        L[r] = 0
+
+    4. Final Result
+
+        return L[r]
  */
 
 /**
