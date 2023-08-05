@@ -552,7 +552,7 @@ Supported list of problem categories for searching,
 | 6       | ZigZag Conversion	                                | Easy | | |
 | 5	      | Longest Palindromic Substring	                    | Medium | | |
 | 4	      | [Median of Two Sorted Arrays](src/binary_search/MedianOfTwoSortedArrays.js) | Hard | Sort, Merge Sort, Binary Search | [讲解1](https://youtu.be/raYYmEwyJ0o)|
-| 3       | Longest Substring Without Repeating Characters      | Medium | String, Hash, Two Pointers | |
+| 3       | [Longest Substring Without Repeating Characters](src/string/LongestSubstringWithoutRepeatingCharsSol1.js) | Medium | String, Hash, Two Pointers | |
 | 2       | Add Two Numbers                                     | Medium | | |
 | 1       | [Two Sum](src/array/two_pointers/TwoSum.ts)         | Medium | Two Pointers | |
 
