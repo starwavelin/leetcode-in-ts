@@ -434,7 +434,7 @@ Supported list of problem categories for searching,
 | 124	 | Binary Tree Maximum Path Sum                         | Hard | | |
 | 123	 | Best Time to Buy and Sell Stock III                  | Hard | | |
 | 122	 | Best Time to Buy and Sell Stock II                   | Medium | | |
-| 121	 | [Best Time to Buy and Sell Stock](src/array/sliding_window/BestTimeToBuyAndSellStock1Sol1.js) | Easy | Sliding Window, Enum | |
+| 121	 | [Best Time to Buy and Sell Stock](src/array/sliding_window/BestTimeToBuyAndSellStock1Sol1.js), [Solution 2](src/array/sliding_window/BestTimeToBuyAndSellStock1Sol2.js) | Easy | Sliding Window, Enum | |
 | 120	 | Triangle                                             | Medium | | |
 | 119	 | Pascal's Triangle II                                 | Easy | | |
 | 118	 | Pascal's Triangle                                    | Easy | | |
@@ -552,7 +552,8 @@ Supported list of problem categories for searching,
 | 6       | ZigZag Conversion	                                | Easy | | |
 | 5	      | Longest Palindromic Substring	                    | Medium | | |
 | 4	      | [Median of Two Sorted Arrays](src/binary_search/MedianOfTwoSortedArrays.js) | Hard | Sort, Merge Sort, Binary Search | [讲解1](https://youtu.be/raYYmEwyJ0o)|
-| 3       | [Longest Substring Without Repeating Characters](src/string/LongestSubstringWithoutRepeatingCharsSol1.js) | Medium | String, Hash, Two Pointers | |
+| 3       | [Longest Substring Without Repeating Characters](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol1.js),
+[Solution 2](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol2.js) | Medium | String, Hash, Two Pointers, DP | |
 | 2       | Add Two Numbers                                     | Medium | | |
 | 1       | [Two Sum](src/array/two_pointers/TwoSum.ts)         | Medium | Two Pointers | |
 
