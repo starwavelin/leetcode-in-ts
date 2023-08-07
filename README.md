@@ -394,7 +394,7 @@ Supported list of problem categories for searching,
 | 164	 | Maximum Gap                                          | Hard | | |
 | 163	 | Missing Ranges                                       | Medium | | |
 | 162	 | [Find Peak Element](src/binary_search/FindPeakElement.js) | Medium | Binary Search | |
-| 161	 | One Edit Distance                                    | Medium | | |
+| 161	 | [One Edit Distance](src/string/two_pointers/OneEditDistance.js) | Medium | Two Pointers | |
 | 160	 | Intersection of Two Linked Lists                     | Easy | | |
 | 159	 | Longest Substring with At Most Two Distinct Characters |	Hard | | |
 | 158	 | Read N Characters Given Read4 II - Call multiple times |	Hard | | |
