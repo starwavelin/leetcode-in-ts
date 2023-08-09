@@ -77,7 +77,7 @@ Supported list of problem categories for searching,
 | 716	 | [Max Stack](src/stack/MaxStack.ts)                   | Easy | Stack | |
 | 704	 | [Binary Search](src/binary_search/BinarySearch1.js), [Version 2](src/binary_search/BinarySearch2.js), [Version 3](src/binary_search/BinarySearch3.js)                   | Easy | Binary Search | |
 | 621	 | [Task Schedule](src/heap/TaskScheduleSol1.js), [Solution 2](src/heap/TaskScheduleSol2.js) | Medium | Heap, Hash, Sort, Math | |
-| 567	 | [Permutation in String](src/string/sliding_window/PermutationInStringSol1.js),  | Medium | Hash, Sliding Window | |
+| 567	 | [Permutation in String](src/string/sliding_window/PermutationInStringSol1.js), [Solution 2](src/string/sliding_window/PermutationInStringSol2.js)  | Medium | Hash, Sliding Window | |
 | 503	 | [Next Greater Element II](src/stack/NextGreaterElement2.ts) | Easy | Stack | |
 | 500	 | Keyboard Row                                                                         | Easy | | |
 | 499	 | The Maze III                                                                         | Hard | | |
