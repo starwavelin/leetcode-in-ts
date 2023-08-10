@@ -333,7 +333,7 @@ Supported list of problem categories for searching,
 | 242	 | [Valid Anagram](src/hash/ValidAnagram.ts)            | Easy | Hash, ArrayMap | [讲解](https://youtu.be/PaqSyN63kB8)|
 | 241	 | Different Ways to Add Parentheses                    | Medium | | |
 | 240	 | [Search a 2D Matrix II](src/binary_search/SearchA2DMatrix2.js) | Medium | Matrix | |
-| 239	 | Sliding Window Maximum                               | Hard | | |
+| 239	 | [Sliding Window Maximum](src/array/sliding_window/SlidingWindowMaximumSol1.js), [Solution 2](src/array/sliding_window/SlidingWindowMaximumSol2.js) | Hard | Sliding Window, Deque | |
 | 238	 | [Product of Array Except Self](src/math/ProductOfArrayExceptSelfSol1.js), [Solution 2](src/math/ProductOfArrayExceptSelfSol2.js) | Medium | Math, Array | |
 | 237	 | Delete Node in a Linked List                         | Easy | | |
 | 236	 | Lowest Common Ancestor of a Binary Tree              | Medium | | |
@@ -397,7 +397,7 @@ Supported list of problem categories for searching,
 | 162	 | [Find Peak Element](src/binary_search/FindPeakElement.js) | Medium | Binary Search | |
 | 161	 | [One Edit Distance](src/string/two_pointers/OneEditDistance.js) | Medium | Two Pointers | |
 | 160	 | Intersection of Two Linked Lists                     | Easy | | |
-| 159	 | Longest Substring with At Most Two Distinct Characters |	Hard | | |
+| 159	 | [Longest Substring with At Most Two Distinct Characters](src/string/sliding_window/LongestSubstringWithAtMostTwoDistinctCharactersSol1.js) |	Medium | Sliding Window | |
 | 158	 | Read N Characters Given Read4 II - Call multiple times |	Hard | | |
 | 157	 | Read N Characters Given Read4 $                      | Easy | | |
 | 156	 | Binary Tree Upside Down $                            | Medium | | |
