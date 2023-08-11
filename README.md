@@ -480,7 +480,7 @@ Supported list of problem categories for searching,
 | 79	  | Word Search                                         | Medium | | |
 | 78	  | Subsets                                             | Medium | | |
 | 77	  | Combinations                                        | Medium | | |
-| 76	  | Minimum Window Substring                            | Hard | | |
+| 76	  | [Minimum Window Substring](src/string/sliding_window/MinimumWindowSubstringSol1.js), [Solution 2](src/string/sliding_window/MinimumWindowSubstringSol2.js)                   | Hard | | |
 | 75	  | Sort Colors]                                        | Medium | | |
 | 74	  | [Search a 2D Matrix](src/binary_search/SearchA2DMatrix.js) | Medium | Binary Search, Matrix | |
 | 73	  | Set Matrix Zeroes                                   | Medium | | |
