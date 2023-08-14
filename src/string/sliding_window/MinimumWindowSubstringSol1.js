@@ -71,3 +71,4 @@ const t = "xshxlvswdb"
 console.log(minWindow(s, t)); // "bywsrlpxhssriprdqujzhnsaszmvqox"
 
 console.log(minWindow("BCDEFGHIJKLMNOPQRSTUVWXYZA", "A")); // A
+console.log(minWindow("aa", "aa")); // aa
