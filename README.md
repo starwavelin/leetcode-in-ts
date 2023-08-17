@@ -68,6 +68,7 @@ Supported list of problem categories for searching,
 **Selective Problems 251 - 1,000**
 | No.    | Problem                                              | Difficulty  | Tags  | Videos |
 |--------|------------------------------------------------------|-------------|-------|--------|
+| 992	 | [Subarrays with K Different Integers](src/array/sliding_window/SubarraysWithKDifferentIntegersSol1.js)              | Hard | Sliding Window, Math, Hash | |
 | 981	 | [Time Based Key-Value Store](src/data_structure/TimeBasedKeyValueStore.js), [TS解](src/data_structure/TimeBasedKeyValueStore.ts) | Medium | Hash, Binary Search, Data Structure | |
 | 973	 | [K Closest Points to Origin](src/heap/KClosestPointsToOrigin.js) | Medium | Heap | |
 | 905	 | [Sort Array By Parity](src/array/two_pointers/SortArrayByParity.ts) | Easy | Two Pointers, Array, Sort | |
@@ -228,7 +229,8 @@ Supported list of problem categories for searching,
 | 343	| Integer Break                                                                                                      | Medium | | |
 | 342	| [Power of Four](src/math/PowerOf4.java)                                                                            | Easy | | |
 | 341	| Flatten Nested List Iterator $                                                                                     | Medium | | |
-| 340	| [Longest Substring with At Most K Distinct Characters](src/string/LongestSubstringWithAtMostKDistinctChars.java) $ | Hard | | |
+| 340	| [Longest Substring with At Most K Distinct Characters](src/string/sliding_window/LongestSubstringWithAtMostKDistinctChars.js) $, 
+[Variant 1](src/string/sliding_window/LongestSubstringWithAtMostKDistinctCharsVar1.js) | Hard | Sliding Window | |
 | 339	| Nested List Weight Sum $                                                                                           | Easy | | |
 | 338	| Counting Bits                                                                                                      | Medium | | |
 | 337	| House Robber III                                                                                                   | Medium | | |
