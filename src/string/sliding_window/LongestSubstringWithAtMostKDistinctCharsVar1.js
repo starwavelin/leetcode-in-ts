@@ -1,5 +1,5 @@
 /***************************************************************************
- * Problem No. : 340 Variation 1
+ * Problem No. : 340 Variant 1
  * Problem Name: Longest Substring with At Most K Distinct Characters
  * Date        : August 16, 2023
  * Author      : @codingbro
@@ -13,7 +13,7 @@
  *  has at most K distinct characters, how shall I handle that?
  * 
  * And a condition:
- *  The same letter at different indices are considered as different chars.
+ *  The same character at different indices are considered as different chars.
  * 
  * Solution:
  *  For the generating result portion, instead of res = Math.max(res, r - l +1).
@@ -39,13 +39,47 @@ var numOfSubstringKDistinct = function(s, k) {
     return res;
 };
 
-
-
 // Tests
 console.log(numOfSubstringKDistinct("eceba", 2)); // 10 [The 5 Single characters, 'ec', 'ece', 'ce', 'eb', 'ba']
-console.log(numOfSubstringKDistinct("bb", 1)); // 3 Why this is 3??    ['b', 'b']
 console.log(numOfSubstringKDistinct("eceba", 1)); // 5 ['e', 'c', 'e', 'b', 'a'] 
 console.log(numOfSubstringKDistinct("eceba", 3)); // 13 [ The solution from example 1 + 'eceb', 'ceb', 'eba'] 
+console.log(numOfSubstringKDistinct("bb", 1)); // 3 Why this is 3??  I think this should be 2 as ['b', 'b']
+console.log(numOfSubstringKDistinct("bb", 2)); // 3     ['b', 'b', 'bb']
+
+
+
+/**
+ * Use typical Map (not array map) to handle this
+ */
+var numOfSubstringKDistinctTypicalMap = function(s, k) {
+    let res = 0, count = 0; // the num of distinct chars
+    const map = new Map(); // key - char , val - frequency
+
+    for (let l = 0, r = 0; r < s.length; r++) {
+        if (!map.has(s[r]) || map.get(s[r]) == 0) {
+            count++;
+        }
+        map.set(s[r], (map.get(s[r]) || 0) + 1);
+
+        while (count > k) {
+            map.set(s[l], map.get(s[l]) - 1);
+            if (map.get(s[l]) == 0) count--;
+            l++;
+        }
+        
+        res += r-l+1;
+    }
+
+    return res;
+};
+
+// Tests 2
+console.log('Test Part2 starts: ');
+console.log(numOfSubstringKDistinctTypicalMap("eceba", 2)); // 10 [The 5 Single characters, 'ec', 'ece', 'ce', 'eb', 'ba']
+console.log(numOfSubstringKDistinctTypicalMap("eceba", 1)); // 5 ['e', 'c', 'e', 'b', 'a'] 
+console.log(numOfSubstringKDistinctTypicalMap("eceba", 3)); // 13 [ The solution from example 1 + 'eceb', 'ceb', 'eba'] 
+console.log(numOfSubstringKDistinctTypicalMap("bb", 1)); // 3 Why this is 3??  I think this should be 2 as ['b', 'b']
+console.log(numOfSubstringKDistinctTypicalMap("bb", 2)); // 3     ['b', 'b', 'bb']
 
 
 
@@ -78,3 +112,11 @@ var numOfSubstringKDistinctGrandYang = function(s, k) {
     
     return res;
 };
+
+// Tests 3
+console.log('Test Part3 starts: ');
+console.log(numOfSubstringKDistinctGrandYang("eceba", 2)); // 10 [The 5 Single characters, 'ec', 'ece', 'ce', 'eb', 'ba']
+console.log(numOfSubstringKDistinctGrandYang("eceba", 1)); // 5 ['e', 'c', 'e', 'b', 'a'] 
+console.log(numOfSubstringKDistinctGrandYang("eceba", 3)); // 13 [ The solution from example 1 + 'eceb', 'ceb', 'eba'] 
+console.log(numOfSubstringKDistinctGrandYang("bb", 1)); // 3 Why this is 3??  I think this should be 2 as ['b', 'b']
+console.log(numOfSubstringKDistinctGrandYang("bb", 2)); // 3     ['b', 'b', 'bb']
