@@ -68,7 +68,7 @@ Supported list of problem categories for searching,
 **Selective Problems 251 - 1,000**
 | No.    | Problem                                              | Difficulty  | Tags  | Videos |
 |--------|------------------------------------------------------|-------------|-------|--------|
-| 992	 | [Subarrays with K Different Integers](src/array/sliding_window/SubarraysWithKDifferentIntegersSol1.js)              | Hard | Sliding Window, Math, Hash | |
+| 992	 | [Subarrays with K Different Integers](src/array/sliding_window/SubarraysWithKDifferentIntegersSol1.js), [Solution 2](src/array/sliding_window/SubarraysWithKDifferentIntegersSol2.js) | Hard | Sliding Window, Math, Hash | |
 | 981	 | [Time Based Key-Value Store](src/data_structure/TimeBasedKeyValueStore.js), [TS解](src/data_structure/TimeBasedKeyValueStore.ts) | Medium | Hash, Binary Search, Data Structure | |
 | 973	 | [K Closest Points to Origin](src/heap/KClosestPointsToOrigin.js) | Medium | Heap | |
 | 905	 | [Sort Array By Parity](src/array/two_pointers/SortArrayByParity.ts) | Easy | Two Pointers, Array, Sort | |
