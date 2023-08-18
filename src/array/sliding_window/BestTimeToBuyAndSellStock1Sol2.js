@@ -36,3 +36,35 @@ console.log(maxProfitSol2([7,1,5,3,6,4])); // 5
 console.log(maxProfitSol2([7,6,4,3,1])); // 0
 
 console.log(maxProfitSol2(prices3)); // 999
+
+
+/**
+ * We can use the Sliding Window Template to write it again
+ */
+var maxProfitTemplate = function(prices) {
+    let res = 0;
+
+    for (let l = 0, r = 1; r < prices.length; r++) {
+
+        // handle L pointer
+        if (prices[r] <= prices[l]) {
+            l = r;
+        }
+
+        // handle result
+        res = Math.max(res, prices[r] - prices[l]);
+    }
+
+    return res;
+};
+
+
+// Tests 2
+console.log('Test Part 2:');
+
+console.log(maxProfitSol2([7,1,5,3,6,4])); // 5
+
+console.log(maxProfitSol2([7,6,4,3,1])); // 0
+
+console.log(maxProfitSol2(prices3)); // 999
+
