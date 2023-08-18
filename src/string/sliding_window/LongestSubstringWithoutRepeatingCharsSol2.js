@@ -36,7 +36,7 @@ var lengthOfLongestSubstring = function(s) {
     let maxLen = 0
     let map = new Array(128).fill(-1);
     for (let l = 0, r = 0; r < s.length; r++) {
-        l = Math.max( l, map[s.charCodeAt(r)]+1 );
+        l = Math.max( l, map[s.charCodeAt(r)] + 1 );
 
         map[s.charCodeAt(r)] = r;
         maxLen = Math.max(maxLen, r - l + 1);
