@@ -403,7 +403,7 @@ Supported list of problem categories for searching,
 | 158	 | Read N Characters Given Read4 II - Call multiple times |	Hard | | |
 | 157	 | Read N Characters Given Read4 $                      | Easy | | |
 | 156	 | Binary Tree Upside Down $                            | Medium | | |
-| 155	 | [Min Stack](src/stack/MinStack.ts)                   | Easy | Stack, Data Structure | |
+| 155	 | [Min Stack](src/stack/MinStack.ts), [JS 解](src/stack/MinStack.js) | Easy | Stack, Data Structure | |
 | 154	 | Find Minimum in Rotated Sorted Array II              | Hard | | |
 | 153	 | [Find Minimum in Rotated Sorted Array](src/binary_search/FindMinimumInRotatedSortedArray.js) | Medium | Binary Search | |
 | 152	 | Maximum Product Subarray                             | Medium | | |
