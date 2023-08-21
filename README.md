@@ -75,7 +75,7 @@ Supported list of problem categories for searching,
 | 875	 | [Koko eating bananas](src/binary_search/KokoEatingBananas.js) | Medium | Binary Search | |
 | 852	 | [Peak Index in a Mountain Array](src/binary_search/PeakIndexInAMountainArray.js) | Medium | Binary Search | |
 | 739	 | [Daily Temperatures](src/stack/DailyTemperatures.ts) | Medium | Stack | |
-| 716	 | [Max Stack](src/stack/MaxStack.ts)                   | Easy | Stack | |
+| 716	 | [Max Stack](src/stack/MaxStack.ts), [JS 解](src/stack/MaxStack.js), [JS 解2](src/stack/MaxStackSol2.js) | Hard | Stack, Design | |
 | 704	 | [Binary Search](src/binary_search/BinarySearch1.js), [Version 2](src/binary_search/BinarySearch2.js), [Version 3](src/binary_search/BinarySearch3.js)                   | Easy | Binary Search | |
 | 621	 | [Task Schedule](src/heap/TaskScheduleSol1.js), [Solution 2](src/heap/TaskScheduleSol2.js) | Medium | Heap, Hash, Sort, Math | |
 | 567	 | [Permutation in String](src/string/sliding_window/PermutationInStringSol1.js), [Solution 2](src/string/sliding_window/PermutationInStringSol2.js)  | Medium | Hash, Sliding Window | |
