@@ -408,7 +408,7 @@ Supported list of problem categories for searching,
 | 153	 | [Find Minimum in Rotated Sorted Array](src/binary_search/FindMinimumInRotatedSortedArray.js) | Medium | Binary Search | |
 | 152	 | Maximum Product Subarray                             | Medium | | |
 | 151	 | [Reverse Words in a String](src/string/two_pointers/ReverseWordsInAString1.ts) | Medium | Two Pointers | [讲解](https://youtu.be/54uU5Zhzorw) |
-| 150	 | [Evaluate Reverse Polish Notation](src/stack/EvaluateReversePolishNotation.ts) | Medium | Stack | |
+| 150	 | [Evaluate Reverse Polish Notation](src/stack/EvaluateReversePolishNotation.ts), [JS 解](src/stack/EvaluateReversePolishNotation.js) | Medium | Stack | |
 | 149	 | Max Points on a Line                                 | Hard | | |
 | 148	 | Sort List                                            | Medium | | |
 | 147	 | Insertion Sort List                                  | Medium | | |
