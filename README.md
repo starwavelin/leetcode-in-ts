@@ -191,7 +191,7 @@ Supported list of problem categories for searching,
 | 381	| Insert Delete GetRandom O(1) - Duplicates allowed                                                                  | Hard | | |
 | 380	| Insert Delete GetRandom O(1)                                                                                       | Medium | | |
 | 379	| Design Phone Directory $                                                                                           | Medium | | |
-| 378	| [Kth Smallest Element in a Sorted Matrix](src/heap/KthSmallestElementInASortedMatrixSol1.js), [Solution 2](src/heap/KthSmallestElementInASortedMatrixSol2.js) | Medium | Heap, Binary Search | |
+| 378	| [Kth Smallest Element in a Sorted Matrix; has a Heap class](src/heap/KthSmallestElementInASortedMatrixSol1.js), [Solution 2](src/heap/KthSmallestElementInASortedMatrixSol2.js) | Medium | Heap, Binary Search | |
 | 377	| Combination Sum IV                                                                                                 | Medium | | |
 | 376	| Wiggle Subsequence                                                                                                 | Medium | | |
 | 375	| Guess Number Higher or Lower II                                                                                    | Medium | | |
@@ -222,7 +222,7 @@ Supported list of problem categories for searching,
 | 350	| [Intersection of Two Arrays II](src/array/two_pointers/IntersectionOfTwoArrays2.js)  | Easy | Two Pointers, Hash | |
 | 349	| [Intersection of Two Arrays](src/array/two_pointers/IntersectionOfTwoArrays.js) | Easy | Two Pointers, Binary Search | |
 | 348	| Design Tic-Tac-Toe $                                                                | Medium | | |
-| 347	| [Top K Frequent Elements](src/heap/TopKFrequentElementsSol1.js), [Solution 2](src/heap/TopKFrequentElementsSol2.js), [Solution 3](src/heap/TopKFrequentElementsSol3.js), [Solution 4](src/heap/TopKFrequentElementsSol4.js) | Medium | Sort, Heap, Bucket Sort | |
+| 347	| [Top K Frequent Elements](src/heap/TopKFrequentElementsSol1.js), [Solution 2 MaxHeap](src/heap/TopKFrequentElementsSol2.js), [Solution 3 MinHeap](src/heap/TopKFrequentElementsSol3.js), [Solution 4](src/heap/TopKFrequentElementsSol4.js) | Medium | Sort, Heap, Bucket Sort | |
 | 346	| Moving Average from Data Stream  $                                                                                 | Easy | | |
 | 345	| Reverse Vowels of a String                                                                                         | Easy | | |
 | 344	| Reverse String                                                                                                     | Easy | | |

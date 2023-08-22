@@ -19,7 +19,7 @@ var kthSmallest = function(matrix, k) {
                 maxHeap.enqueue(matrix[i][j]);
             } else if (matrix[i][j] < maxHeap.front().element) {
                 maxHeap.enqueue(matrix[i][j]);
-                maxHeap.dequeue();               
+                maxHeap.dequeue();
             }
         }
     }

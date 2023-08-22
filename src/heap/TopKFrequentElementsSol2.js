@@ -16,7 +16,7 @@
 var topKFrequentMaxPriorityQueue = function(nums, k) {
     const map = new Map();
     for (const n of nums) {
-        map.set(n, map.get(n) + 1 || 1);
+        map.set(n, (map.get(n) || 0) + 1);
     }
 
     // build the max heap based on the kvArray, the root is the highest frequency entry of the kvArray
