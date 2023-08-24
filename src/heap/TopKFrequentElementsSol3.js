@@ -38,6 +38,35 @@ var topKFrequent = function(nums, k) {
     return res;
 };
 
+/**
+ * The time efficiency below if better than the topKFrequent() above.
+ * So when using minHeap for this problem we can aim this solution first.
+ */
+var topKFrequentMinHeapCode1 = function(nums, k) {
+    const res = [];
+    const map = new Map();
+    for (const n of nums) {
+        map.set(n, (map.get(n) || 0) + 1);
+    }
+
+    const minHeap = new MinPriorityQueue(item => item.freq);
+    for (let [key, freq] of map) {
+        if (minHeap.size() < k) {
+            minHeap.enqueue(key, freq);
+        } else if (freq > minHeap.front().priority) {
+            minHeap.dequeue();
+            minHeap.enqueue(key, freq);
+        }
+    }
+
+    while (minHeap.size() > 0) {
+        res.push(minHeap.dequeue().element);
+    }
+
+    return res;
+};
+
+
 
 /**
  * Solution 3 variation: Use the hand-implemented min heap
