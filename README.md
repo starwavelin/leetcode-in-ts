@@ -196,7 +196,7 @@ Supported list of problem categories for searching,
 | 376	| Wiggle Subsequence                                                                                                 | Medium | | |
 | 375	| Guess Number Higher or Lower II                                                                                    | Medium | | |
 | 374	| Guess Number Higher or Lower                                                                                       | Easy | | |
-| 373	| [Find K Pairs with Smallest Sums](src/heap/FindKPairsWithSmallestSumsSol1.js), [Solution 2](src/heap/FindKPairsWithSmallestSumsSol2.js)                                                                                    | Medium | Heap | |
+| 373	| [Find K Pairs with Smallest Sums](src/heap/FindKPairsWithSmallestSumsSol1.js), [Solution 2](src/heap/FindKPairsWithSmallestSumsSol2.js), [Solution 3 Similar to Dijkstra](src/heap/FindKPairsWithSmallestSumsSol3.js)                                                                        | Medium | Heap | |
 | 372	| Super Pow                                                                                                          | Medium | | |
 | 371	| Sum of Two Integers                                                                                                | Easy | | |
 | 370	| Range Addition $                                                                                                   | Medium | | |
