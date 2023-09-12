@@ -59,11 +59,11 @@ Supported list of problem categories for searching,
 **Selective Problems 1,501 - 2,000**
 
 **Selective Problems 1,001 - 1,500**
-| No.  | Problem                                                                                                                                                | Difficulty | Tags         | Videos |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ------------ | ------ |
-| 1071 | [Greatest Common Divisor of Strings](src/string/GreatestCommonDivisorOfStringsSol1.js), [Solution 3](src/string/GreatestCommonDivisorOfStringsSol3.js) | Easy       | String, Math |        |
-| 1046 | [Last Stone Weight](src/heap/LastStoneWeight.js)                                                                                                       | Easy       | Heap         |        |
-| 1021 | [Remove Outermost Parentheses](src/stack/RemoveOutermostParentheses.ts)                                                                                | Easy       | Stack        |        |
+| No.  | Problem                                                                                                                                                                                                                 | Difficulty | Tags         | Videos |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------ | ------ |
+| 1071 | [Greatest Common Divisor of Strings](src/string/GreatestCommonDivisorOfStringsSol1.js),  [Solution 2](src/string/GreatestCommonDivisorOfStringsSol2.js), [Solution 3](src/string/GreatestCommonDivisorOfStringsSol3.js) | Easy       | String, Math |        |
+| 1046 | [Last Stone Weight](src/heap/LastStoneWeight.js)                                                                                                                                                                        | Easy       | Heap         |        |
+| 1021 | [Remove Outermost Parentheses](src/stack/RemoveOutermostParentheses.ts)                                                                                                                                                 | Easy       | Stack        |        |
 
 
 **Selective Problems 251 - 1,000**
