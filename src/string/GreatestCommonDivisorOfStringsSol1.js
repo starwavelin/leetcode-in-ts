@@ -8,11 +8,33 @@
  ***************************************************************************/
 
 /**
+ * Same concept as the old solution, but uses
+ *  min(m, n) [b/c the gcd cannot be longer than the min(m,n)]
+ *  str.repeat(times) function to greatly simplify the code
+ */
+var gcdOfStrings = function (str1, str2) {
+    let res = '';
+    const m = str1.length, n = str2.length;
+
+    for (let i = 0; i < Math.min(m, n); i++) {
+        if (m % (i + 1) !== 0 || n % (i + 1) !== 0) continue;
+        let prefix = str1.substring(0, i + 1); // base, possible x
+        if (prefix.repeat(m / (i + 1)) !== str1) continue;
+        if (prefix.repeat(n / (i + 1)) !== str2) continue;
+
+        res = prefix;
+    }
+
+    return res;
+};
+
+
+/**
  * @param {string} str1
  * @param {string} str2
  * @return {string}
  */
-var gcdOfStrings = function (str1, str2) {
+var gcdOfStringsOld = function (str1, str2) {
     let res = '';
     const m = str1.length, n = str2.length;
 
