@@ -233,7 +233,7 @@ Supported list of problem categories for searching,
 | 348 | Design Tic-Tac-Toe $ | Medium | | |
 | 347 | [Top K Frequent Elements](src/heap/TopKFrequentElementsSol1.js), [Solution 2 MaxHeap](src/heap/TopKFrequentElementsSol2.js), [Solution 3 MinHeap](src/heap/TopKFrequentElementsSol3.js), [Solution 4](src/heap/TopKFrequentElementsSol4.js) | Medium | Sort, Heap, Bucket Sort | |
 | 346 | Moving Average from Data Stream $ | Easy | | |
-| 345 | [Reverse Vowels of a String](src/string/two_pointers/ReverseVowelsOfAStringSol1.js) | Easy | String, Two Pointers | |
+| 345 | [Reverse Vowels of a String](src/string/two_pointers/ReverseVowelsOfAStringSol1.js), [Solution 2](src/string/two_pointers/ReverseVowelsOfAStringSol2.js) | Easy | String, Two Pointers | |
 | 344 | Reverse String | Easy | | |
 | 343 | Integer Break | Medium | | |
 | 342 | [Power of Four](src/math/PowerOf4.java) | Easy | | |
