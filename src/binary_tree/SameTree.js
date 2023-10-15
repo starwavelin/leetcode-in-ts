@@ -11,11 +11,14 @@
  * @param {TreeNode} p
  * @param {TreeNode} q
  * @return {boolean}
+ * 
+ * Time Complexity: O(n) where n = min(NumOfNodesInP, NumOfNodesInQ)
+ * Space Complexity: O(log n), the depth of the recursion stack
  */
 var isSameTree = function(p, q) {
     if (!p && !q) { // if p is null and q is null
         return true;
-    } else if (!p && q || p && !q || p.val != q.val) {
+    } else if (!p && q || p && !q || p?.val != q?.val) {
         return false;
     }
     return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
