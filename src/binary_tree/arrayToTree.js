@@ -20,11 +20,8 @@ const arrayToTree = (arr, index = 0) => {
     const root = new TreeNode(arr[index]);
 
     // Divide
-    const leftIndex = 2 * index + 1;
-    const rightIndex = 2 * index + 2;
-
-    root.left = arrayToTree(arr, leftIndex);
-    root.right = arrayToTree(arr, rightIndex);
+    root.left = arrayToTree(arr, 2 * index + 1);
+    root.right = arrayToTree(arr, 2 * index + 2);
 
     // Conquer
     return root;
@@ -39,5 +36,8 @@ module.exports = {
 const arr1 = [1, null, 2];
 console.log(arrayToTree(arr1));
 
-const arr2 = [1, 2, 3, null, null, 4, 5];
+const arr2 = [1, null, 2, 3]; // Not legitimate, so the last 3 becomes not printable
 console.log(arrayToTree(arr2));
+
+// const arr3 = [1, 2, 3, null, null, 4, 5];
+// console.log(arrayToTree(arr3));
