@@ -459,7 +459,7 @@ Supported list of problem categories for searching,
 | 111 | Minimum Depth of Binary Tree | Easy | | |
 | 110 | Balanced Binary Tree | Easy | | |
 | 109 | Convert Sorted List to Binary Search Tree | Medium | | |
-| 108 | Convert Sorted Array to Binary Search Tree | Medium | | |
+| 108 | [Convert Sorted Array to Binary Search Tree](src/binary_tree/ConvertSortedArrayToBinarySearchTree.js) | Easy | | |
 | 107 | Binary Tree Level Order Traversal II | Easy | | |
 | 106 | Construct Binary Tree from Inorder and Postorder Traversal | Medium | | |
 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium | | |
