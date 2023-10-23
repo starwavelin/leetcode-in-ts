@@ -352,7 +352,7 @@ Supported list of problem categories for searching,
 | 235 | Lowest Common Ancestor of a Binary Search Tree |Medium |  |  |
 | 234 | Palindrome Linked List | Easy |  |  |
 | 233 | Number of Digit One | Medium |  |  |
-| 232 | [Implement Queue using Stacks](src/stack/ImplementQueueUsingStacks.ts)  | Easy | Stack |  |
+| 232 | [Implement Queue using Stacks](src/stack/ImplementQueueUsingStacks.ts), [Solution 2](src/stack/ImplementQueueUsingStacksSol2.js)  | Easy | Stack |  |
 | 231 | Power of Two | Easy |  |  |
 | 230 | Kth Smallest Element in a BST | Medium |  |  |
 | 229 | Majority Element II | Medium | | |
