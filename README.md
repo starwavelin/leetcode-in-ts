@@ -69,6 +69,7 @@ Supported list of problem categories for searching,
 **Selective Problems 1,001 - 1,500**
 | No. | Problem | Difficulty | Tags | Videos |
 | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------ | ------ |
+| 1379 | [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](src/binary_tree/FindNodeInAClonedTree.js) | Easy | Binary Tree | |
 | 1071 | [Greatest Common Divisor of Strings](src/string/GreatestCommonDivisorOfStringsSol1.js), [Solution 2](src/string/GreatestCommonDivisorOfStringsSol2.js), [Solution 3](src/string/GreatestCommonDivisorOfStringsSol3.js) | Easy | String, Math | |
 | 1046 | [Last Stone Weight](src/heap/LastStoneWeight.js) | Easy | Heap | |
 | 1021 | [Remove Outermost Parentheses](src/stack/RemoveOutermostParentheses.ts) | Easy | Stack | |
