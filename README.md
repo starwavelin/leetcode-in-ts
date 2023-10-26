@@ -470,7 +470,7 @@ Supported list of problem categories for searching,
 | 101 | [Symmetric Tree](src/binary_tree/SymmetricTree.js) | Easy | Binary Tree | |
 | 100 | [Same Tree](src/binary_tree/SameTree.js) | Easy | Binary Tree | |
 | 99  | Recover Binary Search Tree | Hard | | |
-| 98  | Validate Binary Search Tree | Medium | | |
+| 98  | [Validate Binary Search Tree](src/binary_tree/ValidateBinarySearchTreeSol1.js), [Solution 2](src/binary_tree/ValidateBinarySearchTreeSol2.js) | Medium | Binary Tree, DFS | |
 | 97  | Interleaving String | Hard | | |
 | 96  | Unique Binary Search Trees | Medium | | |
 | 95  | Unique Binary Search Trees II | Medium | | |
