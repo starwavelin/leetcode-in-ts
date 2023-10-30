@@ -88,6 +88,7 @@ Supported list of problem categories for searching,
 | 704 | [Binary Search](src/binary_search/BinarySearch1.js), [Version 2](src/binary_search/BinarySearch2.js), [Version 3](src/binary_search/BinarySearch3.js) | Easy | Binary Search | |
 | 621 | [Task Schedule](src/heap/TaskScheduleSol1.js), [Solution 2](src/heap/TaskScheduleSol2.js) | Medium | Heap, Hash, Sort, Math | |
 | 605 | [Can Place Flower](src/array/greedy/CanPlaceFlower.js) | Easy | Array, Greedy | |
+| 572 | [Subtree of Another Tree](src/binary_tree/SubtreeOfAnotherTree.js) | Easy | Binary Tree, DFS | |
 | 567 | [Permutation in String](src/string/sliding_window/PermutationInStringSol1.js), [Solution 2](src/string/sliding_window/PermutationInStringSol2.js) | Medium | Hash, Sliding Window | |
 | 503 | [Next Greater Element II](src/stack/NextGreaterElement2.ts) | Easy | Stack | |
 | 500 | Keyboard Row | Easy | | |
@@ -468,7 +469,7 @@ Supported list of problem categories for searching,
 | 103 | Binary Tree Zigzag Level Order Traversal | Medium | | |
 | 102 | Binary Tree Level Order Traversal | Easy | | |
 | 101 | [Symmetric Tree](src/binary_tree/SymmetricTree.js) | Easy | Binary Tree | |
-| 100 | [Same Tree](src/binary_tree/SameTree.js) | Easy | Binary Tree | |
+| 100 | [Same Tree](src/binary_tree/SameTreeSol1.js), [Solution 2](src/binary_tree/SameTreeSol2.js) | Easy | Binary Tree | |
 | 99  | Recover Binary Search Tree | Hard | | |
 | 98  | [Validate Binary Search Tree](src/binary_tree/ValidateBinarySearchTreeSol1.js), [Solution 2](src/binary_tree/ValidateBinarySearchTreeSol2.js) | Medium | Binary Tree, DFS | |
 | 97  | Interleaving String | Hard | | |
