@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "practice of leetcode in typescript",
     "main": "index.js",
+    "type": "module",
     "devDependencies": {
         "@datastructures-js/priority-queue": "^4.1.2",
         "@types/jest": "27.5.1",
