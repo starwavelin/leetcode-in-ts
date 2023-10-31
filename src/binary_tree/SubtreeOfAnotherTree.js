@@ -7,7 +7,7 @@
  * meta        : tag-binary-tree, tag-dfs, tag-meta
  ***************************************************************************/
 
-import { arrayToTree } from './arrayToTree.js';
+import { arrayToTree } from './arrayToTreeMyStyle.js';
 
 var isSubtree = function(root, subRoot) {
     if (!root) {
