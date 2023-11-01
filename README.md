@@ -350,7 +350,7 @@ Supported list of problem categories for searching,
 | 238 | [Product of Array Except Self](src/math/ProductOfArrayExceptSelfSol1.js), [Solution 2](src/math/ProductOfArrayExceptSelfSol2.js) | Medium | Math, Array | |
 | 237 | Delete Node in a Linked List | Easy | | |
 | 236 | Lowest Common Ancestor of a Binary Tree | Medium | | |
-| 235 | Lowest Common Ancestor of a Binary Search Tree |Medium |  |  |
+| 235 | [Lowest Common Ancestor of a Binary Search Tree](src/binary_tree/LCAofBSTSol1.js), [Solution 2](src/binary_tree/LCAofBSTSol2.js) |Medium | Binary Search Tree, DFS |  |
 | 234 | Palindrome Linked List | Easy |  |  |
 | 233 | Number of Digit One | Medium |  |  |
 | 232 | [Implement Queue using Stacks](src/stack/ImplementQueueUsingStacks.ts), [Solution 2](src/stack/ImplementQueueUsingStacksSol2.js)  | Easy | Stack |  |
