@@ -359,7 +359,7 @@ Supported list of problem categories for searching,
 | 229 | Majority Element II | Medium | | |
 | 228 | Summary Ranges | Easy | | |
 | 227 | Basic Calculator II | Medium | | |
-| 226 | Invert Binary Tree | Easy | | |
+| 226 | [Invert Binary Tree](src/binary_tree/InvertBinaryTreeSol1.js), [Solutioin 2](src/binary_tree/InvertBinaryTreeSol2.js) | Easy | Binary Tree, Divide and Conquer | |
 | 225 | [Implement Stack using Queues](src/stack/ImplementStackUsingQueues.ts) | Medium | Queue | |
 | 224 | Basic Calculator | Medium | | |
 | 223 | Rectangle Area | Easy | | |
