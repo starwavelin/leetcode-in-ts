@@ -33,6 +33,6 @@ const invertTreeVar2 = (root) => {
     if (!root) {
         return null;
     }
-    [root.left, root.right] = [invertTree(root.right), invertTree(root.left)];
+    [root.left, root.right] = [invertTreeVar2(root.right), invertTreeVar2(root.left)];
     return root;
 }
