@@ -349,7 +349,7 @@ Supported list of problem categories for searching,
 | 239 | [Sliding Window Maximum](src/array/sliding_window/SlidingWindowMaximumSol1.js), [Solution 2](src/array/sliding_window/SlidingWindowMaximumSol2.js) | Hard | Sliding Window, Deque |  |
 | 238 | [Product of Array Except Self](src/math/ProductOfArrayExceptSelfSol1.js), [Solution 2](src/math/ProductOfArrayExceptSelfSol2.js) | Medium | Math, Array | |
 | 237 | Delete Node in a Linked List | Easy | | |
-| 236 | Lowest Common Ancestor of a Binary Tree | Medium | | |
+| 236 | [Lowest Common Ancestor of a Binary Tree](src/binary_tree/LCAofBinaryTree1.js) | Medium | Binary Tree, Divide and Conquer | |
 | 235 | [Lowest Common Ancestor of a Binary Search Tree](src/binary_tree/LCAofBSTSol1.js), [Solution 2](src/binary_tree/LCAofBSTSol2.js) |Medium | Binary Search Tree, DFS |  |
 | 234 | Palindrome Linked List | Easy |  |  |
 | 233 | Number of Digit One | Medium |  |  |
