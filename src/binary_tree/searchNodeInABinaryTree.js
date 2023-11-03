@@ -16,7 +16,7 @@ const searchNode = (root, p) => {
         return false;
     }
 
-    if (root.val == p.val) {
+    if (root === p) {
         return true;
     }
 
@@ -27,13 +27,13 @@ const searchNode = (root, p) => {
  * Tests
  */
 const tree1 = arrayToTree([2, 1, 3]);
-const p1 = new TreeNode(1);
+const p1 = tree1.left;
 console.log(searchNode(tree1, p1)); // true
 
 const tree2 = arrayToTree([2, 1, 3, null, 5]);
-const p2 = new TreeNode(5);
+const p2 = tree2.left.right;
 console.log(searchNode(tree2, p2)); // true
-const p2prime = new TreeNode(3);
+const p2prime = tree2.right;
 console.log(searchNode(tree2, p2prime)); // true
 
 const p3 = new TreeNode(13);
