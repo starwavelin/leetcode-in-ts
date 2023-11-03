@@ -67,7 +67,7 @@ Supported list of problem categories for searching,
 **Selective Problems 1,501 - 2,000**
 | No. | Problem | Difficulty | Tags | Videos |
 | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------ | ------ |
-| 1644 | [Lowest Common Ancestor of a Binary Tree II](src/binary_tree/LCAofBinaryTree2Sol1.js) | Medium | Binary Tree | |
+| 1644 | [Lowest Common Ancestor of a Binary Tree II](src/binary_tree/LCAofBinaryTree2Sol1.js), [Solution 2](src/binary_tree/LCAofBinaryTree2Sol2.js) | Medium | Binary Tree | |
 
 **Selective Problems 1,001 - 1,500**
 | No. | Problem | Difficulty | Tags | Videos |
