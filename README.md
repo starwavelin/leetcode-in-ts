@@ -381,7 +381,7 @@ Supported list of problem categories for searching,
 | 209 | Minimum Size Subarray Sum | Medium | | |
 | 208 | Implement Trie (Prefix Tree) | Medium | | |
 | 207 | [Course Schedule](src/graph/CourseSchedule.ts) | Medium | Graph, Topological Sort | |
-| 206 | [Reverse Linked List](src/linked_list/ReverseLinkedListSol1.js) | Easy | Linked List | |
+| 206 | [Reverse Linked List](src/linked_list/ReverseLinkedList1Sol1.js) | Easy | Linked List | |
 | 205 | Isomorphic Strings | Easy | | |
 | 204 | Count Primes | Easy | | |
 | 203 | Remove Linked List Elements | Easy | | |
@@ -489,7 +489,7 @@ Supported list of problem categories for searching,
 | 85  | Maximal Rectangle | Hard | | |
 | 84  | Largest Rectangle in Histogram | Hard | | |
 | 83  | [Remove Duplicates from Sorted List](src/linked_list/RemoveDuplicatesFromSortedList1.js) | Easy | Linked List | |
-| 82  | Remove Duplicates from Sorted List II | Medium | Linked List | |
+| 82  | [Remove Duplicates from Sorted List II](src/linked_list/RemoveDuplicatesFromSortedList2.js) | Medium | Linked List | |
 | 81  | Search in Rotated Sorted Array II | Medium | | |
 | 80  | [Remove Duplicates from Sorted Array II](src/array/two_pointers/RemoveDuplicatesFromSortedArray2.ts) | Medium | Two Pointers | |
 | 79  | Word Search | Medium | | |

@@ -27,3 +27,21 @@ const remvoeDuplicates = (head) => {
     }
     return head;
 }
+
+/**
+ * Can also use one help var to re-write the implementation above
+ */
+const remvoeDuplicatesSol2 = (head) => {
+    if (!head || !head.next) {
+        return head;
+    }
+    let pre = head;
+    while (pre.next) {
+        if (pre.val === pre.next.val) {
+            pre.next = pre.next.next;
+        } else {
+            pre = pre.next;
+        }
+    }
+    return head;
+}
