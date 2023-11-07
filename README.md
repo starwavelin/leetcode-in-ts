@@ -381,7 +381,7 @@ Supported list of problem categories for searching,
 | 209 | Minimum Size Subarray Sum | Medium | | |
 | 208 | Implement Trie (Prefix Tree) | Medium | | |
 | 207 | [Course Schedule](src/graph/CourseSchedule.ts) | Medium | Graph, Topological Sort | |
-| 206 | [Reverse Linked List](src/linked_list/ReverseLinkedList1Sol1.js) | Easy | Linked List | |
+| 206 | [Reverse Linked List](src/linked_list/ReverseLinkedList1Sol1.js), [Solution 2](src/linked_list/ReverseLinkedList1Sol2.js) | Easy | Linked List | |
 | 205 | Isomorphic Strings | Easy | | |
 | 204 | Count Primes | Easy | | |
 | 203 | Remove Linked List Elements | Easy | | |
@@ -479,7 +479,7 @@ Supported list of problem categories for searching,
 | 95  | Unique Binary Search Trees II | Medium | | |
 | 94  | Binary Tree Inorder Traversal | Medium | | |
 | 93  | Restore IP Addresses | Medium | | |
-| 92  | Reverse Linked List II | Medium | | |
+| 92  | [Reverse Linked List II](src/linked_list/ReverseLinkedList2Sol1.js) | Medium | Linked List, Two Pointers | |
 | 91  | Decode Ways | Medium | | |
 | 90  | Subsets II | Medium | | |
 | 89  | Gray Code | Medium | | |
