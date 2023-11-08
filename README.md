@@ -381,7 +381,7 @@ Supported list of problem categories for searching,
 | 209 | Minimum Size Subarray Sum | Medium | | |
 | 208 | Implement Trie (Prefix Tree) | Medium | | |
 | 207 | [Course Schedule](src/graph/CourseSchedule.ts) | Medium | Graph, Topological Sort | |
-| 206 | [Reverse Linked List](src/linked_list/ReverseLinkedList1Sol1.js), [Solution 2](src/linked_list/ReverseLinkedList1Sol2.js) | Easy | Linked List | |
+| 206 | [Reverse Linked List](src/linked_list/ReverseLinkedList1Sol1.js), [Solution 2](src/linked_list/ReverseLinkedList1Sol2.js), [Solution 3](src/linked_list/ReverseLinkedList1Sol3.js) | Easy | Linked List | |
 | 205 | Isomorphic Strings | Easy | | |
 | 204 | Count Primes | Easy | | |
 | 203 | Remove Linked List Elements | Easy | | |
