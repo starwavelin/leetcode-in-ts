@@ -45,3 +45,25 @@ const remvoeDuplicatesSol2 = (head) => {
     }
     return head;
 }
+
+/**
+ * Can also use the idea that:
+ *  Once I find duplications, I move the cur pointer to the first non-repeating one and
+ * then delete the dups in one setting.
+ */
+var deleteDuplicatesSol3 = function(head) {
+    if (!head || !head.next) {
+        return head;
+    }
+    let pre = head, cur = head.next;
+    while (cur) {
+        if (pre.val == cur.val) {
+            cur = cur.next; // move cur but delete later
+        } else { // deletion or simply catchup
+            pre.next = cur;
+            pre = cur;
+        }
+    }
+    pre.next = cur; // handle the case of removing tailing dups
+    return head;
+};
