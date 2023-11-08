@@ -485,7 +485,7 @@ Supported list of problem categories for searching,
 | 89  | Gray Code | Medium | | |
 | 88  | [Merge Sorted Array](src/array/two_pointers/MergeSortedArrays.ts) | Easy | Array | [讲解](https://youtu.be/eCtTFp6k8Ls) |
 | 87  | Scramble String | Hard | | |
-| 86  | Partition List | Medium | | |
+| 86  | [Partition List](src/linked_list/PartitionList.js) | Medium | Linked List | |
 | 85  | Maximal Rectangle | Hard | | |
 | 84  | Largest Rectangle in Histogram | Hard | | |
 | 83  | [Remove Duplicates from Sorted List](src/linked_list/RemoveDuplicatesFromSortedList1.js) | Easy | Linked List | |
