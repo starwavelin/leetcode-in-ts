@@ -479,7 +479,7 @@ Supported list of problem categories for searching,
 | 95  | Unique Binary Search Trees II | Medium | | |
 | 94  | Binary Tree Inorder Traversal | Medium | | |
 | 93  | Restore IP Addresses | Medium | | |
-| 92  | [Reverse Linked List II](src/linked_list/ReverseLinkedList2Sol1.js) | Medium | Linked List, Two Pointers | |
+| 92  | [Reverse Linked List II](src/linked_list/ReverseLinkedList2Sol1.js), [Solution 2](src/linked_list/ReverseLinkedList2Sol2.js) | Medium | Linked List, Two Pointers | |
 | 91  | Decode Ways | Medium | | |
 | 90  | Subsets II | Medium | | |
 | 89  | Gray Code | Medium | | |
