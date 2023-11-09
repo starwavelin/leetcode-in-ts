@@ -84,6 +84,7 @@ Supported list of problem categories for searching,
 | 981 | [Time Based Key-Value Store](src/data_structure/TimeBasedKeyValueStore.js), [TS 解](src/data_structure/TimeBasedKeyValueStore.ts) | Medium | Hash, Binary Search, Data Structure | |
 | 973 | [K Closest Points to Origin](src/heap/KClosestPointsToOriginSol1.js), [wip Solution 2](src/heap/KClosestPointsToOriginSol2.js) | Medium | Heap | |
 | 905 | [Sort Array By Parity](src/array/two_pointers/SortArrayByParity.ts) | Easy | Two Pointers, Array, Sort | |
+| 876 | [Middle of the Linked List](src/linked_list/MiddleOfTheLinkedList.js) | Easy | Linked List, Two Pointers | |
 | 875 | [Koko eating bananas](src/binary_search/KokoEatingBananas.js) | Medium | Binary Search | |
 | 852 | [Peak Index in a Mountain Array](src/binary_search/PeakIndexInAMountainArray.js) | Medium | Binary Search | |
 | 739 | [Daily Temperatures](src/stack/DailyTemperatures.ts) | Medium | Stack | |
