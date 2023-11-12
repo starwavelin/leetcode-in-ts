@@ -7,22 +7,51 @@
  * meta        : tag-heap
  ***************************************************************************/
 
-const { MaxPriorityQueue } = require('@datastructures-js/priority-queue');
+import { PriorityQueue } from '@datastructures-js/priority-queue';
+
+const kClosest = (points, k) => {
+    // define maxHeap first
+    const maxHeap = new PriorityQueue((a, b) => b.dis - a.dis); // implies that the obj inserted into heap has a prop named dis
+    for (const point of points) {
+        const dis = point[0] ** 2 + point[1] ** 2; // calculate distance between point and origin, ignore the sqrt
+        const obj = { point, dis };
+        if (maxHeap.size() < k) {
+            maxHeap.enqueue(obj);
+        } else if (maxHeap.front().dis > dis) { // replace the head with the smaller distance obj
+            maxHeap.dequeue();
+            maxHeap.enqueue(obj);
+        }
+    }
+    const res = [];
+    while (!maxHeap.isEmpty()) {
+        res.push(maxHeap.dequeue().point);
+    }
+    return res;
+}
+
+/**
+ * Tests
+ *  -- kClosest, using latest data structure version
+ */
+console.log(kClosest([[1,3],[-2,2]], 1)); // expect [-2,2]
+console.log(kClosest([[3,3],[5,-1],[-2,4]], 2)); // expect [[-2,4],[3,3]]
 
 /**
  * @param {number[][]} points
  * @param {number} k
  * @return {number[][]}
  */
-var kClosest = function(points, k) {
+var kClosestV4DS = function(points, k) {
     const heap = new MaxPriorityQueue({priority: x => x.dis}); // max heap
     for (const point of points) {
         const dis = point[0] ** 2 + point[1] ** 2; // distance before sqrt
-        const el = { dis, point };
+        const obj = { point, dis };
         if (heap.size() < k) {
-            heap.enqueue(el);
+            heap.enqueue(obj);
         } else if (dis < heap.front().element.dis) {
-            heap.enqueue(el);
+            // Within heap.front(), we have { element: { point: point, dis: dis}, priority: dis }
+            // The reason we need to put { point, dis } as an obj into heap is b/c dis is not a natural prop of point
+            heap.enqueue(obj);
             heap.dequeue();
         }
     }    
@@ -32,11 +61,6 @@ var kClosest = function(points, k) {
     }
     return res;
 };
-
-// Test kClosest
-// console.log(kClosest([[1,3],[-2,2]], 1)); // expect [-2,2]
-// console.log(kClosest([[3,3],[5,-1],[-2,4]], 2)); // expect [[-2,4],[3,3]]
-
 
 
 var kClosestHandImplHeap = function(points, k) {
@@ -120,5 +144,5 @@ class Heap {
 }
 
 // Test kClosestHandImplHeap
-console.log(kClosestHandImplHeap([[1,3],[-2,2]], 1)); // expect [-2,2]
-console.log(kClosestHandImplHeap([[3,3],[5,9],[-2,4]], 2)); // expect [[-2,4],[3,3]]
+// console.log(kClosestHandImplHeap([[1,3],[-2,2]], 1)); // expect [-2,2]
+// console.log(kClosestHandImplHeap([[3,3],[5,9],[-2,4]], 2)); // expect [[-2,4],[3,3]]

@@ -549,7 +549,7 @@ Supported list of problem categories for searching,
 | 26  | [Remove Duplicates from Sorted Array](src/array/two_pointers/RemoveDuplicatesFromSortedArray.ts) | Easy | Two Pointers | |
 | 25  | Reverse Nodes in k-Group | Hard | | |
 | 24  | Swap Nodes in Pairs | Medium | | |
-| 23  | Merge k Sorted Lists | Hard | | |
+| 23  | [Merge k Sorted Lists](src/linked_list/MergeKSortedLists.js) | Hard | Linked List, Heap | |
 | 22  | [Generate Parentheses](src/backtracking/GenerateParenthesisSol1.js) | Medium | Backtracking | |
 | 21  | [Merge Two Sorted Lists](src/linked_list/MergeTwoSortedLists.js) | Easy | Linked List, Two Pointers | |
 | 20  | [Valid Parentheses](src/stack/ValidParentheses.ts) | Easy | Stack | |

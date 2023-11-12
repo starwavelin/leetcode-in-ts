@@ -40,52 +40,44 @@ const insertNode = (head, newNode) => {
     return head;
 }
 
-const printList = (head) => {
-    const res = [];
-    while (head) {
-        res.push(head.val);
-        head = head.next;
-    }
-    return res;
-}
-
 /**
  * Tests
  */
 
 import { ListNode } from './ListNode.js';
+import { printList } from './printList.js';
 
 const node1 = new ListNode(3);
-console.log(printList(insertNode(null, node1))); // expect [3]
+printList(insertNode(null, node1)); // expect [3]
 
 const ll2Head = new ListNode(2); 
 ll2Head.next = new ListNode(5);
 const node2 = new ListNode(1);
-console.log(printList(insertNode(ll2Head, node2))); // expect [1, 2, 5]
+printList(insertNode(ll2Head, node2)); // expect [1, 2, 5]
 
 const ll3Head = new ListNode(2); 
 ll3Head.next = new ListNode(5);
 const node3 = new ListNode(2);
-console.log(printList(insertNode(ll3Head, node3))); // expect [2, 2, 5]
+printList(insertNode(ll3Head, node3)); // expect [2, 2, 5]
 
 const ll4Head = new ListNode(2);
 ll4Head.next = new ListNode(5);
 const node4 = new ListNode(4);
-console.log(printList(insertNode(ll4Head, node4))); // expect [2, 4, 5]
+printList(insertNode(ll4Head, node4)); // expect [2, 4, 5]
 
 const ll5Head = new ListNode(2);
 ll5Head.next = new ListNode(5);
 const node5 = new ListNode(5);
-console.log(printList(insertNode(ll5Head, node5))); // expect [2, 5, 5]
+printList(insertNode(ll5Head, node5)); // expect [2, 5, 5]
 
 const ll6Head = new ListNode(2);
 ll6Head.next = new ListNode(5);
 const node6 = new ListNode(9);
-console.log(printList(insertNode(ll6Head, node6))); // expect [2, 5, 9]
+printList(insertNode(ll6Head, node6)); // expect [2, 5, 9]
 
 const ll7Head = new ListNode(2);
 ll7Head.next = new ListNode(5);
 ll7Head.next.next = new ListNode(18);
 ll7Head.next.next.next = new ListNode(33);
 const node7 = new ListNode(14);
-console.log(printList(insertNode(ll7Head, node7))); // expect [2, 5, 14, 18, 33]
+printList(insertNode(ll7Head, node7)); // expect [2, 5, 14, 18, 33]
