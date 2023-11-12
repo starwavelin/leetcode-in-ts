@@ -551,7 +551,7 @@ Supported list of problem categories for searching,
 | 24  | Swap Nodes in Pairs | Medium | | |
 | 23  | Merge k Sorted Lists | Hard | | |
 | 22  | [Generate Parentheses](src/backtracking/GenerateParenthesisSol1.js) | Medium | Backtracking | |
-| 21  | Merge Two Sorted Lists | Easy | | |
+| 21  | [Merge Two Sorted Lists](src/linked_list/MergeTwoSortedLists.js) | Easy | Linked List, Two Pointers | |
 | 20  | [Valid Parentheses](src/stack/ValidParentheses.ts) | Easy | Stack | |
 | 19  | Remove Nth Node From End of List | Easy | Linked List | |
 | 18  | [4Sum](src/array/two_pointers/FourSum.js) | Medium | Sort, DFS | |
