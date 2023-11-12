@@ -30,10 +30,12 @@
  */
 const partition = (nums, k) => {
     const n = nums.length;
-    let i = 0, j = 1;
+    let i = 0, j = 0; // i - slow, j - fast; j should also start from 0th index
     while (j < n) {
         if (nums[j] < k) {
-            [nums[i], nums[j]] = [nums[j], nums[i]];
+            if (nums[j] !== nums[i]) {
+                [nums[i], nums[j]] = [nums[j], nums[i]];
+            }
             i++;
         }
         j++;
@@ -45,10 +47,14 @@ const partition = (nums, k) => {
  * Tests
  */
 const nums1 = [16, 3, 9, 7, 4, 12], k1 = 8;
-console.log(partition(nums1, k1));
+console.log(partition(nums1, k1)); // expect [3, 7, 4, 16, 9, 12]
 
 const nums2 = [18, 3], k2 = 10;
-console.log(partition(nums2, k2));
+console.log(partition(nums2, k2)); // expect [3, 18]
 
 const nums3 = [17, 9, 23, 8, 5], k3 = 8;
-console.log(partition(nums3, k3));
+console.log(partition(nums3, k3)); // expect [5, 9, 23, 8, 17]
+
+// Test Case 4 shows why j cannot start from index 1.
+const nums4 = [2, 9, 23, 8, 5], k4 = 8;
+console.log(partition(nums4, k4)); // expect [2, 5, 23, 8, 9]

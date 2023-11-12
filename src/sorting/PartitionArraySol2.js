@@ -58,3 +58,6 @@ console.log(partition(nums2, k2));
 
 const nums3 = [17, 9, 23, 8, 5], k3 = 8;
 console.log(partition(nums3, k3));
+
+const nums4 = [2, 9, 23, 8, 5], k4 = 8;
+console.log(partition(nums4, k4)); // expect [ 2, 5, 23, 8, 9 ]
