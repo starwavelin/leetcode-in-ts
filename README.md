@@ -424,7 +424,7 @@ Supported list of problem categories for searching,
 | 151 | [Reverse Words in a String](src/string/two_pointers/ReverseWordsInAString1Sol1.js) | Medium | Two Pointers | [讲解](https://youtu.be/54uU5Zhzorw) |
 | 150 | [Evaluate Reverse Polish Notation](src/stack/EvaluateReversePolishNotation.ts), [JS 解](src/stack/EvaluateReversePolishNotation.js) | Medium | Stack | |
 | 149 | Max Points on a Line | Hard | | |
-| 148 | Sort List | Medium | | |
+| 148 | [Sort List](src/linked_list/SortListSol1.js) | Medium | Linked List | |
 | 147 | Insertion Sort List | Medium | | |
 | 146 | [LRU Cache](src/data_structure/LRUCacheSol1.ts), Solution 2 | Hard | Map, LinkedList | |
 | 145 | Binary Tree Postorder Traversal | Hard | | |
