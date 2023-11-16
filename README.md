@@ -553,7 +553,7 @@ Supported list of problem categories for searching,
 | 22  | [Generate Parentheses](src/backtracking/GenerateParenthesisSol1.js) | Medium | Backtracking | |
 | 21  | [Merge Two Sorted Lists](src/linked_list/MergeTwoSortedLists.js) | Easy | Linked List, Two Pointers | |
 | 20  | [Valid Parentheses](src/stack/ValidParentheses.ts) | Easy | Stack | |
-| 19  | Remove Nth Node From End of List | Easy | Linked List | |
+| 19  | [Remove Nth Node From End of List](src/linked_list/RemoveNthNodeFromEndOfList.js) | Medium | Linked List | |
 | 18  | [4Sum](src/array/two_pointers/FourSum.js) | Medium | Sort, DFS | |
 | 17  | Letter Combinations of a Phone Number | Medium | | |
 | 16  | [3Sum Closest](src/array/two_pointers/ThreeSumClosest.js) | Medium | Sort | |
