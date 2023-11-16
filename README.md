@@ -431,7 +431,7 @@ Supported list of problem categories for searching,
 | 144 | Binary Tree Preorder Traversal | Medium | | |
 | 143 | [Reorder List](src/linked_list/ReorderList.js) | Medium | | |
 | 142 | Linked List Cycle II | Medium | | |
-| 141 | Linked List Cycle | Medium | | |
+| 141 | [Linked List Cycle](src/linked_list/LinkedListCycle1.js) | Easy | Two Pointers | |
 | 140 | Word Break II | Hard | | |
 | 139 | Word Break | Medium | | |
 | 138 | [Copy List with Random Pointer](src/linked_list/CopyListWithRandomPointer.ts) | Medium | Linked List, Hash | |
