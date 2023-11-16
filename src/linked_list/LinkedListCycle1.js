@@ -14,11 +14,17 @@
 var hasCycle = function(head) {
     let fast = head, slow = head;
     while (fast && fast.next) {
-        fast = fast.next.next;
+        fast = fast.next.next;        
+        slow = slow.next;
+
+        /* Compare the slow and fast pointers after they both have moved their steps.
+            Doing so will help LC 142 which wants us to find the entrance node of the cycle.
+            Because doing so illustrates that the two pointers may not meet at the entrance, 
+            ie. [3, 2, 0, 4] where 4 points to 2. They will meet at Node 4.
+        */
         if (fast === slow) {
             return true;
         }
-        slow = slow.next;
     }
     return false;
 };
