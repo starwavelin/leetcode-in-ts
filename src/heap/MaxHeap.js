@@ -66,6 +66,10 @@ const peak = (heap) => {
     return heap[1];
 }
 
+const isEmpty = (heap) => {
+    return heap.length === 1;
+}
+
 
 /**
  * Testing

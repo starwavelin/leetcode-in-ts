@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Debug",
             "skipFiles": ["<node_internals>/**"],
-            "program": "${workspaceFolder}/src/binary_tree/LCAofBinaryTree1.js",
+            "program": "${workspaceFolder}/src/heap/PriorityOfProcessesSol2.js",
             "outFiles": ["${workspaceFolder}/**/*.js"]
         }
     ]
