@@ -15,12 +15,6 @@ import { PriorityQueue } from '@datastructures-js/priority-queue';
  * @return {number[]}
  */
 const process = (priority) => {
-    // Form the {val, idx} object array from priority array
-    const objs = [];
-    for (let i = 0; i < priority.length; i++) {
-        objs.push({ val: priority[i], idx: i });
-    }
-
     /**
      * Form a maxheap, the comparator is:
      * the larger value should be the top; 
@@ -40,9 +34,9 @@ const process = (priority) => {
         }
     });
 
-    // put objects into heap
-    for (let o of objs) {
-        maxHeap.enqueue(o);
+    // put { val: priority[i], idx: i } into heap
+    for (let i = 0; i < priority.length; i++) {
+        maxHeap.enqueue({ val: priority[i], idx: i });
     }
 
     let res = []; // stores non-identical obj first, then the final result
