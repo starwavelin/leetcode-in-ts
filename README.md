@@ -217,7 +217,7 @@ Supported list of problem categories for searching,
 | 370 | Range Addition $ | Medium | | |
 | 369 | Plus One Linked List $ | Medium | | |
 | 368 | Largest Divisible Subset | Medium | | |
-| 367 | Valid Perfect Square | Medium | | |
+| 367 | [Valid Perfect Square](src/math/ValidPerfectSquare.js) | Easy | Math, Binary Search | |
 | 366 | Find Leaves of Binary Tree $ | Medium | | |
 | 365 | Water and Jug Problem | Medium | | |
 | 364 | Nested List Weight Sum II $ | Medium | | |
