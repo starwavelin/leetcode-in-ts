@@ -7,6 +7,12 @@
  * meta        : tag-dp, tag-amazon
  ****************************************************************************/
 
+/**
+ * The Dynamic Programming solution is WIP
+ * 
+ * @param {number[]} nums 
+ * @returns 
+ */
 const countRemainingItems = (nums) => {
     nums.sort((a, b) => a - b);
     let l = 0, r = nums.length - 1;

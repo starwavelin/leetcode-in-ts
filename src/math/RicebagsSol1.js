@@ -21,7 +21,7 @@ const maxSize = (bags) => {
         let prevBag = Math.sqrt(bag);
 
         // Found a new base number for the sequence
-        if (Math.floor(bag / prevBag) != prevBag || !map.has(prevBag)) {
+        if (!map.has(prevBag)) { // Math.floor(bag / prevBag) != prevBag ||
             map.set(bag, 1);
             continue;
         }
