@@ -46,7 +46,7 @@ const getRoot = (num) => {
         const mid = (l + r) >> 1;
         if (num / mid == mid) { // happy case: found sqrt
             return mid;
-        } else if (Math.floor(num / mid) < mid) { // meaning mid is too large
+        } else if (num / mid < mid) { // meaning mid is too large
             r = mid - 1;
         } else {
             l = mid + 1;
@@ -67,7 +67,10 @@ const num3 = 25;
 console.log(getRoot(num3)); // expect 5
 const num4 = 33;
 console.log(getRoot(num4)); // expect -1
-
+const num5 = 8;
+console.log(getRoot(num5)); // expect -1
+const num6 = 10;
+console.log(getRoot(num6)); // expect -1
 
 
 /**
