@@ -84,3 +84,39 @@ console.log( minEatingSpeedSol2([3,6,7,11], 27) ); // should return 1
 console.log( minEatingSpeedSol2([3,6,7,11], 8) ); // should return 4
 console.log( minEatingSpeedSol2([30,11,23,4,20], 5) ); // should return 30;
 console.log( minEatingSpeedSol2([30,11,23,4,20], 6) ); // should return 23;
+
+
+/**
+ * Sol 2 optimized
+ * 
+ */
+var minEatingSpeedSol2Optimized = function(piles, h) {
+    // get the highest eating speed
+    let r = Math.max(...piles); // O(n)
+    console.log(`r is ${r}`);
+    let l = 1;
+
+    // Binary search
+    while (l + 1 < r) {
+        const mid = (l + r) >> 1; 
+        if (calcHours2(piles, mid) > h) { // meaning speed mid is too slow
+            l = mid;
+        } else {
+            r = mid;
+        }
+    }
+    if (calcHours2(piles, l) <= h) {
+        return l;
+    } else if (calcHours2(piles, r) <= h) {
+        return r;
+    }
+    return -1;
+};
+
+const calcHours2 = (piles, speed) => {
+    let hours = 0;
+    for (let i = 0; i < piles.length; i++) {
+        hours += Math.ceil(piles[i] / speed);
+    }
+    return hours;
+}
