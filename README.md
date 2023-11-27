@@ -434,7 +434,7 @@ Supported list of problem categories for searching,
 | 141 | [Linked List Cycle](src/linked_list/LinkedListCycle1.js) | Easy | Two Pointers | |
 | 140 | Word Break II | Hard | | |
 | 139 | Word Break | Medium | | |
-| 138 | [Copy List with Random Pointer](src/linked_list/CopyListWithRandomPointer.ts) | Medium | Linked List, Hash | |
+| 138 | [Copy List with Random Pointer](src/linked_list/CopyListWithRandomPointer.ts), [JS 解1](src/linked_list/CopyListWithRandomPointerSol1.js) | Medium | Linked List, Hash | |
 | 137 | Single Number II | Medium | Bit | [讲解](https://youtu.be/puXcQpwgcD0) |
 | 136 | Single Number | Medium | Bit, Hash | [讲解](https://youtu.be/7xU7g04FJHw)                                          |
 | 135 | [Candy](src/array/greedy/Candy.ts) | Hard | Greedy, Array, Math | |
