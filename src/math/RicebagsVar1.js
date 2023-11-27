@@ -34,6 +34,7 @@ const getMaxSequence = (bags) => {
         }
 
         map.set(bag, map.get(prevBag).concat(bag)); // array.push() returns the count of the new size, NOT the new array. This case we'd prefer arr.concat(item)
+
         const len = map.get(bag).length;
         if (len > maxLen) {
             maxLen = len;

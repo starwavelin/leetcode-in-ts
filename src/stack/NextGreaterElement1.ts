@@ -4,7 +4,7 @@
  * Date        : June 25, 2022
  * Author      : @codingbro
  *
- * meta        : tag-hash, tag-stack, tag-array
+ * meta        : tag-hash, tag-stack, tag-array, tag-monotonic-stack
  ***************************************************************************/
 
 export function nextGreaterElementSol1(nums1: number[], nums2: number[]): number[] {
