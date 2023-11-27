@@ -86,7 +86,7 @@ export class ListWithRandomPointer {
                 map.set(trav, new Node(trav.val));
             }
 
-            // Create copied next pointer if it doesn't exist
+            // Create copied next pointer node if it doesn't exist
             if (trav.next && !map.has(trav.next)) {
                 map.set(trav.next, new Node(trav.next.val));
             }
