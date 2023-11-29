@@ -4,9 +4,17 @@
  * Date        : June 28, 2023
  * Author      : @codingbro
  *
- * meta        : tag-matrix, tag-binary-search
+ * meta        : tag-matrix
  ***************************************************************************/
 
+/**
+ * The solution to this problem doesn't actually use Binary Search,
+ * instead, it employs the properties and characteristics of the given matrix
+ * 
+ * @param {number[][]} matrix 
+ * @param {number} target 
+ * @returns {boolean}
+ */
 var searchMatrix = function(matrix, target) {
     const m = matrix.length;
     const n = matrix[0].length;

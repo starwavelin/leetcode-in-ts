@@ -348,7 +348,7 @@ Supported list of problem categories for searching,
 | 243 | Shortest Word Distance | Easy |  |  |
 | 242 | [Valid Anagram](src/hash/ValidAnagram.ts) | Easy | Hash, ArrayMap | [讲解](https://youtu.be/PaqSyN63kB8) |
 | 241 | Different Ways to Add Parentheses | Medium |  |  |
-| 240 | [Search a 2D Matrix II](src/binary_search/SearchA2DMatrix2.js) | Medium | Matrix | |
+| 240 | [Search a 2D Matrix II](src/matrix/SearchA2DMatrix2.js) | Medium | Matrix | |
 | 239 | [Sliding Window Maximum](src/array/sliding_window/SlidingWindowMaximumSol1.js), [Solution 2](src/array/sliding_window/SlidingWindowMaximumSol2.js) | Hard | Sliding Window, Deque |  |
 | 238 | [Product of Array Except Self](src/math/ProductOfArrayExceptSelfSol1.js), [Solution 2](src/math/ProductOfArrayExceptSelfSol2.js) | Medium | Math, Array | |
 | 237 | Delete Node in a Linked List | Easy | | |
@@ -498,7 +498,7 @@ Supported list of problem categories for searching,
 | 77  | Combinations | Medium | | |
 | 76  | [Minimum Window Substring](src/string/sliding_window/MinimumWindowSubstringSol1.js), [Solution 2](src/string/sliding_window/MinimumWindowSubstringSol2.js) | Hard | Sliding Window, Hash | |
 | 75  | Sort Colors | Medium | | |
-| 74  | [Search a 2D Matrix](src/binary_search/SearchA2DMatrix.js) | Medium | Binary Search, Matrix | |
+| 74  | [Search a 2D Matrix](src/matrix/SearchA2DMatrix.js) | Medium | Binary Search, Matrix | |
 | 73  | Set Matrix Zeroes | Medium | | |
 | 72  | Edit Distance | Hard | | |
 | 71  | Simplify Path | Medium | | |
@@ -518,7 +518,7 @@ Supported list of problem categories for searching,
 | 57  | [Insert Interval](src/interval/InsertInterval.ts) | Medium | Interval | |
 | 56  | [Merge Intervals](src/interval/MergeIntervals.ts) | Medium | Interval, Sort | |
 | 55  | Jump Game | Medium | | |
-| 54  | Spiral Matrix | Medium | | |
+| 54  | Spiral Matrix | Medium | Matrix | |
 | 53  | Maximum Subarray | Medium | | |
 | 52  | N-Queens II | Hard | | |
 | 51  | N-Queens | Hard | | |
@@ -536,7 +536,7 @@ Supported list of problem categories for searching,
 | 39  | Combination Sum | Medium | | |
 | 38  | Count and Say | Easy | | |
 | 37  | Sudoku Solver | Hard | | |
-| 36  | [Valid Sudoku](src/hash/ValidSudoku.js) | Medium | Hash, Set | |
+| 36  | [Valid Sudoku](src/matrix/ValidSudoku.js) | Medium | Hash, Set, Matrix | |
 | 35  | [Search Insert Position](src/binary_search/SearchInsertPosition.js) | Medium | Binary Search | |
 | 34  | [Find First and Last Position of Element in Sorted Array](src/binary_search/SearchRange.js) | Medium | Binary Search | |
 | 33  | [Search in Rotated Sorted Array](src/binary_search/SearchInRotatedSortedArray.js) | Medium | Binary Search | |

@@ -4,7 +4,7 @@
  * Date        : July 31, 2023
  * Author      : @codingbro
  *
- * meta        : tag-matrix, tag-set, tag-map, tag-math
+ * meta        : tag-matrix, tag-set, tag-hash, tag-math
  ***************************************************************************/
 
 /**
@@ -16,8 +16,8 @@ var isValidSudoku = function(board) {
     const colMap = new Map(); // key: 0, 1, ... 8, value: set of numbers 
     const boxMap = new Map(); // key: `0-0`, `0-1`, ... `2-2`, value: set of numbers
 
-    for (let i=0; i < 9; i++) { // i is row
-        for (let j=0; j < 9; j++) { // j is col
+    for (let i = 0; i < 9; i++) { // i is row
+        for (let j = 0; j < 9; j++) { // j is col
             if (board[i][j] === '.') {
                 continue;
             }
