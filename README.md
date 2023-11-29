@@ -518,7 +518,7 @@ Supported list of problem categories for searching,
 | 57  | [Insert Interval](src/interval/InsertInterval.ts) | Medium | Interval | |
 | 56  | [Merge Intervals](src/interval/MergeIntervals.ts) | Medium | Interval, Sort | |
 | 55  | Jump Game | Medium | | |
-| 54  | Spiral Matrix | Medium | Matrix | |
+| 54  | [Spiral Matrix](src/matrix/SpiralMatrixSol1.js) | Medium | Matrix | |
 | 53  | Maximum Subarray | Medium | | |
 | 52  | N-Queens II | Hard | | |
 | 51  | N-Queens | Hard | | |
