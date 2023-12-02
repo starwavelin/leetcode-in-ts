@@ -115,20 +115,20 @@ const layers = [
 ]
 
 const c = new Canvas(layers);
-c.print(1); // expect color: green, shape: triangle
-c.print(2); // expect color: blue, shape: rectangle
+c.print(1); // expect 1 color: green, shape: triangle
+c.print(2); // expect 2 color: blue, shape: rectangle
 
 c.apply(1, 'color', 'pink');
 c.apply(1, 'shape', 'circle');
 
-c.print(1); // expect color: pink, shape: circle
+c.print(1); // expect 1 color: pink, shape: circle
 
 c.undo();
-c.print(1); // expect color: pink, shape: triangle
+c.print(1); // expect 1 color: pink, shape: triangle
 
 c.undo();
-c.print(1); // expect color: green, shape: triangle
+c.print(1); // expect 1 color: green, shape: triangle
 
 c.undo();
-c.print(1); // No change. Expect color: green, shape: triangle
-c.print(2); // expect color: blue, shape: null
+c.print(1); // No change. Expect 1 color: green, shape: triangle
+c.print(2); // expect 2 color: blue, shape: null
