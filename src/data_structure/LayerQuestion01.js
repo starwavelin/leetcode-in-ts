@@ -33,9 +33,9 @@
 
 
 class Layer {
-    constructor(id, properties) {
+    constructor(id, props) {
         this.id = id;
-        this.properties = properties;
+        this.props = props;
     }
 }
 
@@ -56,8 +56,8 @@ class Canvas {
         for (let layer of layers) {
             this.layerMap.set(layer.id, layer);
 
-            for (let key of Object.keys(layer.properties)) {
-                this.appliedHist.push([layer.id, key, null, layer.properties[key]]);
+            for (let key of Object.keys(layer.props)) {
+                this.appliedHist.push([layer.id, key, null, layer.props[key]]);
             }
         }
     }
@@ -77,10 +77,10 @@ class Canvas {
      */
     apply = (id, prop, val) => {
         // insert a record to applied hist
-        this.appliedHist.push([id, prop, this.layerMap.get(id).properties[prop], val]);
+        this.appliedHist.push([id, prop, this.layerMap.get(id).props[prop], val]);
 
         // update layer map
-        this.getLayer(id).properties[prop] = val;
+        this.layerMap.get(id).props[prop] = val;
     }
     
     undo = () => {
@@ -90,7 +90,7 @@ class Canvas {
 
         const top = this.appliedHist[this.appliedHist.length - 1];
         const id = top[0], prop = top[1], oldVal = top[2];
-        this.layerMap.get(id).properties[prop] = oldVal;
+        this.layerMap.get(id).props[prop] = oldVal;
 
         this.appliedHist.pop(); // drop the top record from the appliedHist b/c undo is completed
     }
@@ -110,12 +110,13 @@ class Canvas {
  */
 
 const layers = [
-    { id: 1, properties: { color: 'green', shape: 'triangle' } },
-    { id: 2, properties: { color: 'blue', shape: 'rectangle' } }
+    { id: 1, props: { color: 'green', shape: 'triangle' } },
+    { id: 2, props: { color: 'blue', shape: 'rectangle' } }
 ]
 
 const c = new Canvas(layers);
-// c.print(1); c.print(2);
+c.print(1); // expect color: green, shape: triangle
+c.print(2); // expect color: blue, shape: rectangle
 
 c.apply(1, 'color', 'pink');
 c.apply(1, 'shape', 'circle');
