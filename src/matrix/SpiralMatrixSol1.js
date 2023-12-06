@@ -47,11 +47,11 @@ const spiralOrder = (matrix) => {
     res.push(matrix[i][j]);
 
     for (let k = 0; k < m * n; k++) {
-        // get the moving direction and step(s)
+        // get the next position using round counter in the dir map
         i += dir[round % 4][0];
         j += dir[round % 4][1];
 
-        // determine round increasing time for the initial 3 corners
+        // increase the round counter for the first 3 corners (or turning points)
         if ((i == 0 && j == n-1) || (i == m-1 && j == n-1) || (i == m-1 && j == 0)) {
             round++;
         }
@@ -61,38 +61,34 @@ const spiralOrder = (matrix) => {
         //     return res;
         // }
 
-        // update the res when we encounter an unvisited spot
+        // mark visited matrix and store the visited grid into res
         if (visited[i][j] == 0) {
             visited[i][j] = 1;
             res.push(matrix[i][j]);
         }
 
-        // Further round increasing logic
+        // handle round increase in the inner spirals
         switch (round % 4) {
-            case 0:
+            case 0: // downward
                 if (j + 1 <= n - 1 && visited[i][j+1] == 1) {
-                    round++; // downward
-                    continue;
+                    round++;
                 }
                 break;
-            case 1:
+            case 1: // leftward
                 if (i + 1 <= m - 1 && visited[i+1][j] == 1) {
-                    round++; // leftward
-                    continue;
+                    round++;
                 }
                 break;
-            case 2:
+            case 2: // upward
                 if (j - 1 >= 0 && visited[i][j-1] == 1) {
-                    round++; // upward
-                    continue;
+                    round++;
                 }
                 break;
-            case 3: 
+            case 3:  // rightward
                 /* when we have the round val to be 3, we are about to move rightward, 
-                so case 3 should be the rightward case, then r - d - l - u order (3 - 0 - 1 - 2) */
+                so case 3 should be the rightward case, then r -> d -> l -> u order (3 -> 0 -> 1 -> 2) */
                 if (i - 1 >= 0 && visited[i-1][j] == 1) {
-                    round++; // rightward
-                    continue;
+                    round++;
                 }
                 break;
         }
