@@ -4,17 +4,20 @@
  * Date        : August 14, 2023
  * Author      : @codingbro
  *
- * meta        : tag-sliding-window, tag-hash
+ * meta        : tag-sliding-window, tag-substring, tag-hash, tag-array-map
  ***************************************************************************/
 
 /**
+ * Solution 2:
+ *  The idea is from NeetCode Video: https://www.youtube.com/watch?v=jSto0O4AJbM
+ * 
  * @param {string} s
  * @param {string} t
  * @return {string}
  */
 var minWindow = function(s, t) {
     const m = s.length;
-    let res = [-1, -1], len = m + 1; // because the most possible longest s that has min-window substring is length m 
+    let head = 0, len = m + 1; // because the most possible longest s that has min-window substring is length m 
     const windowMap = new Map(), countMap = new Map(); // key - char, val - frequency    
 
     // Can fill countMap first b/c t is the smaller string
@@ -35,20 +38,21 @@ var minWindow = function(s, t) {
         while (have === need) {
             // Update result
             if ( r-l+1 < len ) {
-                res = [l, r];
+                head = l;
                 len = r-l+1;
             }
 
-            // Pop from the left of our window
-            windowMap.set(s[l], windowMap.get(s[l]) - 1);
-            if (countMap.get(s[l]) > 0 && windowMap.get(s[l]) < countMap.get(s[l])) {
+            // Start popping (removing) element from the left of our window
+            const c = s[l];
+            windowMap.set(c, windowMap.get(c) - 1);
+            if (countMap.get(c) > 0 && windowMap.get(c) < countMap.get(c)) {
                 have--;
             }
             l++;
         }
     }
 
-    return len === m + 1 ? '' : s.substring(res[0], res[1]+1);
+    return len === m + 1 ? '' : s.substring(head, head + len);
 };
 
 
@@ -63,7 +67,8 @@ const s = "zfvdiuibotzsqrpgfnbfwudczyruzvuyaselommcfmuxdmgkzhpydsafttzsowrrovccj
 const t = "xshxlvswdb"
 console.log(minWindow(s, t)); // "bywsrlpxhssriprdqujzhnsaszmvqox"
 
-
+const s2 = 'acedfecbd', t2 = 'cef';
+console.log(minWindow(s2, t2)); // 'fec'
 
 
 
@@ -74,12 +79,11 @@ console.log(minWindow(s, t)); // "bywsrlpxhssriprdqujzhnsaszmvqox"
 /* Using array map solution 
  * The not good part of using array-map are two:
     1. At this time there are both upper and lowercase letters involved, so the array map of size 128 is acutally discrete (in two parts)
-    2. It is not easy to count the unique letters existing in an arrayMap, 
-        but is easier to do so using a regular map (map.size)
+    2. It is not easy to count the unique letters existing in an arrayMap, but is easier to do so using a regular map (map.size)
  *
 */
 
-var minWindowArrayMap = function(s, t) {    
+var minWindowArrayMap = function(s, t) {
     const m = s.length;
     let res = [-1, -1], len = m+1; // because the most possible longest s that has min-window substring is length m 
     const windowMap = new Array(128).fill(0), countMap = new Array(128).fill(0);
