@@ -4,7 +4,7 @@
  * Date        : August 5, 2023
  * Author      : @codingbro
  *
- * meta        : tag-sliding-window, tag-two-pointers
+ * meta        : tag-two-pointers, tag-sliding-window
  ***************************************************************************/
 
 var moveZeroes = function(nums) {

@@ -301,7 +301,7 @@ Supported list of problem categories for searching,
 | 286 | Walls and Gates $ | Medium | | |
 | 285 | Inorder Successor in BST $ | Medium | | |
 | 284 | Peeking Iterator | Medium | | |
-| 283 | [Move Zeroes](src/array/sliding_window/MoveZeros.js) | Easy | Two Pointers | |
+| 283 | [Move Zeroes](src/array/two_pointers/MoveZeros.js) | Easy | Two Pointers | |
 | 282 | Expression Add Operators | Hard | | |
 | 281 | Zigzag Iterator $ | Medium | | |
 | 280 | Wiggle Sort $ | Medium | | |
