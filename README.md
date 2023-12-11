@@ -496,7 +496,7 @@ Supported list of problem categories for searching,
 | 79  | Word Search | Medium | | |
 | 78  | Subsets | Medium | | |
 | 77  | Combinations | Medium | | |
-| 76  | [Minimum Window Substring](src/string/sliding_window/MinimumWindowSubstringSol1.js), [Solution 2](src/string/sliding_window/MinimumWindowSubstringSol2.js), [Solution 3 - Template of zjh](src/string/sliding_window/MinimumWindowSubstringSol3.js) | Hard | Sliding Window, Hash | |
+| 76  | [Minimum Window Substring](src/string/sliding_window/MinimumWindowSubstringSol1.js), [Solution 2](src/string/sliding_window/MinimumWindowSubstringSol2.js), [Solution 3 - my Template based on zjh](src/string/sliding_window/MinimumWindowSubstringSol3.js) | Hard | Sliding Window, Hash | |
 | 75  | Sort Colors | Medium | | |
 | 74  | [Search a 2D Matrix](src/matrix/SearchA2DMatrix.js) | Medium | Binary Search, Matrix | |
 | 73  | Set Matrix Zeroes | Medium | | |
