@@ -379,7 +379,7 @@ Supported list of problem categories for searching,
 | 212 | Word Search II | Hard | | |
 | 211 | Add and Search Word - Data structure design | Medium | | |
 | 210 | [Course Schedule II](src/graph/CourseSchedule2.ts) | Medium | Graph, Topological Sort | |
-| 209 | Minimum Size Subarray Sum | Medium | | |
+| 209 | [Minimum Size Subarray Sum](src/array/sliding_window/MinimumSizeSubarraySum.js) | Medium | Sliding Window | |
 | 208 | Implement Trie (Prefix Tree) | Medium | | |
 | 207 | [Course Schedule](src/graph/CourseSchedule.ts) | Medium | Graph, Topological Sort | |
 | 206 | [Reverse Linked List](src/linked_list/ReverseLinkedList1Sol1.js), [Solution 2](src/linked_list/ReverseLinkedList1Sol2.js), [Solution 3](src/linked_list/ReverseLinkedList1Sol3.js) | Easy | Linked List | |
