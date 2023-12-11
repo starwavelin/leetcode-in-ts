@@ -10,6 +10,7 @@
 /**
  * Solution 2:
  *  The idea is from NeetCode Video: https://www.youtube.com/watch?v=jSto0O4AJbM
+ * Using two counts, `have` and `need`
  * 
  * @param {string} s
  * @param {string} t
@@ -17,33 +18,36 @@
  */
 var minWindow = function(s, t) {
     const m = s.length;
-    let head = 0, len = m + 1; // because the most possible longest s that has min-window substring is length m 
-    const windowMap = new Map(), countMap = new Map(); // key - char, val - frequency    
+    const windowMap = new Map(), countMap = new Map(); // key - char, val - frequency
+    let head = 0, len = m + 1; // len is the length of the window substring, init to a cannot obtained value
+    let have = 0, need = 0;
 
-    // Can fill countMap first b/c t is the smaller string
+    // count need: we fill the countMap first b/c t is usually the smaller string
     for (let c of t) {
         countMap.set(c, (countMap.get(c) || 0) + 1);
     }
-    let have = 0, need = countMap.size;
-
-
+    need = countMap.size;
+    
+    // Sliding window template
     for (let l = 0, r = 0; r < m; r++) {
-        const c = s[r];
+        // handle r
+        let c = s[r];
         windowMap.set(c, (windowMap.get(c) || 0) + 1);
 
+        // count the increase of have
         if (countMap.get(c) > 0 && windowMap.get(c) === countMap.get(c)) {
             have++;
         }
 
         while (have === need) {
-            // Update result
-            if ( r-l+1 < len ) {
+            // min window string, update res here
+            if (r - l + 1 < len) {
+                len = r - l + 1;
                 head = l;
-                len = r-l+1;
             }
 
-            // Start popping (removing) element from the left of our window
-            const c = s[l];
+            // update l pointer and the have count, pop the left el from the window
+            c = s[l];
             windowMap.set(c, windowMap.get(c) - 1);
             if (countMap.get(c) > 0 && windowMap.get(c) < countMap.get(c)) {
                 have--;
