@@ -4,7 +4,7 @@
  * Date        : August 5, 2023
  * Author      : @codingbro
  *
- * meta        : tag-set, tag-sliding-window, tag-two-pointers
+ * meta        : tag-substring, tag-set, tag-sliding-window, tag-two-pointers
  ***************************************************************************/
 
 /**
@@ -12,25 +12,27 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function(s) {
-    let maxLen = 0;
+    const n = s.length;
+    let len = 0; // the length of the substring
     const set = new Set();
 
-    for (let l=0, r=0; r < s.length; r++) {
-        // update l to its right position
-        while (set.has(s[r])) { // if set has the current character
+    for (let l=0, r=0; r < n; r++) {
+        // update l to its correct position based on r's increment
+        while (set.has(s[r])) { // pop l from the left of the substring
             set.delete(s[l]);
             l++;
         }
 
         set.add(s[r]);
-        maxLen = Math.max(maxLen, r - l + 1);
+
+        len = Math.max(len, r - l + 1);
     }
 
-    return maxLen;
+    return len;
 };
 
 // Tests
-
+console.log(lengthOfLongestSubstring('tmmzuxt')); // 5 formed by mzuxt
 console.log(lengthOfLongestSubstring('abcabcbb')); // 3
 console.log(lengthOfLongestSubstring('ccccccc')); // 1
 console.log(lengthOfLongestSubstring('aedfgbcb')); // 7
