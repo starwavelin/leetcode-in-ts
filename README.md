@@ -76,6 +76,7 @@ Supported list of problem categories for searching,
 | 1071 | [Greatest Common Divisor of Strings](src/string/GreatestCommonDivisorOfStringsSol1.js), [Solution 2](src/string/GreatestCommonDivisorOfStringsSol2.js), [Solution 3](src/string/GreatestCommonDivisorOfStringsSol3.js) | Easy | String, Math | |
 | 1046 | [Last Stone Weight](src/heap/LastStoneWeight.js) | Easy | Heap | |
 | 1021 | [Remove Outermost Parentheses](src/stack/RemoveOutermostParentheses.ts) | Easy | Stack | |
+| 1004 | [Max Consecutive Ones III](src/array/sliding_window/MaxConsecutiveOnes3.js) | Medium | Sliding Window | |
 
 **Selective Problems 251 - 1,000**
 | No. | Problem | Difficulty | Tags | Videos |
