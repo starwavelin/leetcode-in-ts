@@ -413,7 +413,7 @@ Supported list of problem categories for searching,
 | 162 | [Find Peak Element](src/binary_search/FindPeakElement.js) | Medium | Binary Search | |
 | 161 | [One Edit Distance](src/string/two_pointers/OneEditDistance.js) | Medium | Two Pointers | |
 | 160 | Intersection of Two Linked Lists | Easy | | |
-| 159 | [Longest Substring with At Most Two Distinct Characters](src/string/sliding_window/LongestSubstringWithAtMostTwoDistinctCharactersSol1.js) | Medium | Sliding Window | |
+| 159 | [Longest Substring with At Most Two Distinct Characters](src/string/sliding_window/LongestSubstringWithAtMostTwoDistinctCharactersSol0.js), [Solution 1](src/string/sliding_window/LongestSubstringWithAtMostTwoDistinctCharactersSol1.js) | Medium | Sliding Window | |
 | 158 | Read N Characters Given Read4 II - Call multiple times | Hard | | |
 | 157 | Read N Characters Given Read4 $ | Easy | | |
 | 156 | Binary Tree Upside Down $ | Medium | | |
