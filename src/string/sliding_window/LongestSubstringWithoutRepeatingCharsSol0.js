@@ -1,11 +1,15 @@
 /***************************************************************************
  * Problem No. : 3
  * Problem Name: Longest Substring Without Repeating Characters
- * Date        : August 5, 2023
+ * Date        : December 12, 2023
  * Author      : @codingbro
  *
- * meta        : tag-substring, tag-set, tag-sliding-window, tag-two-pointers
+ * meta        : tag-substring, tag-sliding-window, tag-hash
  ***************************************************************************/
+
+/**
+ * This solution uses my template
+ */
 
 /**
  * @param {string} s
@@ -13,18 +17,23 @@
  */
 var lengthOfLongestSubstring = function(s) {
     const n = s.length;
-    let len = 0; // the length of the substring
-    const set = new Set();
+    const map = new Map();
+    let len = 0; // len is the length of the substring
+    // map.get(c) is as count in the template
 
-    for (let l=0, r=0; r < n; r++) {
-        // update l to its correct position based on r's increment
-        while (set.has(s[r])) { // pop l from the left of the substring
-            set.delete(s[l]);
+    // sliding window template
+    for (let l = 0 , r = 0; r < n; r++) {
+        // handle r
+        const c = s[r];
+        map.set(c, (map.get(c) || 0) + 1);
+
+        // handle l 
+        while (map.get(c) == 2) { // pop l from the left of the substring
+            map.set(s[l], map.get(s[l]) - 1);
             l++;
         }
 
-        set.add(s[r]);
-
+        // max substring result
         len = Math.max(len, r - l + 1);
     }
 
