@@ -4,7 +4,7 @@
  * Date        : December 11, 2023
  * Author      : @codingbro
  *
- * meta        : tag-sliding-window, tag-subarray
+ * meta        : tag-sliding-window, tag-subarray, tag-prefix-sum
  ***************************************************************************/
 
 /**
