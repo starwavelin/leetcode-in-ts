@@ -91,7 +91,7 @@ Supported list of problem categories for searching,
 | 739 | [Daily Temperatures](src/stack/DailyTemperatures.ts) | Medium | Stack | |
 | 716 | [Max Stack](src/stack/MaxStack.ts), [JS 解](src/stack/MaxStack.js), [JS 解 2](src/stack/MaxStackSol2.js) | Hard | Stack, Design | |
 | 704 | [Binary Search](src/binary_search/BinarySearch1.js), [Version 2](src/binary_search/BinarySearch2.js), [Version 3](src/binary_search/BinarySearch3.js) | Easy | Binary Search | |
-| 647 | [Palindromic Substrings (Brute Force)](src/dp/PalindromicSubstringsSol1.js), [Solution 2 - DP](src/dp/PalindromicSubstringsSol2.js) | Medium | Two Pointers, DP | |
+| 647 | [Palindromic Substrings (Brute Force)](src/dp/PalindromicSubstringsSol1.js), [Solution 2 - DP](src/dp/PalindromicSubstringsSol2.js), [Solution 3 - Recursion](src/dp/PalindromicSubstringsSol3.js) | Medium | Two Pointers, DP | |
 | 621 | [Task Schedule](src/heap/TaskScheduleSol1.js), [Solution 2](src/heap/TaskScheduleSol2.js) | Medium | Heap, Hash, Sort, Math | |
 | 605 | [Can Place Flower](src/array/greedy/CanPlaceFlower.js) | Easy | Array, Greedy | |
 | 572 | [Subtree of Another Tree](src/binary_tree/SubtreeOfAnotherTree.js) | Easy | Binary Tree, DFS | |
