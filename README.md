@@ -453,7 +453,7 @@ Supported list of problem categories for searching,
 | 124 | Binary Tree Maximum Path Sum | Hard | | |
 | 123 | Best Time to Buy and Sell Stock III | Hard | | |
 | 122 | Best Time to Buy and Sell Stock II | Medium | | |
-| 121 | [Best Time to Buy and Sell Stock](src/array/sliding_window/BestTimeToBuyAndSellStock1Sol1.js), [Solution 2](src/array/sliding_window/BestTimeToBuyAndSellStock1Sol2.js) | Easy | Sliding Window, Enum | |
+| 121 | [Best Time to Buy and Sell Stock](src/array/sliding_window/BestTimeToBuyAndSellStock1Sol1.js), [Solution 2 - Sliding Window](src/array/sliding_window/BestTimeToBuyAndSellStock1Sol2.js) | Easy | Sliding Window, Enum | |
 | 120 | Triangle | Medium | | |
 | 119 | Pascal's Triangle II | Easy | | |
 | 118 | Pascal's Triangle | Easy | | |

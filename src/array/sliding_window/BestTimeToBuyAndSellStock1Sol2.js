@@ -9,6 +9,32 @@
 
 const prices3 = require('./BestTimeToBuyAndSellStock1Sol1') 
 
+/**
+ * An even better Sliding window solution based on my new template -- updated 12/19/2023
+ * 
+ * when the price is increasing, we calculate the profit;
+    when the price is dropping, we move the l pointer to catch r
+ */
+const maxProfit = function(prices) {
+    const n = prices.length;
+    let res = 0;
+
+    for (let l = 0, r = 1; r < n; r++) {
+        // handle r, r just auto increment, thats it
+
+        // handle l
+        while (prices[l] > prices[r]) {
+            l = r;
+        }
+
+        // max subarray res 
+        res = Math.max(res, prices[r] - prices[l]);
+    }
+
+    return res;
+};
+
+
 
 /**
  * @param {number[]} prices
