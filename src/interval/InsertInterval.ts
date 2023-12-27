@@ -4,9 +4,14 @@
  * Date        : May 29, 2022
  * Author      : @codingbro
  *
- * meta        : tag-array, tag-interval
+ * meta        : tag-interval
  ***************************************************************************/
 
+/**
+ * @param intervals
+ * @param newInterval
+ * @returns
+ */
 export function insert(intervals: number[][], newInterval: number[]): number[][] {
     const res: number[][] = [];
 

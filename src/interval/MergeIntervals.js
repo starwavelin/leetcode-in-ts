@@ -12,8 +12,8 @@
  * 
  * Loop through the interval list
  *  1. If there is an overlap, merge it and store the updated interval to intervals[i+1]
- *      Note: be careful about which value should be the updated interval's right endpoint
- *  2. If no overlap, put the interval into the res list
+ *      Note: be careful about which value should be the updated for the interval's right endpoint
+ *  2. If no overlap, push the interval into the res list
  * 
  * Handle the last interval from the given list -- intervals[n-1]
  * 
