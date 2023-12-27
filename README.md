@@ -157,7 +157,7 @@ Supported list of problem categories for searching,
 | 438 | Find All Anagrams in a String | Easy | | |
 | 437 | Path Sum III | Easy | | |
 | 436 | Find Right Interval | Medium | | |
-| 435 | Non-overlapping Intervals | Medium | | |
+| 435 | [Non-overlapping Intervals](src/interval/NonOverlappingIntervals.js) | Medium | Sort | |
 | 434 | Number of Segments in a String | Easy | | |
 | 433 | Minimum Genetic Mutation | Medium | | |
 | 432 | All O`one Data Structure | Hard | | |
