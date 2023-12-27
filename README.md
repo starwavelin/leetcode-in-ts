@@ -517,7 +517,7 @@ Supported list of problem categories for searching,
 | 60  | Permutation Sequence | Medium | | |
 | 59  | Spiral Matrix II | Medium | | |
 | 58  | Length of Last Word | Easy | | |
-| 57  | [Insert Interval - Solution 1 Linear Search](src/interval/InsertIntervalSol1.js), [Insert Interval - TS Solution](src/interval/InsertInterval.ts) | Medium | Interval | |
+| 57  | [Insert Interval - Solution 1 Linear Search](src/interval/InsertIntervalSol1.js), [Solution 2 - Binary Search to find out the insert position](src/interval/InsertIntervalSol2.js), [Insert Interval - TS Solution](src/interval/InsertInterval.ts) | Medium | Interval | |
 | 56  | [Merge Intervals](src/interval/MergeIntervals.js), [Merge Intervals - TS Sol](src/interval/MergeIntervals.ts) | Medium | Interval, Sort, Two Pointers | |
 | 55  | Jump Game | Medium | | |
 | 54  | [Spiral Matrix](src/matrix/SpiralMatrixSol1.js) | Medium | Matrix, Simulation | |

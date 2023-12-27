@@ -4,7 +4,7 @@
  * Date        : December 27, 2023
  * Author      : @codingbro
  *
- * meta        : tag-interval, tag-linear-search
+ * meta        : tag-linear-search, tag-greedy
  ***************************************************************************/
 
 /**
@@ -16,6 +16,12 @@
  * For JS user, the splice function will be used for the insertion
  * res.splice(insertPos, 0, newInterval)
  * 
+ * 
+ * The Greedy Idea is:
+ *  If no overlapping, put interval into res
+ *      And based on the relative position between newInterval and interval, determine whether to update insPos
+ *  If having overlaps, update the newInterval to represent the post-merging interval
+ * Merge newInterval in the right position in the end
  * 
  * Time Complexity: O(n), not only because of traversing the original array, but the splice function also takes O(n)
  * Space Complexity: O(1)
@@ -50,6 +56,7 @@ const insert = (intervals, newInterval) => {
 /**
  * Tests 
  */
+console.log(insert([[1,5],[6,8]], [0,9])); // [[0,9]]
 console.log(insert([[1,3],[6,9]], [2,5])); // [[1,5],[6,9]]
 console.log(insert([[1,5]], [0,3])); // [[0,5]]
 console.log(insert([[3,5],[12,15]], [6,6])); // [[3,5],[6,6],[12,15]]
