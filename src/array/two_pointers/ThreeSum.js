@@ -113,34 +113,39 @@ var threeSumVer2 = function(nums) {
  * @return {number[][]}
  */
 var threeSum = function(nums) {
-    const res = []
+    const res = []; // store the result triplets
     nums.sort((a, b) => a-b);
-    // console.log(nums);
-    const len = nums.length;
+
+    const n = nums.length;
 
     // The following portion can be extracted into a kSum() ftn and be called recusrively
     let i = 0;
-    while (i < len-2) {
-        const target = 0 - nums[i];
-        let l = i+1, r = len-1;
+    while (i < n - 2) {
+        const target = -nums[i];
+
+        // Apply 2-Sum
+        let l = i+1, r = n-1;
         while (l < r) {
             if (nums[l] + nums[r] === target) {
                 res.push([nums[i], nums[l], nums[r]]);
-                l++;
-                while (nums[l] === nums[l-1] && l < len-1) {
+                l++; r--;
+
+                // Dedup on l pointer in 2-Sum, handle example like [-2, 0, 0, 2, 2]
+                while (nums[l] === nums[l-1]) {
                     l++;
                 }
-                r--;
             } else if (nums[l] + nums[r] < target) {
                 l++;
             } else {
                 r--;
             }
         }
-        i++;
-        while (nums[i] === nums[i-1] && i < len-2) {
+        
+        // Dedup on i
+        while (nums[i+1] === nums[i]) {
             i++;
         }
+        i++;
     }
 
     return res;
