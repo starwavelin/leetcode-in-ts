@@ -332,7 +332,7 @@ Supported list of problem categories for searching,
 | 256 | Paint House $ | Medium | | |
 | 255 | Verify Preorder Sequence in Binary Search Tree $ | Medium | | |
 | 254 | Factor Combinations $ | Medium | | |
-| 253 | [Meeting Rooms II $](src/interval/MeetingRooms2Sol1.js), [Solution 2](src/interval/MeetingRooms2Sol2.js) | Medium | Interval, Map | |
+| 253 | [Meeting Rooms II $](src/interval/MeetingRooms2Sol1.js), [Solution 2](src/interval/MeetingRooms2Sol2.js), [Solution 3 - Min Heap](src/interval/MeetingRooms2Sol3.js) | Medium | Interval, Map, Sort, Greedy | |
 | 252 | [Meeting Rooms $](src/interval/MeetingRooms1Sol1.js) | Easy | Interval | |
 | 251 | Flatten 2D Vector $ | Medium | | |
 
