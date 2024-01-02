@@ -18,7 +18,7 @@
 
 const heap = [undefined]; // index 0 is reserved for undefined, for easy calculation purpose
 
-function heapify(array, index) {
+function heapify(array, index) { // index - the starting index from which we need to start the heapify process
     const n = array.length;
     let childIndex;
 
