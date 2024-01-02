@@ -26,10 +26,11 @@ function heapify(array, index) { // index - the starting index from which we nee
         childIndex = index * 2;
 
         // pick the smaller one
-        if (childIndex !== n-1 && array[childIndex] > array[childIndex+1]) {
+        if (childIndex + 1 < n && array[childIndex] > array[childIndex+1]) { // boundary checking + compare
             childIndex++;
         }
 
+        // check if swap is needed
         if (array[index] > array[childIndex]) {
             [array[index], array[childIndex]] = [array[childIndex], array[index]];
         } else {
@@ -38,8 +39,8 @@ function heapify(array, index) { // index - the starting index from which we nee
     }
 }
 
-// Or we can call this function enqueue()
-function add(el) {
+// Or we can call this function add()
+function enqueue(el) {
     heap.push(el);
     const n = heap.length;
     for (let i = Math.floor(n/2); i >= 1; i--) {
@@ -47,20 +48,21 @@ function add(el) {
     }
 }
 
-// Or we can call this function dequeue()
-function remove() {
+// Or we can call this function remove()
+function dequeue() {
     if (heap.length === 1) {
         throw new Error('No elements to remove');
     }
 
-    const res = heap[1];
-    const el = heap.pop();
+    const top = heap[1];
+
+    const last = heap.pop();
     if (heap.length > 1) {
-        heap[1] = el;
+        heap[1] = last;
         heapify(heap, 1);
     }
 
-    return res;
+    return top;
 }
 
 
@@ -75,15 +77,15 @@ function remove() {
  * 与 MinHeap.js 比较就发现,这个数据流输入就是要call add() function 好几次才能构建出完整的heap
  * 而 MinHeap.js 中的 buildHeap(array),由于是有一个给定的array,只要call一次就建好heap了
  */
-add(11);
-add(12);
-add(13);
-add(10);
-add(9);
-add(5);
+enqueue(11);
+enqueue(12);
+enqueue(13);
+enqueue(10);
+enqueue(9);
+enqueue(5);
 
 console.log(heap);  // expect [ undefined, 5, 10, 9, 12, 11, 13 ]
-console.log(remove(heap)); // expect 5
+console.log(dequeue(heap)); // expect 5
 console.log(heap);
-console.log(remove(heap)); // expect 9
+console.log(dequeue(heap)); // expect 9
 console.log(heap);

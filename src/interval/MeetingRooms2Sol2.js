@@ -4,7 +4,7 @@
  * Date        : January 2, 2024
  * Author      : @codingbro
  *
- * meta        : tag-array, tag-sort, tag-greedy
+ * meta        : tag-array, tag-sort, tag-greedy, tag-prefix-sum
  ***************************************************************************/
 
 /**
