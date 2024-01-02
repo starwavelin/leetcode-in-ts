@@ -4,7 +4,7 @@
  * Date        : December 10, 2023
  * Author      : @codingbro
  *
- * meta        : tag-sliding-window, tag-substring, tag-hash, tag-array-map
+ * meta        : tag-sliding-window, tag-substring, tag-map, tag-array-map
  ***************************************************************************/
 
 /**

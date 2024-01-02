@@ -4,7 +4,7 @@
  * Date        : July 23, 2022
  * Author      : @codingbro
  *
- * meta        : tag-linked-list, tag-hash
+ * meta        : tag-linked-list, tag-map
  ***************************************************************************/
 
 export class ListWithRandomPointer {

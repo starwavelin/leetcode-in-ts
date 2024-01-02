@@ -4,7 +4,7 @@
  * Date        : November 20, 2023
  * Author      : @codingbro
  *
- * meta        : tag-math, tag-hash, tag-sort, tag-amazon
+ * meta        : tag-math, tag-map, tag-sort, tag-amazon
  ****************************************************************************/
 
 /**

@@ -4,7 +4,7 @@
  * Date        : July 11, 2023
  * Author      : @codingbro
  *
- * meta        : tag-two-pointers, tag-hash
+ * meta        : tag-two-pointers, tag-map
  ***************************************************************************/
 
 /**

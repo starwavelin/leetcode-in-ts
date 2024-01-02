@@ -4,7 +4,7 @@
  * Date        : December 2, 2023
  * Author      : @codingbro
  *
- * meta        : tag-data-structure, tag-stack, tag-hash
+ * meta        : tag-data-structure, tag-stack, tag-map
  ****************************************************************************/
 
 /**

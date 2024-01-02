@@ -4,7 +4,7 @@
  * Date        : July 31, 2023
  * Author      : @codingbro
  *
- * meta        : tag-matrix, tag-set, tag-hash, tag-math
+ * meta        : tag-matrix, tag-set, tag-map, tag-math
  ***************************************************************************/
 
 /**

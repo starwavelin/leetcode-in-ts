@@ -4,7 +4,7 @@
  * Date        : August 7, 2023
  * Author      : @codingbro
  *
- * meta        : tag-hash, tag-array-map
+ * meta        : tag-map, tag-array-map
  ***************************************************************************/
 
 /**

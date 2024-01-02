@@ -36,7 +36,7 @@ Supported list of problem categories for searching,
 -   [Interval](../../search?utf8=✓&q=tag-interval)
 -   [Sort](../../search?utf8=✓&q=tag-sort)
 -   [Linked List](../../search?utf8=✓&q=tag-linked-list)
--   [Hash](../../search?utf8=✓&q=tag-hash)
+-   [Map](../../search?utf8=✓&q=tag-map)
 -   [Array Map](../../search?utf8=✓&q=tag-array-map)
 -   [Stack](../../search?utf8=✓&q=tag-stack)
 -   [Queue](../../search?utf8=✓&q=tag-queue)
@@ -81,8 +81,8 @@ Supported list of problem categories for searching,
 **Selective Problems 251 - 1,000**
 | No. | Problem | Difficulty | Tags | Videos |
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------- | ------------------------------------ |
-| 992 | [Subarrays with K Different Integers](src/array/sliding_window/SubarraysWithKDifferentIntegersSol1.js), [Solution 2](src/array/sliding_window/SubarraysWithKDifferentIntegersSol2.js) | Hard | Sliding Window, Math, Hash | |
-| 981 | [Time Based Key-Value Store](src/data_structure/TimeBasedKeyValueStore.js), [TS 解](src/data_structure/TimeBasedKeyValueStore.ts) | Medium | Hash, Binary Search, Data Structure | |
+| 992 | [Subarrays with K Different Integers](src/array/sliding_window/SubarraysWithKDifferentIntegersSol1.js), [Solution 2](src/array/sliding_window/SubarraysWithKDifferentIntegersSol2.js) | Hard | Sliding Window, Math, Map | |
+| 981 | [Time Based Key-Value Store](src/data_structure/TimeBasedKeyValueStore.js), [TS 解](src/data_structure/TimeBasedKeyValueStore.ts) | Medium | Map, Binary Search, Data Structure | |
 | 973 | [K Closest Points to Origin](src/heap/KClosestPointsToOriginSol1.js), [wip Solution 2](src/heap/KClosestPointsToOriginSol2.js) | Medium | Heap | |
 | 905 | [Sort Array By Parity](src/array/two_pointers/SortArrayByParity.ts) | Easy | Two Pointers, Array, Sort | |
 | 876 | [Middle of the Linked List](src/linked_list/MiddleOfTheLinkedList.js) | Easy | Linked List, Two Pointers | |
@@ -92,15 +92,15 @@ Supported list of problem categories for searching,
 | 716 | [Max Stack](src/stack/MaxStack.ts), [JS 解](src/stack/MaxStack.js), [JS 解 2](src/stack/MaxStackSol2.js) | Hard | Stack, Design | |
 | 704 | [Binary Search](src/binary_search/BinarySearch1.js), [Version 2](src/binary_search/BinarySearch2.js), [Version 3](src/binary_search/BinarySearch3.js) | Easy | Binary Search | |
 | 647 | [Palindromic Substrings (Brute Force)](src/dp/PalindromicSubstringsSol1.js), [Solution 2 - DP](src/dp/PalindromicSubstringsSol2.js), [Solution 3 - Recursion](src/dp/PalindromicSubstringsSol3.js) | Medium | Two Pointers, DP | |
-| 621 | [Task Schedule](src/heap/TaskScheduleSol1.js), [Solution 2](src/heap/TaskScheduleSol2.js) | Medium | Heap, Hash, Sort, Math | |
+| 621 | [Task Schedule](src/heap/TaskScheduleSol1.js), [Solution 2](src/heap/TaskScheduleSol2.js) | Medium | Heap, Map, Sort, Math | |
 | 605 | [Can Place Flower](src/array/greedy/CanPlaceFlower.js) | Easy | Array, Greedy | |
 | 572 | [Subtree of Another Tree](src/binary_tree/SubtreeOfAnotherTree.js) | Easy | Binary Tree, DFS | |
-| 567 | [Permutation in String](src/string/sliding_window/PermutationInStringSol1.js), [Solution 2](src/string/sliding_window/PermutationInStringSol2.js) | Medium | Hash, Sliding Window | |
+| 567 | [Permutation in String](src/string/sliding_window/PermutationInStringSol1.js), [Solution 2](src/string/sliding_window/PermutationInStringSol2.js) | Medium | Map, Sliding Window | |
 | 503 | [Next Greater Element II](src/stack/NextGreaterElement2.ts) | Easy | Stack | |
 | 500 | Keyboard Row | Easy | | |
 | 499 | The Maze III | Hard | | |
 | 498 | Diagonal Traverse | Medium | | |
-| 496 | [Next Greater Element I](src/stack/NextGreaterElement1.ts) | Easy | Hash, Stack | |
+| 496 | [Next Greater Element I](src/stack/NextGreaterElement1.ts) | Easy | Map, Stack | |
 | 495 | Teemo Attacking | Medium | | |
 | 494 | Target Sum | Medium | | |
 | 493 | Reverse Pairs | Hard | | |
@@ -139,7 +139,7 @@ Supported list of problem categories for searching,
 | 457 | Circular Array Loop | Medium | | |
 | 456 | 132 Pattern | Medium | | |
 | 455 | [Assign Cookies](src/array/greedy/AssignCookies.ts) | Easy | Array, Greedy | |
-| 454 | [4Sum II](src/hash/FourSumII.js) | Medium | Hash | |
+| 454 | [4Sum II](src/hash/FourSumII.js) | Medium | Map | |
 | 453 | Minimum Moves to Equal Array Elements | Easy | | |
 | 452 | Minimum Number of Arrows to Burst Balloons | Medium | | |
 | 451 | Sort Characters By Frequency | Medium | | |
@@ -236,7 +236,7 @@ Supported list of problem categories for searching,
 | 353 | Design Snake Game $ | Medium | | |
 | 352 | Data Stream as Disjoint Intervals | Hard | | |
 | 351 | Android Unlock Patterns $ | Medium | | |
-| 350 | [Intersection of Two Arrays II](src/array/two_pointers/IntersectionOfTwoArrays2.js) | Easy | Two Pointers, Hash | |
+| 350 | [Intersection of Two Arrays II](src/array/two_pointers/IntersectionOfTwoArrays2.js) | Easy | Two Pointers, Map | |
 | 349 | [Intersection of Two Arrays](src/array/two_pointers/IntersectionOfTwoArrays.js) | Easy | Two Pointers, Binary Search | |
 | 348 | Design Tic-Tac-Toe $ | Medium | | |
 | 347 | [Top K Frequent Elements](src/heap/TopKFrequentElementsSol1.js), [Solution 2 MaxHeap](src/heap/TopKFrequentElementsSol2.js), [Solution 3 MinHeap](src/heap/TopKFrequentElementsSol3.js), [Solution 4](src/heap/TopKFrequentElementsSol4.js) | Medium | Sort, Heap, Bucket Sort | |
@@ -332,7 +332,7 @@ Supported list of problem categories for searching,
 | 256 | Paint House $ | Medium | | |
 | 255 | Verify Preorder Sequence in Binary Search Tree $ | Medium | | |
 | 254 | Factor Combinations $ | Medium | | |
-| 253 | Meeting Rooms II $ | Medium | | |
+| 253 | [Meeting Rooms II $](src/interval/MeetingRooms2Sol1.js) | Medium | Interval, Map | |
 | 252 | [Meeting Rooms $](src/interval/MeetingRooms1Sol1.js) | Easy | Interval | |
 | 251 | Flatten 2D Vector $ | Medium | | |
 
@@ -348,7 +348,7 @@ Supported list of problem categories for searching,
 | 245 | Shortest Word Distance III | Medium | | |
 | 244 | Shortest Word Distance II | Medium | | |
 | 243 | Shortest Word Distance | Easy |  |  |
-| 242 | [Valid Anagram](src/hash/ValidAnagram.ts) | Easy | Hash, ArrayMap | [讲解](https://youtu.be/PaqSyN63kB8) |
+| 242 | [Valid Anagram](src/hash/ValidAnagram.ts) | Easy | Map, ArrayMap | [讲解](https://youtu.be/PaqSyN63kB8) |
 | 241 | Different Ways to Add Parentheses | Medium |  |  |
 | 240 | [Search a 2D Matrix II](src/matrix/SearchA2DMatrix2.js) | Medium | Matrix | |
 | 239 | [Sliding Window Maximum](src/array/sliding_window/SlidingWindowMaximumSol1.js), [Solution 2](src/array/sliding_window/SlidingWindowMaximumSol2.js) | Hard | Sliding Window, Deque |  |
@@ -436,9 +436,9 @@ Supported list of problem categories for searching,
 | 141 | [Linked List Cycle](src/linked_list/LinkedListCycle1.js) | Easy | Two Pointers | |
 | 140 | Word Break II | Hard | | |
 | 139 | Word Break | Medium | | |
-| 138 | [Copy List with Random Pointer](src/linked_list/CopyListWithRandomPointer.ts), [JS 解1](src/linked_list/CopyListWithRandomPointerSol1.js), [JS 解2](src/linked_list/CopyListWithRandomPointerSol2.js), [JS 解3](src/linked_list/CopyListWithRandomPointerSol3.js) | Medium | Linked List, Hash, Two Pointers | |
+| 138 | [Copy List with Random Pointer](src/linked_list/CopyListWithRandomPointer.ts), [JS 解1](src/linked_list/CopyListWithRandomPointerSol1.js), [JS 解2](src/linked_list/CopyListWithRandomPointerSol2.js), [JS 解3](src/linked_list/CopyListWithRandomPointerSol3.js) | Medium | Linked List, Map, Two Pointers | |
 | 137 | Single Number II | Medium | Bit | [讲解](https://youtu.be/puXcQpwgcD0) |
-| 136 | Single Number | Medium | Bit, Hash | [讲解](https://youtu.be/7xU7g04FJHw)                                          |
+| 136 | Single Number | Medium | Bit, Map | [讲解](https://youtu.be/7xU7g04FJHw)                                          |
 | 135 | [Candy](src/array/greedy/Candy.ts) | Hard | Greedy, Array, Math | |
 | 134 | Gas Station | Medium | | |
 | 133 | [Clone Graph](src/graph/CloneGraph.ts) | Medium | Graph | [讲解 1](https://youtu.be/5e6buIyUvhs) [讲解 2](https://youtu.be/F2ofVoR0adw) |
@@ -446,7 +446,7 @@ Supported list of problem categories for searching,
 | 131 | Palindrome Partitioning | Medium | | |
 | 130 | Surrounded Regions | Medium | | |
 | 129 | Sum Root to Leaf Numbers | Medium | | |
-| 128 | [Longest Consecutive Sequence](src/hash/LongestConsecutiveSequence.js) | Medium | Set, Hash | |
+| 128 | [Longest Consecutive Sequence](src/hash/LongestConsecutiveSequence.js) | Medium | Set, Map | |
 | 127 | Word Ladder | Medium | | |
 | 126 | Word Ladder II | Hard | | |
 | 125 | [Valid Palindrome](src/string/two_pointers/ValidPalindrome.ts), [JS 解](src/string/two_pointers/ValidPalindrome.js) | Easy | Two Pointers | |
@@ -498,7 +498,7 @@ Supported list of problem categories for searching,
 | 79  | Word Search | Medium | | |
 | 78  | Subsets | Medium | | |
 | 77  | Combinations | Medium | | |
-| 76  | [Minimum Window Substring](src/string/sliding_window/MinimumWindowSubstringSol1.js), [Solution 2](src/string/sliding_window/MinimumWindowSubstringSol2.js), [Solution 3 - my Template based on zjh](src/string/sliding_window/MinimumWindowSubstringSol3.js) | Hard | Sliding Window, Hash | |
+| 76  | [Minimum Window Substring](src/string/sliding_window/MinimumWindowSubstringSol1.js), [Solution 2](src/string/sliding_window/MinimumWindowSubstringSol2.js), [Solution 3 - my Template based on zjh](src/string/sliding_window/MinimumWindowSubstringSol3.js) | Hard | Sliding Window, Map | |
 | 75  | [Sort Colors](src/sorting/SortColors.js) | Medium | Two Pointers, Sort | |
 | 74  | [Search a 2D Matrix](src/matrix/SearchA2DMatrix.js) | Medium | Binary Search, Matrix | |
 | 73  | Set Matrix Zeroes | Medium | | |
@@ -525,7 +525,7 @@ Supported list of problem categories for searching,
 | 52  | N-Queens II | Hard | | |
 | 51  | N-Queens | Hard | | |
 | 50  | Pow(x, n) | Medium | | |
-| 49  | [Group Anagrams](src/hash/GroupAnagrams.ts) | Medium | Hash | [讲解](https://www.youtube.com/watch?v=G0WEebYHJ-E) |
+| 49  | [Group Anagrams](src/hash/GroupAnagrams.ts) | Medium | Map | [讲解](https://www.youtube.com/watch?v=G0WEebYHJ-E) |
 | 48  | Rotate Image | Medium | | |
 | 47  | Permutations II | Hard | | |
 | 46  | Permutations | Medium | | |
@@ -538,7 +538,7 @@ Supported list of problem categories for searching,
 | 39  | Combination Sum | Medium | | |
 | 38  | Count and Say | Easy | | |
 | 37  | Sudoku Solver | Hard | | |
-| 36  | [Valid Sudoku](src/matrix/ValidSudoku.js) | Medium | Hash, Set, Matrix | |
+| 36  | [Valid Sudoku](src/matrix/ValidSudoku.js) | Medium | Map, Set, Matrix | |
 | 35  | [Search Insert Position](src/binary_search/SearchInsertPosition.js) | Medium | Binary Search | |
 | 34  | [Find First and Last Position of Element in Sorted Array](src/binary_search/SearchRange.js) | Medium | Binary Search | |
 | 33  | [Search in Rotated Sorted Array](src/binary_search/SearchInRotatedSortedArray.js) | Medium | Binary Search | |
@@ -571,7 +571,7 @@ Supported list of problem categories for searching,
 | 6   | ZigZag Conversion | Easy | | |
 | 5   | Longest Palindromic Substring | Medium | | |
 | 4   | [Median of Two Sorted Arrays](src/binary_search/MedianOfTwoSortedArrays.js) | Hard | Sort, Merge Sort, Binary Search | [讲解 1](https://youtu.be/raYYmEwyJ0o) |
-| 3   | [Longest Substring Without Repeating Characters](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol0.js), [Solution 1 - using Set](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol1.js), [Solution 2 - Sliding window but not using my template](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol2.js), [Solution 3](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol3.js), [Solution 4](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol4.js), [Solution 5](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol5.js) | Medium | String, Hash, Two Pointers, DP, Set | |
+| 3   | [Longest Substring Without Repeating Characters](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol0.js), [Solution 1 - using Set](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol1.js), [Solution 2 - Sliding window but not using my template](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol2.js), [Solution 3](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol3.js), [Solution 4](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol4.js), [Solution 5](src/string/sliding_window/LongestSubstringWithoutRepeatingCharsSol5.js) | Medium | String, Map, Two Pointers, DP, Set | |
 | 2   | Add Two Numbers | Medium | | |
 | 1   | [Two Sum](src/array/two_pointers/TwoSum.ts) | Medium | Two Pointers | 讲解 |
 
