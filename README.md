@@ -333,7 +333,7 @@ Supported list of problem categories for searching,
 | 255 | Verify Preorder Sequence in Binary Search Tree $ | Medium | | |
 | 254 | Factor Combinations $ | Medium | | |
 | 253 | Meeting Rooms II $ | Medium | | |
-| 252 | Meeting Rooms $ | Easy | | |
+| 252 | [Meeting Rooms $](src/interval/MeetingRooms1Sol1.js) | Easy | Interval | |
 | 251 | Flatten 2D Vector $ | Medium | | |
 
 **Problem 1 - 250**
