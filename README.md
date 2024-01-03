@@ -96,7 +96,7 @@ Supported list of problem categories for searching,
 | 605 | [Can Place Flower](src/array/greedy/CanPlaceFlower.js) | Easy | Array, Greedy | |
 | 572 | [Subtree of Another Tree](src/binary_tree/SubtreeOfAnotherTree.js) | Easy | Binary Tree, DFS | |
 | 567 | [Permutation in String](src/string/sliding_window/PermutationInStringSol1.js), [Solution 2](src/string/sliding_window/PermutationInStringSol2.js) | Medium | Map, Sliding Window | |
-| 560 | [Subarray Sum Equals K - Running Sum](src/array/prefix_sum//SubarraySumEqualsKSol1.js) | Medium | Prefix Sum, Map | |
+| 560 | [Subarray Sum Equals K - Running Sum](src/array/prefix_sum//SubarraySumEqualsKSol1.js), [Solution 2 - Map](src/array/prefix_sum//SubarraySumEqualsKSol2.js) | Medium | Prefix Sum, Map | |
 | 503 | [Next Greater Element II](src/stack/NextGreaterElement2.ts) | Easy | Stack | |
 | 500 | Keyboard Row | Easy | | |
 | 499 | The Maze III | Hard | | |
