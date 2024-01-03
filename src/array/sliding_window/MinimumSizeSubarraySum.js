@@ -8,6 +8,11 @@
  ***************************************************************************/
 
 /**
+ * Important constraints:
+ *  1 <= nums[i] <= 10^4
+ */
+
+/**
  * @param {number} target
  * @param {number[]} nums
  * @return {number}
