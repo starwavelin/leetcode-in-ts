@@ -406,7 +406,7 @@ Supported list of problem categories for searching,
 | 172 | Factorial Trailing Zeroes | Easy | | |
 | 171 | Excel Sheet Column Number | Easy | | |
 | 170 | Two Sum III - Data structure design | Easy | | |
-| 169 | Majority Element | Easy | | |
+| 169 | [Majority Element](src/bit/MajorityElementSol1.js) | Easy | Bit | |
 | 168 | Excel Sheet Column Title | Easy | | |
 | 167 | Two Sum II - Input array is sorted $ | Medium | Array, Two Pointers | [Video](https://youtu.be/SGaWWnFSV-0) |
 | 166 | Fraction to Recurring Decimal | Medium | | |
@@ -439,7 +439,7 @@ Supported list of problem categories for searching,
 | 139 | Word Break | Medium | | |
 | 138 | [Copy List with Random Pointer](src/linked_list/CopyListWithRandomPointer.ts), [JS 解1](src/linked_list/CopyListWithRandomPointerSol1.js), [JS 解2](src/linked_list/CopyListWithRandomPointerSol2.js), [JS 解3](src/linked_list/CopyListWithRandomPointerSol3.js) | Medium | Linked List, Map, Two Pointers | |
 | 137 | Single Number II | Medium | Bit | [讲解](https://youtu.be/puXcQpwgcD0) |
-| 136 | Single Number | Medium | Bit, Map | [讲解](https://youtu.be/7xU7g04FJHw)                                          |
+| 136 | [Single Number](src/bit/SingleNumber.js) | Medium | Bit, Map | [讲解](https://youtu.be/7xU7g04FJHw)                                          |
 | 135 | [Candy](src/array/greedy/Candy.ts) | Hard | Greedy, Array, Math | |
 | 134 | Gas Station | Medium | | |
 | 133 | [Clone Graph](src/graph/CloneGraph.ts) | Medium | Graph | [讲解 1](https://youtu.be/5e6buIyUvhs) [讲解 2](https://youtu.be/F2ofVoR0adw) |
