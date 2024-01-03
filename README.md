@@ -373,7 +373,7 @@ Supported list of problem categories for searching,
 | 220 | Contains Duplicate III | Medium | | |
 | 219 | Contains Duplicate II | Easy |  |  |
 | 218 | The Skyline Problem | Hard |  |  |
-| 217 | Contains Duplicate | Easy |  |  |
+| 217 | [Contains Duplicate](src/array/ContainsDuplicate.js) | Easy | Set |  |
 | 216 | Combination Sum III | Medium | | |
 | 215 | Kth Largest Element in an Array | Medium | | |
 | 214 | Shortest Palindrome | Hard | | |
