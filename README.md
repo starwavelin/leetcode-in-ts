@@ -406,7 +406,7 @@ Supported list of problem categories for searching,
 | 172 | Factorial Trailing Zeroes | Easy | | |
 | 171 | Excel Sheet Column Number | Easy | | |
 | 170 | Two Sum III - Data structure design | Easy | | |
-| 169 | [Majority Element](src/bit/MajorityElementSol1.js) | Easy | Bit | |
+| 169 | [Majority Element](src/bit/MajorityElementSol1.js), [Solutioin 2](src/bit/MajorityElementSol2.js) | Easy | Bit | |
 | 168 | Excel Sheet Column Title | Easy | | |
 | 167 | Two Sum II - Input array is sorted $ | Medium | Array, Two Pointers | [Video](https://youtu.be/SGaWWnFSV-0) |
 | 166 | Fraction to Recurring Decimal | Medium | | |
