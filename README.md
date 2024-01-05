@@ -296,8 +296,8 @@ Supported list of problem categories for searching,
 | 294 | Flip Game II $ | Medium | | |
 | 293 | Flip Game $ | Easy | | |
 | 292 | Nim Game | Easy | | |
-| 291 | Word Pattern II $ | Hard | | |
-| 290 | Word Pattern | Easy | | |
+| 291 | Word Pattern II $ | Medium | | |
+| 290 | [Word Pattern - 2 map solution](src/string/WordPatternSol1.js) | Easy | | |
 | 289 | [Game of Life](src/array/GameOfLife.java) | Medium | | |
 | 288 | Unique Word Abbreviation $ | Easy | | |
 | 287 | [Find the Duplicate Number](src/binary_search/FindTheDuplicateNumber.js) | Medium | Binary Search, | |
