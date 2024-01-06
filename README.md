@@ -88,7 +88,7 @@ Supported list of problem categories for searching,
 | 876 | [Middle of the Linked List](src/linked_list/MiddleOfTheLinkedList.js) | Easy | Linked List, Two Pointers | |
 | 875 | [Koko eating bananas](src/binary_search/KokoEatingBananas.js) | Medium | Binary Search | |
 | 852 | [Peak Index in a Mountain Array](src/binary_search/PeakIndexInAMountainArray.js) | Medium | Binary Search | |
-| 739 | [Daily Temperatures](src/stack/DailyTemperatures.ts) | Medium | Stack | |
+| 739 | [Daily Temperatures](src/stack/DailyTemperatures.js), [TS 解](src/stack/DailyTemperatures.ts) | Medium | Stack | |
 | 716 | [Max Stack](src/stack/MaxStack.ts), [JS 解](src/stack/MaxStack.js), [JS 解 2](src/stack/MaxStackSol2.js) | Hard | Stack, Design | |
 | 704 | [Binary Search](src/binary_search/BinarySearch1.js), [Version 2](src/binary_search/BinarySearch2.js), [Version 3](src/binary_search/BinarySearch3.js) | Easy | Binary Search | |
 | 647 | [Palindromic Substrings (Brute Force)](src/dp/PalindromicSubstringsSol1.js), [Solution 2 - DP](src/dp/PalindromicSubstringsSol2.js), [Solution 3 - Recursion](src/dp/PalindromicSubstringsSol3.js) | Medium | Two Pointers, DP | |
