@@ -43,6 +43,7 @@ var wordPatternMatch = function(pattern, s) {
         const c = pattern[i];
         const w = words[i];
 
+        // follow the definition of bijection
         if (charToWordMap.has(c) && charToWordMap.get(c) != w ||
             wordToCharMap.has(w) && wordToCharMap.get(w) != c) {
                 return false;
@@ -61,7 +62,8 @@ var wordPatternMatch = function(pattern, s) {
  * Tests
  */
 
-console.log(wordPatternMatch("aabb", "dog cat cat dog")); // false
 console.log(wordPatternMatch("abba", "dog cat cat dog")); // true
+console.log(wordPatternMatch("abba", "dog dog dog dog")); // false
+console.log(wordPatternMatch("aabb", "dog cat cat dog")); // false
 console.log(wordPatternMatch("aabb", "dog cat cat fish")); // false
 console.log(wordPatternMatch("aaaa", "dog cat cat dog")); // false
