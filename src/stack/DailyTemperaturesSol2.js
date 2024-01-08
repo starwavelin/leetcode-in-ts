@@ -4,10 +4,17 @@
  * Date        : January 7, 2024
  * Author      : @codingbro
  *
- * meta        : tag-two-pointers, tag-array
+ * meta        : tag-two-pointers, tag-prefix-sum, tag-array
  ***************************************************************************/
 
 /**
+ * And for tag-prefix-sum, for this problem it is like suffix sum, because we 
+ *  accumulate the sum for daysDiff based on the values from res array, 
+ * by using daysDiff += res[i + daysDiff]; // speed up daysDiff increment
+ * 
+ * 
+ * the tag-two-pointers is like, we have a pointer for curTemp, and a pointer for curMax
+ * 
  * Algorithm:
  * 
  *  Init the res array with size equal to the given input array’s size.
