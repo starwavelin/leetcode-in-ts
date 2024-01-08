@@ -102,7 +102,7 @@ Supported list of problem categories for searching,
 | 500 | Keyboard Row | Easy | | |
 | 499 | The Maze III | Hard | | |
 | 498 | Diagonal Traverse | Medium | | |
-| 496 | [Next Greater Element I](src/stack/NextGreaterElement1.ts) | Easy | Map, Stack | |
+| 496 | [Next Greater Element I](src/stack/NextGreaterElement1Sol1.js), [TS 解](src/stack/NextGreaterElement1.ts) | Easy | Map, Stack | |
 | 495 | Teemo Attacking | Medium | | |
 | 494 | Target Sum | Medium | | |
 | 493 | Reverse Pairs | Hard | | |
