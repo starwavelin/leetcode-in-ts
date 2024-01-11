@@ -8,6 +8,14 @@
  ***************************************************************************/
 
 /**
+ * Algorithm:
+ *  3 Pointer traversal solution
+ * 
+ * Time complexity: O(k*n) Not preferred
+ * Space Complexity: O(1)
+ */
+
+/**
  * @param {number[]} nums
  * @param {number} k
  * @return {number[]}

@@ -523,7 +523,7 @@ Supported list of problem categories for searching,
 | 56  | [Merge Intervals](src/interval/MergeIntervals.js), [Merge Intervals - TS Sol](src/interval/MergeIntervals.ts) | Medium | Interval, Sort, Two Pointers | |
 | 55  | Jump Game | Medium | | |
 | 54  | [Spiral Matrix](src/matrix/SpiralMatrixSol1.js) | Medium | Matrix, Simulation | |
-| 53  | [Maximum Subarray](src/array/sliding_window/MaximumSubarraySol1.js) | Medium | Sliding Window | |
+| 53  | [Maximum Subarray](src/array/sliding_window/MaximumSubarraySol1.js), [Solution 2 - D&C](src/array/sliding_window/MaximumSubarraySol2.js) | Medium | Sliding Window | |
 | 52  | N-Queens II | Hard | | |
 | 51  | N-Queens | Hard | | |
 | 50  | Pow(x, n) | Medium | | |

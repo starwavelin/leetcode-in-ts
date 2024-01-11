@@ -4,7 +4,7 @@
  * Date        : August 10, 2023
  * Author      : @codingbro
  *
- * meta        : tag-sliding-window, tag-deque
+ * meta        : tag-sliding-window, tag-deque, tag-monotonic-queue
  ***************************************************************************/
 
 /**
@@ -14,28 +14,28 @@
  */
 var maxSlidingWindow = function(nums, k) {
     const res = [];
-    const n = nums.length;
     const q = []; // deque for storing the indices of elements; deque's head contains the index of the max
+    const n = nums.length;
 
     for (let l = 0, r = 0; r < n; r++) {
-        // remove smaller number in range k from the end of the deque 
-        // when newly added nums[r] is greater than the number at the end of the deque
+        // keep a monotonic decreasing deque
         while (q.length > 0 && nums[r] > nums[q[q.length - 1]]) {
             q.pop();
         }
         q.push(r);
 
-        // remove the head of the deque if it is out of range k
+        // remove the local max from the deque if it is out of range k
         if (l > q[0]) {
             q.shift();
         }
 
-        // When r >= k-1 we start to fill the res        
-        if (r >= k - 1) {
+        // Update res and l pointer
+        if (r - l == k - 1) {
             res.push(nums[q[0]]);
             l++;
         }
     }
+
     return res;
 };
 
