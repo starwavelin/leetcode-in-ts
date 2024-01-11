@@ -118,9 +118,8 @@ var threeSum = function(nums) {
 
     const n = nums.length;
 
-    // The following portion can be extracted into a kSum() ftn and be called recusrively
-    let i = 0;
-    while (i < n - 2) {
+    // The following portion can be extracted into a kSum() ftn and be called recusrively    
+    for (let i = 0; i < n - 2; i++) {
         const target = -nums[i];
 
         // Apply 2-Sum
@@ -142,10 +141,9 @@ var threeSum = function(nums) {
         }
         
         // Dedup on i
-        while (nums[i+1] === nums[i]) {
+        while (nums[i] === nums[i+1]) {
             i++;
         }
-        i++;
     }
 
     return res;
