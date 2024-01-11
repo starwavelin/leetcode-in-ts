@@ -7,11 +7,32 @@
  * meta        : tag-binary-search
  ***************************************************************************/
 
+/**
+ * Pre-condition: all numbers in the nums array are unique
+ * 
+ * Algorithm:
+ *  Intuitively, I am thinking I need to divide the problem into two major cases:
+ *      The given array is a traditional non-rotated array
+ *      and it is a rotated array.
+ *  But, in reality, I can handle both by dividing into cases during the binary search process.
+ * 
+ *  And in the following binary search process
+ *   Core parts:
+        1. Compare the numbers between nums[mid] and nums[l], and nums[mid] and nums[r],
+            target is either in between or in the rotated part
+        2. When comparing target with nums[l], nums[mid] and nums[r], should use >= or <=
+            this is because the == portion helps handle the non-rotated array scenario 
+ *  
+ * 
+ */
+
+
 var search = function(nums, target) {
     const n = nums.length;
-    let l = 0, r = n-1, mid;
+    let l = 0, r = n-1;
+
     while (l + 1 < r) {
-        mid = l + Math.floor( (r-l)/2 );
+        const mid = (l + r) >> 1; // mid is the mid index
         if (target === nums[mid]) {
             return mid;
         }
