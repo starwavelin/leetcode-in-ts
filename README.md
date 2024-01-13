@@ -424,7 +424,7 @@ Supported list of problem categories for searching,
 | 155 | [Min Stack](src/stack/MinStack.ts), [JS 解](src/stack/MinStack.js), [JS 解 2](src/stack/MinStackSol2.js) | Medium | Stack, Data Structure | |
 | 154 | Find Minimum in Rotated Sorted Array II | Hard | | |
 | 153 | [Find Minimum in Rotated Sorted Array](src/binary_search/FindMinimumInRotatedSortedArray.js) | Medium | Binary Search | |
-| 152 | Maximum Product Subarray |Medium | | |
+| 152 | [Maximum Product Subarray](src/dp/MaximumProductSubarraySol1.js) | Medium | Array, DP | |
 | 151 | [Reverse Words in a String](src/string/two_pointers/ReverseWordsInAString1Sol1.js) | Medium | Two Pointers | [讲解](https://youtu.be/54uU5Zhzorw) |
 | 150 | [Evaluate Reverse Polish Notation](src/stack/EvaluateReversePolishNotation.ts), [JS 解](src/stack/EvaluateReversePolishNotation.js) | Medium | Stack | |
 | 149 | Max Points on a Line | Hard | | |
