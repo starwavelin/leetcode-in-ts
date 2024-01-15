@@ -4,7 +4,7 @@
  * Date        : August 22, 2023
  * Author      : @codingbro
  *
- * meta        : tag-backtracking
+ * meta        : tag-backtracking, tag-dfs, tag-divide-and-conquer
  ***************************************************************************/
 
 /**
@@ -38,3 +38,37 @@ const genDfs = (left, right, path, res) => {  // left: 还未使用的 ( 的个�
  * Tests
  */
 console.log(generateParenthesis(3));
+
+
+
+/**
+ * Divide and Conquer way of writing the code
+ */
+
+/**
+ * @param {number} n
+ * @return {string[]}
+ */
+var generateParenthesisDandC = function(n) {
+    const res = [];
+    let numOfLeft = n, numOfRight = n, path = '';
+    dfs(numOfLeft, numOfRight, path, res);
+    return res;
+};
+
+const dfs = (numOfLeft, numOfRight, path, res) => {
+    if (numOfLeft > numOfRight) { // base case: invalid case - more left parens being lefts
+        return;
+    }
+
+    if (numOfLeft > 0 || numOfRight > 0) {
+        if (numOfLeft > 0) {
+            dfs(numOfLeft - 1, numOfRight, path + '(', res);
+        }
+        if (numOfRight > 0) {
+            dfs(numOfLeft, numOfRight - 1, path + ')', res);
+        }
+    } else { // conquer - can form an answer
+        res.push(path);
+    }
+}
