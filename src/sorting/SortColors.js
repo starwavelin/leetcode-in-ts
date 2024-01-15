@@ -8,6 +8,11 @@
  ***************************************************************************/
 
 /**
+ * Algorithm:
+ *  三个指针[恰好也因为有三种不同的数字],左右指针分别定住左右,游走指针
+ *  游走指针遇到0,跟左边交换;游走指针遇到2,跟右边交换且要回退一格
+ *  
+ * 
  * Use the idea of Array Partition, ref PartitionArraySol2.js
  * Two pointers moving toward each other. 
  * 
@@ -85,3 +90,23 @@ console.log(`Now nums4 is: ${nums4}`);
 const nums5 = [1,2,0]; // testing the offset of i
 sortColors(nums5);
 console.log(`Now nums5 is: ${nums5}`);
+
+
+
+var sortColorsWhileLoop = function(nums) {
+    let l = 0, r = nums.length - 1;
+    let k = l;
+
+    while (k <= r) {
+        if (nums[k] == 2) {
+            [nums[k], nums[r]] = [nums[r], nums[k]];
+            r--; // offset k so don't increase k
+        } else if (nums[k] == 0) {
+            [nums[k], nums[l]] = [nums[l], nums[k]];
+            l++;
+            k++;
+        } else {
+            k++;
+        }
+    }
+};
