@@ -45,6 +45,9 @@ const dfs = (nums, left, right) => {
     const mid = (left + right) >> 1;
     let leftSum = 0, rightSum = 0, curSum = 0;
         // scan from mid to left
+            // Notes: 1. the starting index shall be mid-1 cuz we will evaluate nums[mid] in the conquer part
+            // 2. the lower bound shall be dynamic, which is left
+            // 3. the curSum shall count each nums[i] it traverses, unlike Madane's algo which eliminate the negative-impact num immediately
     for (let i = mid-1; i >= left; i--) {
         curSum += nums[i];
         leftSum = Math.max(leftSum, curSum);
