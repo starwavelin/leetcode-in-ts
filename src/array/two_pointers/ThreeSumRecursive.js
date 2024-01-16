@@ -23,12 +23,12 @@ var threeSum = function (nums, target) {
     const start = 0;
     const k = 3; // k means how-many sum
     const path = []; // store/construct intermediate solution
-    kSum(start, target, k, path, nums, res); // nums - input array; res - result
+    kSum(nums, target, start, k, path, res); // nums - input array; res - result
     
     return res;
 };
 
-const kSum = (start, target, k, path, nums, res) => {
+const kSum = (nums, target, start, k, path, res) => {
     const n = nums.length;
     if (k === 2) { // base case (two-pointer technique)
         let l = start, r = n - 1;
@@ -57,7 +57,7 @@ const kSum = (start, target, k, path, nums, res) => {
                 continue;
             }
             const nextTarget = target - nums[i];
-            kSum(i+1, nextTarget, k-1, [...path, nums[i]], nums, res); // 指针往下移,规模往下减
+            kSum(nums, nextTarget, i+1,  k-1, [...path, nums[i]], res); // 指针往下移,规模往下减
         }
     }
 }

@@ -4,7 +4,7 @@
  * Date        : November 1, 2023
  * Author      : @codingbro
  *
- * meta        : tag-binary-search-tree, tag-dfs, tag-divide-and-conquer
+ * meta        : tag-binary-search-tree, tag-divide-and-conquer
  ***************************************************************************/
 
 /**

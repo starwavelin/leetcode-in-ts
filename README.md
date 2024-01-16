@@ -537,7 +537,7 @@ Supported list of problem categories for searching,
 | 42  | [Trapping Rain Water](src/array/two_pointers/TrappingRainWaterSol1.js), [Solution 2](src/array/two_pointers/TrappingRainWaterSol2.js) | Hard | Math, Two Pointers | |
 | 41  | [First Missing Positive](src/sorting/FirstMissingPositive.js) | Hard | Sort, Map | |
 | 40  | Combination Sum II | Medium | | |
-| 39  | Combination Sum | Medium | | |
+| 39  | [Combination Sum](src/backtracking/CombinationSumSol1.js) | Medium | Backtracking, DP | |
 | 38  | Count and Say | Easy | | |
 | 37  | Sudoku Solver | Hard | | |
 | 36  | [Valid Sudoku](src/matrix/ValidSudoku.js) | Medium | Map, Set, Matrix | |

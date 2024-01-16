@@ -4,7 +4,7 @@
  * Date        : October 31, 2023
  * Author      : @codingbro
  *
- * meta        : tag-binary-tree, tag-dfs, tag-meta
+ * meta        : tag-binary-tree, tag-meta
  ***************************************************************************/
 
 import { arrayToTree } from './arrayToTreeMyStyle.js';

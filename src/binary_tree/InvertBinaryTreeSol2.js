@@ -4,7 +4,7 @@
  * Date        : October 31, 2023
  * Author      : @codingbro
  *
- * meta        : tag-binary-tree, tag-dfs
+ * meta        : tag-binary-tree
  ***************************************************************************/
 
 /**
