@@ -60,5 +60,7 @@ const dfs = (nums, left, right) => {
     }
 
     // conquer
-    return Math.max(Math.max(dfs(nums, left, mid-1), dfs(nums, mid+1, right)), leftSum + nums[mid] + rightSum);
+        // For the conquer case, the scanning is also from mid to the two ends
+    const nonMidMax = Math.max(dfs(nums, left, mid - 1), dfs(nums, mid + 1, right));
+    return Math.max(nonMidMax, leftSum + nums[mid]+ rightSum);
 }
