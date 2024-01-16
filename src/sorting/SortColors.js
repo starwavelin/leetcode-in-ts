@@ -11,6 +11,7 @@
  * Algorithm:
  *  三个指针[恰好也因为有三种不同的数字],左右指针分别定住左右,游走指针
  *  游走指针遇到0,跟左边交换;游走指针遇到2,跟右边交换且要回退一格
+ *  且游走指针只在 l 和 r 之间游动,即上限是r. 
  *  
  * 
  * Use the idea of Array Partition, ref PartitionArraySol2.js
