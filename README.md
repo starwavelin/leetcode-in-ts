@@ -384,7 +384,7 @@ Supported list of problem categories for searching,
 | 211 | Add and Search Word - Data structure design | Medium | | |
 | 210 | [Course Schedule II](src/graph/CourseSchedule2.ts) | Medium | Graph, Topological Sort | |
 | 209 | [Minimum Size Subarray Sum](src/array/sliding_window/MinimumSizeSubarraySum.js) | Medium | Sliding Window | |
-| 208 | Implement Trie (Prefix Tree) | Medium | | |
+| 208 | [Implement Trie (Prefix Tree)](src/trie/ImplementTrie1Sol1.js) | Medium | Trie | |
 | 207 | [Course Schedule](src/graph/CourseSchedule.ts) | Medium | Graph, Topological Sort | |
 | 206 | [Reverse Linked List](src/linked_list/ReverseLinkedList1Sol1.js), [Solution 2](src/linked_list/ReverseLinkedList1Sol2.js), [Solution 3](src/linked_list/ReverseLinkedList1Sol3.js) | Easy | Linked List | |
 | 205 | Isomorphic Strings | Easy | | |
@@ -548,7 +548,7 @@ Supported list of problem categories for searching,
 | 31  | Next Permutation | Medium | | |
 | 30  | Substring with Concatenation of All Words | Hard | | |
 | 29  | Divide Two Integers | Medium | | |
-| 28  | Implement strStr() | Easy | | |
+| 28  | [Index of the First Occurrence in a String](src/string/two_pointers/FirstOccurrenceInAString.js) | Easy | Two Pointers | |
 | 27  | Remove Element | Easy | | |
 | 26  | [Remove Duplicates from Sorted Array](src/array/two_pointers/RemoveDuplicatesFromSortedArray.ts) | Easy | Two Pointers | |
 | 25  | Reverse Nodes in k-Group | Hard | | |
