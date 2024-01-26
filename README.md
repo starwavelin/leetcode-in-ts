@@ -68,6 +68,7 @@ Supported list of problem categories for searching,
 | No. | Problem | Difficulty | Tags | Videos |
 | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------ | ------ |
 | 1944 | [Number of Visible People in a Queue](src/stack/NumberOfVisiblePeopleInAQueueSol1.js), [Solution 2 - Brute Force](src/stack/NumberOfVisiblePeopleInAQueueSol2.js) | Hard | Stack | |
+| 1804 | [Implement Trie 2](src/trie/ImplementTrie2Sol1.js) | Medium | Trie | |
 | 1644 | [Lowest Common Ancestor of a Binary Tree II](src/binary_tree/LCAofBinaryTree2Sol1.js), [Solution 2](src/binary_tree/LCAofBinaryTree2Sol2.js), [Solution 3](src/binary_tree/LCAofBinaryTree2Sol3.js) | Medium | Binary Tree, DFS | |
 
 **Selective Problems 1,001 - 1,500**
