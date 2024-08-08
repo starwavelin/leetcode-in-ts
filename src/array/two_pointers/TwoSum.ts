@@ -18,15 +18,15 @@
  * @param target
  */
 function twoSumSol1(nums: number[], target: number): number[] {
-    const n = nums.length;
-    for (let i = 0; i < n - 1; i++) {
-        for (let j = i + 1; j < n; j++) {
-            if (nums[i] + nums[j] === target) {
-                return [i, j];
-            }
-        }
+  const n = nums.length;
+  for (let i = 0; i < n - 1; i++) {
+    for (let j = i + 1; j < n; j++) {
+      if (nums[i] + nums[j] === target) {
+        return [i, j];
+      }
     }
-    return [-1, -1];
+  }
+  return [-1, -1];
 }
 
 /*
@@ -38,26 +38,26 @@ function twoSumSol1(nums: number[], target: number): number[] {
     Space complexity: O(1)
 */
 function twoSumSol2(nums: number[], target: number): number[] {
-    const n = nums.length;
-    const collection = [];
-    for (let i = 0; i < n; i++) {
-        collection.push([nums[i], i]);
-    }
-    collection.sort((a, b) => a[0] - b[0]);
+  const n = nums.length;
+  const collection = [];
+  for (let i = 0; i < n; i++) {
+    collection.push([nums[i], i]);
+  }
+  collection.sort((a, b) => a[0] - b[0]);
 
-    let i = 0,
-        j = n - 1;
-    while (i < j) {
-        if (collection[i][0] + collection[j][0] === target) {
-            return [collection[i][1], collection[j][1]];
-        } else if (collection[i][0] + collection[j][0] < target) {
-            i++;
-        } else {
-            j--;
-        }
+  let l = 0,
+    r = n - 1;
+  while (l < r) {
+    if (collection[l][0] + collection[r][0] === target) {
+      return [collection[l][1], collection[r][1]];
+    } else if (collection[l][0] + collection[r][0] < target) {
+      l++;
+    } else {
+      r--;
     }
+  }
 
-    return [-1, -1];
+  return [-1, -1];
 }
 
 /**
@@ -75,18 +75,18 @@ function twoSumSol2(nums: number[], target: number): number[] {
  *          if No, look into the next element until there is no elements to look to.
  */
 function twoSumSol3(nums: number[], target: number): number[] {
-    const n = nums.length;
-    const map = new Map<number, number>();
-    for (let i = 0; i < n; i++) {
-        map.set(nums[i], i);
+  const n = nums.length;
+  const map = new Map<number, number>();
+  for (let i = 0; i < n; i++) {
+    map.set(nums[i], i);
+  }
+  for (const num of nums) {
+    if (map.has(target - num)) {
+      return [map.get(num) as number, map.get(target - num) as number];
     }
-    for (const cur of nums) {
-        if (map.has(target - cur)) {
-            return [map.get(cur) as number, map.get(target - cur) as number];
-        }
-    }
+  }
 
-    return [-1, -1];
+  return [-1, -1];
 }
 
 /**
@@ -98,30 +98,30 @@ function twoSumSol3(nums: number[], target: number): number[] {
  *  Space Complexity: O(n)
  */
 function twoSumSol4(nums: number[], target: number): number[] {
-    const n = nums.length;
-    const map = new Map<number, number>();
-    for (let i = 0; i < n; i++) {
-        if (map.has(target - nums[i])) {
-            return [map.get(target - nums[i]) as number, i];
-        }
-        map.set(nums[i], i);
+  const n = nums.length;
+  const map = new Map<number, number>();
+  for (let i = 0; i < n; i++) {
+    if (map.has(target - nums[i])) {
+      return [map.get(target - nums[i]) as number, i];
     }
+    map.set(nums[i], i);
+  }
 
-    return [-1, -1];
+  return [-1, -1];
 }
 
 /**
  * If we have the assumption that all elements in the nums array are unique, then
  */
 function twoSumSol5(nums: number[], target: number): number[] {
-    const n = nums.length;
-    for (let i = 0; i < n; i++) {
-        if (nums.indexOf(target - nums[i]) >= 0 && nums[i] !== target - nums[i]) {
-            return [i, nums.indexOf(target - nums[i])];
-        }
+  const n = nums.length;
+  for (let i = 0; i < n; i++) {
+    if (nums.indexOf(target - nums[i]) >= 0 && nums[i] !== target - nums[i]) {
+      return [i, nums.indexOf(target - nums[i])];
     }
+  }
 
-    return [-1, -1];
+  return [-1, -1];
 }
 
 /**
