@@ -340,7 +340,6 @@ Supported list of problem categories for searching,
 | 251 | Flatten 2D Vector $ | Medium | | |
 
 **Problem 1 - 250**
-
 | No. | Problem | Difficulty | Tags | Videos |
 | --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ----------------------------------- | ----------------------------------------------------------------------------- |
 | 250 | Count Univalue Subtrees | Medium | | |
@@ -367,7 +366,7 @@ Supported list of problem categories for searching,
 | 229 | Majority Element II | Medium | | |
 | 228 | Summary Ranges | Easy | | |
 | 227 | Basic Calculator II | Medium | | |
-| 226 | [Invert Binary Tree](src/binary_tree/InvertBinaryTreeSol1.js), [Solutioin 2](src/binary_tree/InvertBinaryTreeSol2.js) | Easy | Binary Tree, Divide and Conquer | |
+| 226 | [Invert Binary Tree](src/binary_tree/InvertBinaryTreeSol1.js), [Solution 2](src/binary_tree/InvertBinaryTreeSol2.js) | Easy | Binary Tree, Divide and Conquer | |
 | 225 | [Implement Stack using Queues](src/stack/ImplementStackUsingQueues.ts) | Medium | Queue | |
 | 224 | Basic Calculator | Medium | | |
 | 223 | Rectangle Area | Easy | | |
@@ -376,7 +375,7 @@ Supported list of problem categories for searching,
 | 220 | Contains Duplicate III | Medium | | |
 | 219 | Contains Duplicate II | Easy |  |  |
 | 218 | The Skyline Problem | Hard |  |  |
-| 217 | [Contains Duplicate](src/array/ContainsDuplicateSol1.js), [Solution 2](src/array/ContainsDuplicateSol2.js)) | Easy | Set, Map |  |
+| 217 | [Contains Duplicate](src/array/ContainsDuplicateSol1.js), [Solution 2](src/array/ContainsDuplicateSol2.js) | Easy | Set, Map |  |
 | 216 | Combination Sum III | Medium | | |
 | 215 | Kth Largest Element in an Array | Medium | | |
 | 214 | Shortest Palindrome | Hard | | |
@@ -408,7 +407,7 @@ Supported list of problem categories for searching,
 | 172 | Factorial Trailing Zeroes | Easy | | |
 | 171 | Excel Sheet Column Number | Easy | | |
 | 170 | Two Sum III - Data structure design | Easy | | |
-| 169 | [Majority Element](src/bit/MajorityElementSol1.js), [Solutioin 2](src/bit/MajorityElementSol2.js) | Easy | Bit | |
+| 169 | [Majority Element](src/bit/MajorityElementSol1.js), [Solution 2](src/bit/MajorityElementSol2.js) | Easy | Bit | |
 | 168 | Excel Sheet Column Title | Easy | | |
 | 167 | Two Sum II - Input array is sorted $ | Medium | Array, Two Pointers | [Video](https://youtu.be/SGaWWnFSV-0) |
 | 166 | Fraction to Recurring Decimal | Medium | | |
