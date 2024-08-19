@@ -15,29 +15,31 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLongestSubstring = function(s) {
-    const n = s.length;
-    const map = new Map();
-    let len = 0; // len is the length of the substring
-    // map.get(c) is as count in the template
+var lengthOfLongestSubstring = function (s) {
+  const n = s.length;
 
-    // sliding window template
-    for (let l = 0 , r = 0; r < n; r++) {
-        // handle r
-        const c = s[r];
-        map.set(c, (map.get(c) || 0) + 1);
+  let len = 0; // len is the length of the substring
+  const map = new Map();
+  // map.get(c) is as count in the template
 
-        // handle l 
-        while (map.get(c) == 2) { // pop l from the left of the substring
-            map.set(s[l], map.get(s[l]) - 1);
-            l++;
-        }
+  // sliding window template
+  for (let l = 0, r = 0; r < n; r++) {
+    // handle r
+    const c = s[r];
+    map.set(c, (map.get(c) || 0) + 1);
 
-        // max substring result
-        len = Math.max(len, r - l + 1);
+    // handle l
+    while (map.get(c) == 2) {
+      // pop l from the left of the substring
+      map.set(s[l], map.get(s[l]) - 1);
+      l++;
     }
 
-    return len;
+    // max substring result
+    len = Math.max(len, r - l + 1);
+  }
+
+  return len;
 };
 
 // Tests

@@ -11,24 +11,28 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLongestSubstring = function(s) {
-    const n = s.length;
-    let len = 0; // the length of the substring
-    const set = new Set();
+var lengthOfLongestSubstring = function (s) {
+  const n = s.length;
 
-    for (let l=0, r=0; r < n; r++) {
-        // update l to its correct position based on r's increment
-        while (set.has(s[r])) { // pop l from the left of the substring
-            set.delete(s[l]);
-            l++;
-        }
+  let len = 0; // the length of the substring
+  const set = new Set();
 
-        set.add(s[r]);
+  for (let l = 0, r = 0; r < n; r++) {
+    // handle r - part 1: r++
 
-        len = Math.max(len, r - l + 1);
+    // move l to its next starting position of the possible longest all-uniq-char substring, based on r's position
+    while (set.has(s[r])) {
+      // pop l from the left of the substring
+      set.delete(s[l]);
+      l++;
     }
 
-    return len;
+    set.add(s[r]); // handle r - part 2: put s[r] into the set
+
+    len = Math.max(len, r - l + 1);
+  }
+
+  return len;
 };
 
 // Tests
