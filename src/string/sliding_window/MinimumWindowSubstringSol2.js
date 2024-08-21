@@ -11,74 +11,71 @@
  * Solution 2:
  *  The idea is from NeetCode Video: https://www.youtube.com/watch?v=jSto0O4AJbM
  * Using two counts, `have` and `need`
- * 
+ *
  * @param {string} s
  * @param {string} t
  * @return {string}
  */
-var minWindow = function(s, t) {
-    const m = s.length;
-    const windowMap = new Map(), countMap = new Map(); // key - char, val - frequency
-    let head = 0, len = m + 1; // len is the length of the window substring, init to a cannot obtained value
-    let have = 0, need = 0;
+var minWindow = function (s, t) {
+  const n = s.length;
 
-    // count need: we fill the countMap first b/c t is usually the smaller string
-    for (let c of t) {
-        countMap.set(c, (countMap.get(c) || 0) + 1);
-    }
-    need = countMap.size;
-    
-    // Sliding window template
-    for (let l = 0, r = 0; r < m; r++) {
-        // handle r
-        let c = s[r];
-        windowMap.set(c, (windowMap.get(c) || 0) + 1);
+  let head = 0,
+    len = n + 1; // len is the length of the window substring, init to a cannot obtained value
+  const windowMap = new Map(),
+    countMap = new Map(); // key - char, val - frequency
+  let haveCount = 0,
+    needCount = 0;
 
-        // count the increase of have
-        if (countMap.get(c) > 0 && windowMap.get(c) === countMap.get(c)) {
-            have++;
-        }
+  // count need: we fill the countMap first b/c t is usually the smaller string
+  for (let c of t) {
+    countMap.set(c, (countMap.get(c) || 0) + 1);
+  }
+  needCount = countMap.size;
 
-        while (have === need) {
-            // min window string, update res here
-            if (r - l + 1 < len) {
-                len = r - l + 1;
-                head = l;
-            }
+  // Sliding window template
+  for (let l = 0, r = 0; r < n; r++) {
+    // handle r
+    windowMap.set(s[r], (windowMap.get(s[r]) || 0) + 1);
 
-            // update l pointer and the have count, pop the left el from the window
-            c = s[l];
-            windowMap.set(c, windowMap.get(c) - 1);
-            if (countMap.get(c) > 0 && windowMap.get(c) < countMap.get(c)) {
-                have--;
-            }
-            l++;
-        }
+    // count the increase of have
+    if (countMap.get(s[r]) > 0 && windowMap.get(s[r]) === countMap.get(s[r])) {
+      haveCount++;
     }
 
-    return len === m + 1 ? '' : s.substring(head, head + len);
+    while (haveCount === needCount) {
+      // min window string, update res here
+      if (r - l + 1 < len) {
+        head = l;
+        len = r - l + 1;
+      }
+
+      // update l pointer and the have count, pop the left el from the window
+      windowMap.set(s[l], windowMap.get(s[l]) - 1);
+      if (countMap.get(s[l]) > 0 && windowMap.get(s[l]) < countMap.get(s[l])) {
+        haveCount--;
+      }
+      l++;
+    }
+  }
+
+  return len === n + 1 ? '' : s.substring(head, head + len);
 };
 
-
 // Tests
-console.log(minWindow("ADOBECK", "ABC")); // ADOBEC
-console.log(minWindow("aa", "aa")); // aa
-console.log(minWindow("BCDEFGHIJKLMNOPQRSTUVWXYZA", "A")); // A
+console.log(minWindow('ADOBECK', 'ABC')); // ADOBEC
+console.log(minWindow('aa', 'aa')); // aa
+console.log(minWindow('BCDEFGHIJKLMNOPQRSTUVWXYZA', 'A')); // A
 
-console.log(minWindow("ADOBECODEBANC", "ABC")); // BANC
+console.log(minWindow('ADOBECODEBANC', 'ABC')); // BANC
 
-const s = "zfvdiuibotzsqrpgfnbfwudczyruzvuyaselommcfmuxdmgkzhpydsafttzsowrrovccjqhpcdohpurpeiphdrmwkooykfracvemmldqpragmtxqcmxfdmbnapomxfmzdqlpeofvghbubzkdnjirxlgxaujzcxzfqmuudbrllsfmtrpjczaakgzmdlofinkybgugjlrugygzrxiuwkwitvxwilbranrbvmigzbbfcjhthrpfclqxjntrawkajcdgqlmpppxrzemivcpzpfwauruuneuyiyeylrqagnthrgpokhozmmaheudryysjywhjpzmymhhfnxwxemzsyzbcvfwvfoedmoocnccckjjzifzoryhqxkuurspwgubtkqxxuzbeilersdhkdoccbywsrlpxhssriprdqujzhnsaszmvqoxrotjfhafqtxkdpbifvsgfhafccr"
-const t = "xshxlvswdb"
+const s =
+  'zfvdiuibotzsqrpgfnbfwudczyruzvuyaselommcfmuxdmgkzhpydsafttzsowrrovccjqhpcdohpurpeiphdrmwkooykfracvemmldqpragmtxqcmxfdmbnapomxfmzdqlpeofvghbubzkdnjirxlgxaujzcxzfqmuudbrllsfmtrpjczaakgzmdlofinkybgugjlrugygzrxiuwkwitvxwilbranrbvmigzbbfcjhthrpfclqxjntrawkajcdgqlmpppxrzemivcpzpfwauruuneuyiyeylrqagnthrgpokhozmmaheudryysjywhjpzmymhhfnxwxemzsyzbcvfwvfoedmoocnccckjjzifzoryhqxkuurspwgubtkqxxuzbeilersdhkdoccbywsrlpxhssriprdqujzhnsaszmvqoxrotjfhafqtxkdpbifvsgfhafccr';
+const t = 'xshxlvswdb';
 console.log(minWindow(s, t)); // "bywsrlpxhssriprdqujzhnsaszmvqox"
 
-const s2 = 'acedfecbd', t2 = 'cef';
+const s2 = 'acedfecbd',
+  t2 = 'cef';
 console.log(minWindow(s2, t2)); // 'fec'
-
-
-
-
-
-
 
 /* Using array map solution 
  * The not good part of using array-map are two:
@@ -87,48 +84,50 @@ console.log(minWindow(s2, t2)); // 'fec'
  *
 */
 
-var minWindowArrayMap = function(s, t) {
-    const m = s.length;
-    let res = [-1, -1], len = m+1; // because the most possible longest s that has min-window substring is length m 
-    const windowMap = new Array(128).fill(0), countMap = new Array(128).fill(0);
-    let have = 0, need = 0;
+var minWindowArrayMap = function (s, t) {
+  const m = s.length;
+  let res = [-1, -1],
+    len = m + 1; // because the most possible longest s that has min-window substring is length m
+  const windowMap = new Array(128).fill(0),
+    countMap = new Array(128).fill(0);
+  let have = 0,
+    need = 0;
 
-    // Can fill countMap first b/c t is the smaller string
-    for (let c of t) {
-        countMap[c.charCodeAt(0)]++;
+  // Can fill countMap first b/c t is the smaller string
+  for (let c of t) {
+    countMap[c.charCodeAt(0)]++;
+  }
+
+  // Traverse the countMap map array to get the real need value
+  for (let i = 0; i < countMap.length; i++) {
+    if (countMap[i] > 0) {
+      need++;
+    }
+  }
+
+  for (let l = 0, r = 0; r < m; r++) {
+    const c = s[r];
+    windowMap[c.charCodeAt(0)]++;
+
+    if (countMap[c.charCodeAt(0)] > 0 && windowMap[c.charCodeAt(0)] === countMap[c.charCodeAt(0)]) {
+      have++;
     }
 
-    // Traverse the countMap map array to get the real need value
-    for (let i = 0; i < countMap.length; i++) {
-        if (countMap[i] > 0) {
-            need++;
-        }
+    while (have === need) {
+      // Update result
+      if (r - l + 1 < len) {
+        res = [l, r];
+        len = r - l + 1;
+      }
+
+      // Pop from the left of our window
+      windowMap[s[l].charCodeAt(0)]--;
+      if (countMap[s[l].charCodeAt(0)] > 0 && windowMap[s[l].charCodeAt(0)] < countMap[s[l].charCodeAt(0)]) {
+        have--;
+      }
+      l++;
     }
+  }
 
-
-    for (let l = 0, r = 0; r < m; r++) {
-        const c = s[r];
-        windowMap[c.charCodeAt(0)]++;
-
-        if (countMap[c.charCodeAt(0)] > 0 && windowMap[c.charCodeAt(0)] === countMap[c.charCodeAt(0)]) {
-            have++;
-        }
-
-        while (have === need) {
-            // Update result
-            if ( r-l+1 < len ) {
-                res = [l, r];
-                len = r-l+1;
-            }
-
-            // Pop from the left of our window
-            windowMap[s[l].charCodeAt(0)]--;
-            if (countMap[s[l].charCodeAt(0)] > 0 && windowMap[s[l].charCodeAt(0)] < countMap[s[l].charCodeAt(0)]) {
-                have--;
-            }
-            l++;
-        }
-    }
-
-    return len === m + 1 ? '' : s.substring(res[0], res[1]+1);
+  return len === m + 1 ? '' : s.substring(res[0], res[1] + 1);
 };
