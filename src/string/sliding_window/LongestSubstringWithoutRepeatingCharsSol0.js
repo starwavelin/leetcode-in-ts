@@ -9,6 +9,10 @@
 
 /**
  * This solution uses my template
+ *
+ * 这个解法的本质和运用Set的解法是一样的,
+ * Set 是判断 while (set.has(s[r]))
+ * 使用Map则是判断 while (map.get(s[r]) == 2) 即s[r]已重复出现了,需要移动l了.
  */
 
 /**
@@ -19,7 +23,7 @@ var lengthOfLongestSubstring = function (s) {
   const n = s.length;
 
   let len = 0; // len is the length of the substring
-  const map = new Map();
+  const map = new Map(); // key - char, val - count of the char
   // map.get(c) is as count in the template
 
   // sliding window template
