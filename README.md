@@ -422,7 +422,7 @@ Supported list of problem categories for searching,
 | 157 | Read N Characters Given Read4 $ | Easy | | |
 | 156 | Binary Tree Upside Down $ | Medium | | |
 | 155 | [Min Stack](src/stack/MinStack.ts), [JS 解](src/stack/MinStack.js), [JS 解 2](src/stack/MinStackSol2.js) | Medium | Stack, Data Structure | |
-| 154 | Find Minimum in Rotated Sorted Array II | Hard | | |
+| 154 | [Find Minimum in Rotated Sorted Array II - binary search template solution](src/binary_search/FindMinimumInRotatedSortedArray2.js) | Hard | Binary Search | |
 | 153 | [Find Minimum in Rotated Sorted Array](src/binary_search/FindMinimumInRotatedSortedArray.js) | Medium | Binary Search | |
 | 152 | [Maximum Product Subarray](src/dp/MaximumProductSubarraySol1.js) | Medium | Array, DP | |
 | 151 | [Reverse Words in a String](src/string/two_pointers/ReverseWordsInAString1Sol1.js) | Medium | Two Pointers | [讲解](https://youtu.be/54uU5Zhzorw) |
