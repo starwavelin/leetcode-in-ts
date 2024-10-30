@@ -1,6 +1,6 @@
-const { sort } = require('../../src/sorting/SelectionSort.js');
+const { sort } = require('../../src/sorting/InsertionSort.js');
 
-describe('Selection Sort', () => {
+describe('Insertion Sort', () => {
   test('Ex 1', () => {
     const array = [2, 9, 5, 1, 3];
     expect(sort(array)).toStrictEqual([1, 2, 3, 5, 9]);
