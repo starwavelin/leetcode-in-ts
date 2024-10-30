@@ -1,3 +1,10 @@
+/**
+ * Bubble Sort 1: Two Pointers moving toward each other
+ *
+ * @param {*} arr
+ * @returns
+ */
+
 const bubbleSort = (arr) => {
   const n = arr.length;
 
