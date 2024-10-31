@@ -30,4 +30,9 @@ describe('Quick Sort Method 1', () => {
     const array = [1, 2, 3, 4, 5];
     expect(sort(array)).toStrictEqual([1, 2, 3, 4, 5]);
   });
+
+  test('Ex 7 - having duplicates', () => {
+    const array = [1, 2, 1, 5, 4, 6, 3, 4];
+    expect(sort(array)).toStrictEqual([1, 1, 2, 3, 4, 4, 5, 6]);
+  });
 });
