@@ -20,47 +20,43 @@
  ***************************************************************************/
 
 export class PartitionArray {
-    partitionSol1 = (nums: number[], k: number): number[] => {
-        const n = nums.length;
-        let i = 0,
-            j = 0;
-        while (j < n) {
-            if (nums[j] < k) {
-                if (nums[i] !== nums[j]) {
-                    this.swap(nums, i, j);
-                }
-                i++;
-            }
-            j++;
+  // Let l pointer chase after r pointer
+  partitionSol1 = (nums: number[], k: number): number[] => {
+    const n = nums.length;
+    let l = 0,
+      r = 0;
+    while (r < n) {
+      if (nums[r] < k) {
+        if (l !== r) {
+          [nums[l], nums[r]] = [nums[r], nums[l]];
         }
-        return nums;
-    };
-    // 运行结束后 [0, ..., i-1] 与 [i,...,j-1] 即为quicksort需要继续处理的子数组
+        l++;
+      }
+      r++;
+    }
+    return nums;
+  };
+  // 运行结束后 [0, ..., i-1] 与 [i,...,j-1] 即为quicksort需要继续处理的子数组
 
-    partitionSol2 = (nums: number[], k: number): number[] => {
-        const n = nums.length;
-        let l = 0,
-            r = n - 1;
-        while (l < r) {
-            while (l < n && nums[l] < k) {
-                l++;
-            }
-            while (r >= 0 && nums[r] >= k) {
-                r--;
-            }
-            if (l < r) {
-                this.swap(nums, l, r);
-                l++;
-                r--;
-            }
-        }
-        return nums;
-    };
-    // 运行结束后 [0, ..., l-1] 与 [l,...,n-1] 即为quicksort需要继续处理的子数组
-
-    swap = (nums: number[], i: number, j: number): void => {
-        const tmp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = tmp;
-    };
+  // let l and r pointers walking towards each other
+  partitionSol2 = (nums: number[], k: number): number[] => {
+    const n = nums.length;
+    let l = 0,
+      r = n - 1;
+    while (l < r) {
+      while (l < n && nums[l] < k) {
+        l++;
+      }
+      while (r >= 0 && nums[r] >= k) {
+        r--;
+      }
+      if (l < r) {
+        [nums[l], nums[r]] = [nums[r], nums[l]];
+        l++;
+        r--;
+      }
+    }
+    return nums;
+  };
+  // 运行结束后 [0, ..., l-1] 与 [l,...,n-1] 即为quicksort需要继续处理的子数组
 }
