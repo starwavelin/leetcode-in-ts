@@ -36,10 +36,10 @@ const quickSort = (nums, left, right) => {
 
 const partition = (nums, low, high) => {
   const pivotIndex = high;
-  let l = low,
-    r = low;
 
-  while (r < high) {
+  let l = low;
+
+  for (let r = low; r < high; r++) {
     // Move elements less than pivot to the front
     if (nums[r] < nums[pivotIndex]) {
       if (r !== l) {
@@ -48,8 +48,6 @@ const partition = (nums, low, high) => {
 
       l++;
     }
-
-    r++;
   }
 
   // swap the num in position l and pivotIndex

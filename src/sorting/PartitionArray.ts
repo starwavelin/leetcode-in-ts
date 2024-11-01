@@ -23,16 +23,13 @@ export class PartitionArray {
   // Let l pointer chase after r pointer
   partitionSol1 = (nums: number[], k: number): number[] => {
     const n = nums.length;
-    let l = 0,
-      r = 0;
-    while (r < n) {
+    for (let l = 0, r = 0; r < n; r++) {
       if (nums[r] < k) {
         if (l !== r) {
           [nums[l], nums[r]] = [nums[r], nums[l]];
         }
         l++;
       }
-      r++;
     }
     return nums;
   };
