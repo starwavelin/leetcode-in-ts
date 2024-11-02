@@ -46,7 +46,15 @@ const merge = (leftArr, rightArr) => {
     }
   }
 
-  return res.concat(leftArr.slice(l)).concat(rightArr.slice(r));
+  // return res.concat(leftArr.slice(l)).concat(rightArr.slice(r));
+
+  if (l < leftArr.length) {
+    res.push(...leftArr.slice(l));
+  } else {
+    res.push(...rightArr.slice(r));
+  }
+
+  return res;
 };
 
 module.exports = {
