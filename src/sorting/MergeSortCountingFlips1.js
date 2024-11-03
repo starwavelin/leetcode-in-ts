@@ -52,13 +52,11 @@ const mergeAndCount = (leftArr, rightArr) => {
   }
 
   // handle left over leftArr or rightArr elements
-  while (l < m) {
-    res.push(leftArr[l]);
-    l++;
+  if (l < m) {
+    res.push(...leftArr.slice(l));
   }
-  while (r < n) {
-    res.push(rightArr[r]);
-    r++;
+  if (r < n) {
+    res.push(...rightArr.slice(r));
   }
 
   return [res, inversions];
@@ -67,5 +65,5 @@ const mergeAndCount = (leftArr, rightArr) => {
 /**
  * Tests
  */
-console.log(countFlips([4, 2, 1, 3])); // [[1, 2, 3, 4], 4]
-// console.log(countFlips([5, 4, 2, 1, 3])); // [[1, 2, 3, 4, 5], 8]
+// console.log(countFlips([4, 2, 1, 3])); // [[1, 2, 3, 4], 4]
+console.log(countFlips([5, 4, 2, 1, 3])); // [[1, 2, 3, 4, 5], 8]

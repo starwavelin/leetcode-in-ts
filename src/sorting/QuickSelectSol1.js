@@ -13,6 +13,17 @@
  ***************************************************************************/
 
 /**
+ * Note:
+ *
+ * In the QuickSelect(nums, start, end, ???) method call.
+ *                                Kth Smallest --- vs ---  Kth Largest
+ * Orig Question 0-based index:    k                      n - k - 1
+ * Orig Question 1-based index:   k - 1                     n - k
+ *
+ *
+ */
+
+/**
  * Senario: Select the k-th smallest number from the given unsorted array
  *  Here K is index-1 based
  *
@@ -34,8 +45,8 @@
  *  O(log n) on average for recursive stack space.
  *
  *
- * Using Quick Select to Find the  k -th Largest Element:
- *  Calling quickSelect(nums, nums.length - k + 1) to search for the  (n - k + 1) -th smallest element,
+ * Using Quick Select to Find the  k -th Largest Element in index-1 based:
+ *  Calling select(nums, nums.length - k + 1) to search for the  (n - k + 1) -th smallest element,
  * which is equivalent to the  k -th largest element.
  *
  * @param {*} nums
@@ -45,7 +56,16 @@
 const select = (nums, k) => {
   const n = nums.length;
   return quickSelect(nums, 0, n - 1, k - 1); // Use k-1 because nums array is 0-index based
-  // If want to find the K-th largest, use n-k+1 instead.
+  // If want to find the K-th largest in index-1 based, use (n-k) instead to get the (n-k)th smallest 0-index based
+  // to be used in the param of the quickSelect() fn.
+  // As you can see, (n - k) + (k - 1) = n - 1, which satisfied the 0-index based largest index
+
+  /**
+   * If original question asked the k-th in 0-index based,
+   * then smallest, use k
+   * then largest, use n - k - 1.
+   * As you can see, (n - k - 1) + k also equals n - 1
+   */
 };
 
 const quickSelect = (nums, left, right, k) => {
