@@ -431,7 +431,7 @@ Supported list of problem categories for searching,
 | 149 | Max Points on a Line | Hard | | |
 | 148 | [Sort List](src/linked_list/SortListSol1.js) | Medium | Linked List, Sort | |
 | 147 | Insertion Sort List | Medium | | |
-| 146 | [LRU Cache](src/data_structure/LRUCacheSol1.ts), Solution 2 | Hard | Map, LinkedList | |
+| 146 | [LRU Cache](src/data_structure/LRUCacheSol1.js), Solution 2 | Hard | Map, LinkedList | |
 | 145 | Binary Tree Postorder Traversal | Hard | | |
 | 144 | Binary Tree Preorder Traversal | Medium | | |
 | 143 | [Reorder List](src/linked_list/ReorderList.js) | Medium | | |
