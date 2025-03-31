@@ -9,7 +9,7 @@
  * 	Assumption:
  * 		- What is the size of the array? [1 to 500 numbers].
         - What is the value range of each number? [-100, 100]
- * meta        : tag-sort, tag-two-pointers, tag-array
+ * meta        : tag-sort, tag-two-pointers, tag-array, tag-quick-select
  ***************************************************************************/
 
 /**
@@ -50,7 +50,7 @@
  * which is equivalent to the  k -th largest element.
  *
  * @param {*} nums
- * @returns
+ * @returns The K-th (Index-1-based) smallest element from the nums array
  */
 
 const select = (nums, k) => {
